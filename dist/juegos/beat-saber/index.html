@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beat Saber</title>
+  <style>
+    /* Estilos básicos */
+    body { font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <h1>Beat Saber</h1>
+  <p><strong>Software:</strong> SteamVR</p>
+  <p>Juego de ritmo.</p>
+  
+  <h2>Opiniones</h2>
+  
+    <ul>
+      
+        <li><strong>Juan:</strong> Muy divertido y desafiante.</li>
+      
+        <li><strong>Ana:</strong> Perfecto para hacer ejercicio.</li>
+      
+    </ul>
+  
+
+  <!-- Formulario para agregar una opinión específica para el juego -->
+  <h2>Agregar Opinión</h2>
+<form name="opinions" method="POST">
+  <input type="hidden" name="game" value="beat-saber">
+  <input type="text" name="name" placeholder="Tu nombre" required>
+  <textarea name="opinion" placeholder="Tu opinión sobre el juego" required></textarea>
+  <button type="submit">Enviar Opinión</button>
+</form>
+
+  <p><a href="/">Volver a la lista de juegos</a></p>
+</body>
+</html>
+
