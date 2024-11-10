@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ game.title }}</title>
+  <style>
+    /* Estilos básicos */
+    body { font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <h1>{{ game.title }}</h1>
+  <p><strong>Software:</strong> {{ game.software }}</p>
+  <p>{{ game.description }}</p>
+  
+  <h2>Opiniones</h2>
+  {% if game.opinions.length > 0 %}
+    <ul>
+      {% for opinion in game.opinions %}
+        <li><strong>{{ opinion.name }}:</strong> {{ opinion.opinion }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No hay opiniones aún.</p>
+  {% endif %}
+
+  <!-- Formulario para agregar una opinión específica para el juego -->
+  <h2>Agregar Opinión</h2>
+<form name="opinions" method="POST">
+  <input type="hidden" name="game" value="{{ game.id }}">
+  <input type="text" name="name" placeholder="Tu nombre" required>
+  <textarea name="opinion" placeholder="Tu opinión sobre el juego" required></textarea>
+  <button type="submit">Enviar Opinión</button>
+</form>
+
+  <p><a href="/">Volver a la lista de juegos</a></p>
+</body>
+</html>
