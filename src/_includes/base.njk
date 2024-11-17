@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="css/pico.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  
+  <input type="text" id="search-input" placeholder="Buscar juegos...">
+    <select id="software-filter" onchange="softFilter(this.value)">
+    <option value="">Todos los software</option>
+    <option value="SteamVR">SteamVR</option>
+    <option value="Monado">Monado</option>
+    <option value="ALVR">ALVR</option>
+    <option value="wivrn">wivrn</option>
+    </select>
+
+
+    <select id="rating-filter" disabled>
+    <option value="">Any</option>
+    <option value="1">Perfect</option>
+    <option value="2">Requires manual configuration or better</option>
+    <option value="3">Playable with graphical/controller issues or better</option>
+    <option value="4">Unplayable because of graphical/controller issues or better</option>
+    <option value="5">Crashes or won't start or better</option>
+    </select>
+
+
+
+
+<section>
+  <div id="game-list" class="game-list">
+    {% for games in collections.gamesList %}
+    <a href="{{ games.url | url }}" class="game-link">
+      <article class="game-card">
+        
+        <img class="game-img" src="{{ games.data.image }}" alt="Descripción de {{ games.data.title }}" >
+        <div class="game-info">
+            
+            <h3>{{ games.data.title }}</h3>
+                    <div class="rating-container">
+                        {% set steamVR_total = 0 %}
+                        {% set monado_total = 0 %}
+                        {% set alvr_total = 0 %}
+                        {% set wivrn_total = 0 %}
+                        {% set opinions_count = games.data.opinions | length %}
+
+                        {% for opinion in games.data.opinions %}
+                        
+                        {% set steamVR_total = steamVR_total + opinion.steamVR %}
+                        
+                        {% set monado_total = monado_total + opinion.monado %}
+                        {% set alvr_total = alvr_total + opinion.alvr %}
+                        {% set wivrn_total = wivrn_total + opinion.wivrn %}
+                        {% endfor %}
+
+                        {% set steamVR_avg = steamVR_total / opinions_count %}
+
+                        {% set monado_avg = monado_total / opinions_count %}
+                        {% set alvr_avg = alvr_total / opinions_count %}
+                        {% set wivrn_avg = wivrn_total / opinions_count %}                        
+
+
+
+                        <table class="rating-table">
+                            <tr>
+                                <td class="rating-text">SteamVR</td>
+                                <td class="rating-text">Monado</td>
+                                <td class="rating-text">ALVR</td>
+                                <td class="rating-text">wivrn</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="rating rating-{{ steamVR_avg | round }}" title="Media: {{ steamVR_avg | round(1) }}"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-{{ monado_avg | round }}" title="Media: {{ monado_avg | round(1) }}"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-{{ alvr_avg | round }}" title="Media: {{ alvr_avg | round(1) }}"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-{{ wivrn_avg | round }}" title="Media: {{ wivrn_avg | round(1) }}"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+        </div>
+      </article>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  function applyFilters() {
+    const softwareValue = document.getElementById('software-filter').value.toLowerCase();
+    const ratingFilter = document.getElementById('rating-filter');
+    const ratingValue = parseFloat(ratingFilter.value);
+    const searchValue = document.getElementById('search-input').value.toLowerCase(); 
+
+    const games = document.querySelectorAll('.game-card');
+
+    
+    if (softwareValue === "") {
+      ratingFilter.value = "";
+      ratingFilter.disabled = true;
+
+      
+      games.forEach(game => {
+        const gameTitle = game.querySelector('h3').innerText.toLowerCase();
+        if (searchValue === "" || gameTitle.includes(searchValue)) {
+          game.parentElement.style.display = ''; 
+        } else {
+          game.parentElement.style.display = 'none'; 
+        }
+      });
+      return; 
+    } else {
+      ratingFilter.disabled = false;
+    }
+
+   
+    games.forEach(game => {
+      const gameInfo = game.querySelector('.game-info').innerText.toLowerCase();
+      const gameTitle = game.querySelector('h3').innerText.toLowerCase();
+      const ratings = game.querySelectorAll('.rating');
+
+      
+      const satisfiesSoftware = gameInfo.includes(softwareValue);
+      const satisfiesRating = !ratingValue || Array.from(ratings).some(rating => {
+        return parseFloat(rating.title.split(': ')[1]) <= ratingValue;
+      });
+      const satisfiesSearch = searchValue === "" || gameTitle.includes(searchValue);
+
+     
+      if (satisfiesSoftware && satisfiesRating && satisfiesSearch) {
+        game.parentElement.style.display = ''; 
+      } else {
+        game.parentElement.style.display = 'none'; 
+      }
+    });
+  }
+
+  
+  document.getElementById('software-filter').addEventListener('change', applyFilters);
+  document.getElementById('rating-filter').addEventListener('change', applyFilters);
+  document.getElementById('search-input').addEventListener('input', applyFilters); // Evento para búsqueda
+</script>
+
+
+  
+</body>
+</html>

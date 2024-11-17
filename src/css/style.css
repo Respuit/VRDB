@@ -1,0 +1,156 @@
+.game-list {
+    gap: 1rem;
+}
+
+.game-card {
+    cursor: pointer;
+    display: flex; 
+    flex-direction: row; 
+    gap: 1rem; 
+    padding: 1rem;
+    border: 1px solid var(--muted);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit !important;
+}
+
+.game-info {
+    flex: 7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.game-img {
+    border-radius: 1rem;
+    width: 10rem; 
+    height: 6rem; 
+    max-width: 100%; 
+    object-fit: fill; 
+}
+
+.game-info p {
+    margin: 0.5rem 0;
+}
+
+.game-info h3 {
+    margin: 0;
+}
+
+.game-card h3 {
+    margin: 0;
+}
+
+.game-card p {
+    margin: 0.5rem 0;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column; 
+    flex: 3; 
+}
+
+.game-rating {
+    font-weight: bold;
+    color: var(--success);
+}
+
+.game-rating.gold {
+    color: gold;
+}
+
+.game-rating.silver {
+    color: silver;
+}
+
+.game-rating.bronze {
+    color: #cd7f32;
+}
+
+.rating {
+    display: inline-block;
+    width: 2rem; 
+    height: 2rem;
+    background-color: gray;
+    border-radius: 0.5rem; 
+    text-align: center;
+    line-height: 2rem; 
+    color: white; 
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.rating-1 {
+    background-color: rgb(37, 167, 65);
+}
+
+.rating-2 {
+    background-color: orange;
+}
+
+.rating-3 {
+    background-color: red;
+}
+
+.rating-4 {
+    background-color: gray;
+}
+
+.rating-5 {
+    background-color: black;
+}
+
+.rating-table {
+    width: 80%; 
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.rating-table td {
+    padding: 0.25rem 0.5rem; 
+    text-align: center;
+}
+
+.rating-table td.rating-text {
+    font-size: 0.8rem; 
+    font-weight: bold;
+    padding-right: 0.5rem; 
+    width: 25%;
+}
+
+.rating-table td.rating-icon {
+    width: 40%;
+}
+
+.device-info {
+
+}
+
+.device-info p {
+    font-size: 0.7rem;
+    margin: 0.5rem 0; 
+}
+
+.device-info strong {
+    font-weight: bold; 
+}
+
+.game-link,
+.game-link:link,
+.game-link:visited {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+.game-link:hover .game-card {
+    background-color: var(--hover-background); 
+    color: var(--hover-color); 
+}
+
+.opinion-card {
+    cursor: default; 
+}

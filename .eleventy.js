@@ -1,16 +1,18 @@
-const gamesData = require('./src/_data/games.json');
+module.exports = function (eleventyConfig) {
 
-module.exports = function(eleventyConfig) {
-  // Agregar colección de juegos
-  eleventyConfig.addCollection("games", () => gamesData.map(game => ({
-    ...game,
-    url: `/juegos/${game.id}/`,
-  })));
+    eleventyConfig.addPassthroughCopy("./src/css/");
+    eleventyConfig.addWatchTarget("./src/css/");
+    eleventyConfig.addPassthroughCopy("./src/images");
+    eleventyConfig.setDataDirectory("../_data");
 
-  return {
-    dir: {
-      input: "src",
-      output: "dist"
+    return {
+        dir: {
+            input: "src",
+            output: "public",
+        }
     }
-  };
-};
+}
+
+module.exports.config = {
+	pathPrefix: "home/respuit/Documents/Projects/mockupwebvr/base/public/",
+}

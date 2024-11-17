@@ -1,5 +1,5 @@
 {
-  "name": "vr-games-site",
+  "name": "base",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^3.0.0"
-  },
-  "scripts": {
-  "build": "eleventy",
-  "serve": "eleventy --serve"
-}
+  }
 }

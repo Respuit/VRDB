@@ -1,0 +1,61 @@
+---
+permalink: "games/{{ page.fileSlug }}.html"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/pico.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<p>{{ title }}</p>
+
+<img src="../{{ image }}" alt="Descripción de {{ title }}" >
+
+{% for opinion in opinions %}
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <p>{{ opinion.text }}</p>
+            <p>{{ opinion.runtime }}</p>
+            <p>{{ opinion.software }}</p>
+        </div>
+
+        <div class="rating-container">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">wivrn</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="rating rating-{{ opinion.steamVR }}" title="Rating: {{ ratings[opinion.steamVR] }}"></i>
+                    </td>
+                    <td>
+                        <i class="rating rating-{{ opinion.monado }}" title="Rating: {{ ratings[opinion.monado] }}"></i>
+                    </td>
+                    <td>
+                        <i class="rating rating-{{ opinion.alvr }}" title="Rating: {{ ratings[opinion.alvr] }}"></i>
+                    </td>
+                    <td>
+                        <i class="rating rating-{{ opinion.wivrn }}" title="Rating: {{ ratings[opinion.wivrn] }}"></i>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> {{ opinion.device }}</p>
+                <p><strong>GPU:</strong> {{ opinion.GPUVendor }}</p>
+                <p><strong>Distro:</strong> {{ opinion.distro }}</p>
+            </div>
+        </div>
+    </article>
+{% endfor %}
+
+
+
+</body>
+</html>

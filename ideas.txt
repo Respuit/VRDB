@@ -1,0 +1,6 @@
+ratings perfect, requires manual configuration, playable with issue , unplayable due to issues, borked
+
+filters: global ratings
+         steamvr / monado
+         alvr / wivrn
+         rating and software ejemplo perfect que usen steamvr 
