@@ -1,0 +1,156 @@
+.game-list {
+    gap: 1rem;
+}
+
+.game-card {
+    cursor: pointer;
+    display: flex; /* Usamos flexbox para organizar el contenido */
+    flex-direction: row; /* Coloca los elementos en una fila */
+    gap: 1rem; /* Espacio entre los elementos */
+    padding: 1rem;
+    border: 1px solid var(--muted);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit !important;
+}
+
+.game-info {
+    flex: 7; /* Ocupa el 70% del espacio del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente los textos */
+}
+
+.game-img {
+    border-radius: 1rem;
+    width: 10rem; /* Tamaño fijo de ancho */
+    height: 6rem; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Se adapta al ancho del contenedor en dispositivos pequeños */
+    object-fit: fill; /* Asegura que la imagen llene el espacio respetando el aspecto */
+}
+
+.game-info p {
+    margin: 0.5rem 0;
+}
+
+.game-info h3 {
+    margin: 0;
+}
+
+.game-card h3 {
+    margin: 0;
+}
+
+.game-card p {
+    margin: 0.5rem 0;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column; /* Coloca la tabla y la información del dispositivo en columna */
+    flex: 3; /* Ocupa el 30% del espacio del contenedor */
+}
+
+.game-rating {
+    font-weight: bold;
+    color: var(--success);
+}
+
+.game-rating.gold {
+    color: gold;
+}
+
+.game-rating.silver {
+    color: silver;
+}
+
+.game-rating.bronze {
+    color: #cd7f32;
+}
+
+.rating {
+    display: inline-block;
+    width: 2rem; /* Tamaño del icono */
+    height: 2rem;
+    background-color: gray;
+    border-radius: 0.5rem; /* Bordes redondeados */
+    text-align: center;
+    line-height: 2rem; /* Centrado vertical del texto */
+    color: white; /* Color del texto dentro del icono */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Estilos para ratings específicos */
+.rating-1 {
+    background-color: rgb(37, 167, 65);
+}
+
+.rating-2 {
+    background-color: orange;
+}
+
+.rating-3 {
+    background-color: red;
+}
+
+.rating-4 {
+    background-color: gray;
+}
+
+.rating-5 {
+    background-color: black;
+}
+
+.rating-table {
+    width: 80%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.rating-table td {
+    padding: 0.25rem 0.5rem; /* Espaciado interno de las celdas */
+    text-align: center;
+}
+
+.rating-table td.rating-text {
+    font-size: 0.8rem; /* Tamaño de fuente reducido */
+    font-weight: bold;
+    padding-right: 0.5rem; /* Espaciado entre texto e icono */
+    width: 25%;
+}
+
+.rating-table td.rating-icon {
+    width: 40%;
+}
+
+.device-info {
+
+}
+
+.device-info p {
+    font-size: 0.7rem;
+    margin: 0.5rem 0; /* Espaciado vertical entre párrafos */
+}
+
+.device-info strong {
+    font-weight: bold; /* Títulos en negrita */
+}
+
+.game-link,
+.game-link:link,
+.game-link:visited {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Hereda el color original */
+    display: block; /* Hace que el enlace abarque todo el contenedor */
+}
+
+.game-link:hover .game-card {
+    background-color: var(--hover-background); /* Cambia el fondo del artículo */
+    color: var(--hover-color); /* Cambia el color del texto en hover */
+}
+
+.opinion-card {
+    cursor: default; /* Mantiene el cursor clickeable solo para el índice */
+}

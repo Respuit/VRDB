@@ -2,58 +2,223 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lista de Juegos VR</title>
-  <style>
-    /* Estilos básicos */
-    body { font-family: Arial, sans-serif; }
-    .game { margin-bottom: 20px; }
-  </style>
+  <title>VR GAMES</title>
+  <link rel="stylesheet" href="css/pico.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Juegos VR</h1>
+  <h1>VR GAMES</h1>
   
   <input type="text" id="search-input" placeholder="Buscar juegos...">
-  <select id="software-filter">
-      <option value="">Todos los software</option>
-      <option value="SteamVR">SteamVR</option>
-      <option value="Oculus">Oculus</option>
-  </select>
-  
-  <div id="game-list">
+    <select id="software-filter" onchange="softFilter(this.value)">
+    <option value="">Todos los software</option>
+    <option value="SteamVR">SteamVR</option>
+    <option value="Monado">Monado</option>
+    <option value="ALVR">ALVR</option>
+    <option value="wivrn">wivrn</option>
+    </select>
+
+
+    <select id="rating-filter" disabled>
+    <option value="">Any</option>
+    <option value="1">Perfect</option>
+    <option value="2">Requires manual configuration or better</option>
+    <option value="3">Playable with graphical/controller issues or better</option>
+    <option value="4">Unplayable because of graphical/controller issues or better</option>
+    <option value="5">Crashes or won't start or better</option>
+    </select>
+
+
+
+
+<section>
+  <div id="game-list" class="game-list">
     
-      <div class="game" data-title="beat saber" data-software="SteamVR">
-        <h2><a href="/juegos/beat-saber/">Beat Saber</a></h2>
-        <p><strong>Software:</strong> SteamVR</p>
-        <p>Juego de ritmo.</p>
-      </div>
+    <a href="/home/respuit/Documents/Projects/mockupwebvr/base/public/games/superhot-vr.html" class="game-link">
+      <article class="game-card">
+        
+        <img class="game-img" src="images/bs.webp" alt="Descripción de Beat Saber" >
+        <div class="game-info">
+            
+            <h3>Beat Saber</h3>
+                    <div class="rating-container">
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+
+                        
+                        
+                                                
+
+
+
+                        <table class="rating-table">
+                            <tr>
+                                <td class="rating-text">SteamVR</td>
+                                <td class="rating-text">Monado</td>
+                                <td class="rating-text">ALVR</td>
+                                <td class="rating-text">wivrn</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="rating rating-2" title="Media: 1.7"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-2" title="Media: 2"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-2" title="Media: 1.7"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-3" title="Media: 2.7"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+        </div>
+      </article>
+      </a>
     
-      <div class="game" data-title="superhot vr" data-software="Oculus">
-        <h2><a href="/juegos/superhot-vr/">Superhot VR</a></h2>
-        <p><strong>Software:</strong> Oculus</p>
-        <p>Juego de acción en cámara lenta.</p>
-      </div>
+    <a href="/home/respuit/Documents/Projects/mockupwebvr/base/public/games/xplane11.html" class="game-link">
+      <article class="game-card">
+        
+        <img class="game-img" src="images/header.jpg" alt="Descripción de X-Plane 11" >
+        <div class="game-info">
+            
+            <h3>X-Plane 11</h3>
+                    <div class="rating-container">
+                        
+                        
+                        
+                        
+                        
+
+                        
+
+                        
+
+                        
+                        
+                                                
+
+
+
+                        <table class="rating-table">
+                            <tr>
+                                <td class="rating-text">SteamVR</td>
+                                <td class="rating-text">Monado</td>
+                                <td class="rating-text">ALVR</td>
+                                <td class="rating-text">wivrn</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="rating rating-NaN" title="Media: NaN"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-NaN" title="Media: NaN"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-NaN" title="Media: NaN"></i>
+                                </td>
+                                <td>
+                                    <i class="rating rating-NaN" title="Media: NaN"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+        </div>
+      </article>
+      </a>
     
   </div>
+</section>
 
-  <script>
-    const searchInput = document.getElementById('search-input');
-    const softwareFilter = document.getElementById('software-filter');
-    const games = document.querySelectorAll('.game');
+<script>
+  function applyFilters() {
+    const softwareValue = document.getElementById('software-filter').value.toLowerCase();
+    const ratingFilter = document.getElementById('rating-filter');
+    const ratingValue = parseFloat(ratingFilter.value);
+    const searchValue = document.getElementById('search-input').value.toLowerCase(); 
 
-    function filterGames() {
-      const searchText = searchInput.value.toLowerCase();
-      const software = softwareFilter.value;
+    const games = document.querySelectorAll('.game-card');
+
+    
+    if (softwareValue === "") {
+      ratingFilter.value = "";
+      ratingFilter.disabled = true;
+
+      
       games.forEach(game => {
-        const title = game.dataset.title;
-        const gameSoftware = game.dataset.software;
-        const matchesSearch = title.includes(searchText);
-        const matchesSoftware = software ? gameSoftware === software : true;
-        game.style.display = matchesSearch && matchesSoftware ? '' : 'none';
+        const gameTitle = game.querySelector('h3').innerText.toLowerCase();
+        if (searchValue === "" || gameTitle.includes(searchValue)) {
+          game.parentElement.style.display = ''; 
+        } else {
+          game.parentElement.style.display = 'none'; 
+        }
       });
+      return; 
+    } else {
+      ratingFilter.disabled = false;
     }
 
-    searchInput.addEventListener('input', filterGames);
-    softwareFilter.addEventListener('change', filterGames);
-  </script>
+   
+    games.forEach(game => {
+      const gameInfo = game.querySelector('.game-info').innerText.toLowerCase();
+      const gameTitle = game.querySelector('h3').innerText.toLowerCase();
+      const ratings = game.querySelectorAll('.rating');
+
+      
+      const satisfiesSoftware = gameInfo.includes(softwareValue);
+      const satisfiesRating = !ratingValue || Array.from(ratings).some(rating => {
+        return parseFloat(rating.title.split(': ')[1]) <= ratingValue;
+      });
+      const satisfiesSearch = searchValue === "" || gameTitle.includes(searchValue);
+
+     
+      if (satisfiesSoftware && satisfiesRating && satisfiesSearch) {
+        game.parentElement.style.display = ''; 
+      } else {
+        game.parentElement.style.display = 'none'; 
+      }
+    });
+  }
+
+  
+  document.getElementById('software-filter').addEventListener('change', applyFilters);
+  document.getElementById('rating-filter').addEventListener('change', applyFilters);
+  document.getElementById('search-input').addEventListener('input', applyFilters); // Evento para búsqueda
+</script>
+
+
+  
 </body>
 </html>
