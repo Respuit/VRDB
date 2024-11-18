@@ -20,6 +20,45 @@ body:
         - Crashes or won't start
     validations:
       required: false
+  - type: dropdown
+    id: steamvr
+    attributes:
+      label: Monado
+      description: Provide the level of succes using the Monado runtime
+      options:
+        - Perfect
+        - Requires manual configuration
+        - Playable with graphical/controller issues
+        - Unplayable because of graphical/controller issues
+        - Crashes or won't start
+    validations:
+      required: false
+  - type: dropdown
+    id: steamvr
+    attributes:
+      label: ALVR
+      description: Provide the level of succes using the ALVR runtime
+      options:
+        - Perfect
+        - Requires manual configuration
+        - Playable with graphical/controller issues
+        - Unplayable because of graphical/controller issues
+        - Crashes or won't start
+    validations:
+      required: false
+  - type: dropdown
+    id: steamvr
+    attributes:
+      label: Steamvr
+      description: Provide the level of succes using the SteamVR runtime
+      options:
+        - Perfect
+        - Requires manual configuration
+        - Playable with graphical/controller issues
+        - Unplayable because of graphical/controller issues
+        - Crashes or won't start
+    validations:
+      required: false      
   - type: textarea
     id: what-happened
     attributes:
