@@ -72,6 +72,6 @@ body:
     id: date
     attributes:
       label: Date
-      placeholder: YYYY-MM-DD (e.g., 2024-11-18)
+      placeholder: 2024-11-18
       value: ""      
  
