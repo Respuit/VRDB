@@ -68,4 +68,10 @@ body:
       value: "A bug happened!"
     validations:
       required: true
+- type: textarea
+  id: date
+  attributes:
+    label: Date
+    placeholder: YYYY-MM-DD (e.g., 2024-11-18)
+    value: ""      
  
