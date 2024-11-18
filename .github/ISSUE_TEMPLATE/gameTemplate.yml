@@ -1,7 +1,7 @@
-name: 🐞 Bug
+name: Test bug
 description: File a bug/issue
-title: "[BUG] <title>"
-labels: ["test"]
+title: "[BUG]: "
+labels: "test"
 body:
 - type: checkboxes
   attributes:
