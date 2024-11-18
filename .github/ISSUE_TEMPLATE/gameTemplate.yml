@@ -13,8 +13,11 @@ body:
       label: Steamvr
       description: Provide the level of succes using the SteamVR runtime
       options:
-        - 1: Perfect
+        - Perfect
         - Requires manual configuration
+        - Playable with graphical/controller issues
+        - Unplayable because of graphical/controller issues
+        - Crashes or won't start
     validations:
       required: false
   - type: textarea
