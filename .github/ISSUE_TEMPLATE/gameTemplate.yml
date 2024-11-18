@@ -71,6 +71,5 @@ body:
   - type: textarea
     id: date
     attributes:
-      label: Date
-      value: ""      
+      label: Date  
  
