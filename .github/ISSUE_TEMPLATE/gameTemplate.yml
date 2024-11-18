@@ -14,7 +14,7 @@ body:
       description: Provide the level of succes using the SteamVR runtime
       options:
         - 1: Perfect
-        - "2": "Requires manual configuration"
+        - Requires manual configuration
     validations:
       required: false
   - type: textarea
