@@ -21,7 +21,7 @@ body:
     validations:
       required: false
   - type: dropdown
-    id: steamvr
+    id: monado
     attributes:
       label: Monado
       description: Provide the level of succes using the Monado runtime
@@ -34,7 +34,7 @@ body:
     validations:
       required: false
   - type: dropdown
-    id: steamvr
+    id: alvr
     attributes:
       label: ALVR
       description: Provide the level of succes using the ALVR runtime
@@ -47,10 +47,10 @@ body:
     validations:
       required: false
   - type: dropdown
-    id: steamvr
+    id: wivrn
     attributes:
-      label: Steamvr
-      description: Provide the level of succes using the SteamVR runtime
+      label: WIVRN
+      description: Provide the level of succes using the WIVRN runtime
       options:
         - Perfect
         - Requires manual configuration
