@@ -1,21 +1,20 @@
-name: Bug Report
-description: File a bug report.
-title: "[Bug]: "
+name: Game Report
+description: Give feedback for a game.
+title: "[Rating]: "
 labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
+  - type: dropdown
+    id: steamvr
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Steamvr
+      description: Provide the level of succes using the SteamVR runtime
+      options:
+        - 1: Perfect
+        - "2": "Requires manual configuration"
     validations:
       required: false
   - type: textarea
