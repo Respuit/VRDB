@@ -68,7 +68,7 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: date
     attributes:
       label: Date  
