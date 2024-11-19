@@ -13,7 +13,23 @@
 
 
 
+<button onclick="redirectToGitHub()">ADD YOUR REPORT!</button>
+<script>
+    function redirectToGitHub() {
 
+      const baseURL = "https://github.com/Respuit/VRDB/issues/new";
+      const assignees = "";
+      const labels = "bug,triage";
+      const projects = "";
+      const template = "gameTemplate.yml";
+      const title = "[Rating]: " + "X-Plane 11";
 
+      const currentDate = new Date().toISOString().split('T')[0];
+
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+
+      window.location.href = fullURL;
+    }
+</script>
 </body>
 </html>
