@@ -25,7 +25,7 @@ jobs:
 
       - name: Append opinion to Markdown file
         run: |
-          FILE_NAME="$(echo '${{ github.event.issue.title }}' | sed -E 's/\\s+/-/g' | tr '[:upper:]' '[:lower:]').md"
+          FILE_NAME="src/games/$(echo '${{ github.event.issue.title }}' | sed -E 's/\\s+/-/g' | tr '[:upper:]' '[:lower:]').md"
           if [ ! -f "$FILE_NAME" ]; then
             echo "Error: Markdown file for the title does not exist: $FILE_NAME"
             exit 1
