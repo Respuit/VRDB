@@ -62,10 +62,9 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Description
+      description: Please provide your experience with the software.
+      placeholder: Tell us what worked and what didn't. If possible verion information such as Distributon, kernel, gpu drivers, proton version... would be awesome!
     validations:
       required: true
   - type: input
