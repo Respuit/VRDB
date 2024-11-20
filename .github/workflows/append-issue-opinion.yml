@@ -1,9 +1,7 @@
 name: Generate Issue Report on Close
-
 on:
   issues:
     types: [closed]  # Se ejecutará cuando un issue sea cerrado
-
 jobs:
   generate-md-file:
     runs-on: ubuntu-latest
