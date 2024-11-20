@@ -18,3 +18,4 @@ jobs:
           BODY: ${{ github.event.issue.body }}
       - run: |
           cat "${{ github.action_path }}ideas.txt"
+        shell: bash
