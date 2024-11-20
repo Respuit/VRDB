@@ -4,44 +4,11 @@ on:
     types: [closed]  # Se ejecutará cuando un issue sea cerrado
 jobs:
   generate-md-file:
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repository
-        uses: actions/checkout@v4
-
-      - name: Get Issue Data and Generate Report
-        run: |
-          ISSUE_URL="https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}"
-          ISSUE_DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" $ISSUE_URL)
-
-          # Extraer los datos que necesitas del issue (por ejemplo, título, cuerpo, etiquetas)
-          TITLE=$(echo $ISSUE_DATA | jq -r .title)
-          BODY=$(echo $ISSUE_DATA | jq -r .body)
-          LABELS=$(echo $ISSUE_DATA | jq -r .labels | jq -r '.[].name' | paste -sd, -)
-
-          # Extraer los campos del issue, como las respuestas de los dropdowns (puedes ajustarlo según tu estructura)
-          STEAMVR=$(echo "$BODY" | grep -oP 'Steamvr: \K.*')
-          MONADO=$(echo "$BODY" | grep -oP 'Monado: \K.*')
-          ALVR=$(echo "$BODY" | grep -oP 'ALVR: \K.*')
-          WIVRN=$(echo "$BODY" | grep -oP 'WIVRN: \K.*')
-          DESCRIPTION=$(echo "$BODY" | grep -oP 'Description: \K.*')
-          DATE=$(echo "$BODY" | grep -oP 'Date: \K.*')
-
-          # Crear el archivo Markdown
-          echo "# Issue Report: $TITLE" > issue_report.md
-          echo "**Labels**: $LABELS" >> issue_report.md
-          echo "## Report" >> issue_report.md
-          echo "**SteamVR**: $STEAMVR" >> issue_report.md
-          echo "**Monado**: $MONADO" >> issue_report.md
-          echo "**ALVR**: $ALVR" >> issue_report.md
-          echo "**WIVRN**: $WIVRN" >> issue_report.md
-          echo "**Description**: $DESCRIPTION" >> issue_report.md
-          echo "**Date**: $DATE" >> issue_report.md
-
-      - name: Commit and Push the Generated Report
-        run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add issue_report.md
-          git commit -m "Generate issue report for closed issue #${{ github.event.issue.number }}"
-          git push
+      - uses: actions/checkout@v4
+      - run: |
+          echo A comment on issue $NUMBER
+        env:
+          NUMBER: ${{ github.event.issue.number }}
