@@ -73,7 +73,7 @@ jobs:
           # Append to the Markdown file
           with open(file_name, "a") as file:
               file.write("\n" + new_opinion)
-          OF
+          EOF
 
       - name: Commit and push changes
         run: |
