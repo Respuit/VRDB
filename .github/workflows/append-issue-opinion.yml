@@ -13,10 +13,10 @@ jobs:
         env:
           NUMBER: ${{ github.event.issue.number }}
       - run: |
-          input = $BODY
           echo A comment on body $input
         env:
           BODY: ${{ github.event.issue.body }}
+          input: $BODY
       - run: |
           cat "${{ github.action_path }}ideas.txt"
         shell: bash
