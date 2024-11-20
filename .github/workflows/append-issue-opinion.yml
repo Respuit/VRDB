@@ -46,7 +46,7 @@ jobs:
           description = "No description provided."
           date = "Unknown"
           for line in lines:
-              print(f"DEBUG: Body received: {line}")
+              print(f"DEBUG: Body received: {body}")
               if line.startswith("### Steamvr"):
                   steamvr = lines[lines.index(line) + 1].strip()
               elif line.startswith("### Monado"):
