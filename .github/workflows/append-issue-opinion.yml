@@ -16,3 +16,5 @@ jobs:
           echo A comment on body $BODY
         env:
           BODY: ${{ github.event.issue.body }}
+      - run: |
+          cat "${{ github.action_path }}/my_file.js" > ideas.txt   
