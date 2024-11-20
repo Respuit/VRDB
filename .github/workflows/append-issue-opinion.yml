@@ -36,6 +36,7 @@ jobs:
           # Input variables
           file_name = os.environ.get("FILE_NAME")
           body = os.environ.get("body")
+          print(f"DEBUG: Body received: {body}")
             
           # Example of parsing the body into specific fields
           lines = body.split("\\n")
@@ -46,7 +47,6 @@ jobs:
           description = "No description provided."
           date = "Unknown"
           for line in lines:
-              print(f"DEBUG: Body received: {body}")
               if line.startswith("### Steamvr"):
                   steamvr = lines[lines.index(line) + 1].strip()
               elif line.startswith("### Monado"):
