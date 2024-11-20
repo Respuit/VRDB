@@ -67,7 +67,6 @@ jobs:
             **WIVRN**: {wivrn}
             **Date**: {date}
             **Opinion**: {description}
-            **Appended on**: {datetime.utcnow().isoformat()}
           """
           
           # Append to the Markdown file
