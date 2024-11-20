@@ -31,7 +31,6 @@ jobs:
             exit 1
           fi
           python3 <<EOF
-            from datetime import datetime
             import os
             
             # Input variables
