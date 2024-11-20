@@ -51,7 +51,7 @@ jobs:
               elif line.startswith("### Monado"):
                   monado = lines[lines.index(line) + 1].strip()
               elif line.startswith("### ALVR"):
-                  alvr = lines[lines.index(line) + 1].strip()
+                  alvr = lines[lines.index(line) + 1].strip() if len(lines) > lines.index(line) + 1 else ""
               elif line.startswith("### WIVRN"):
                   wivrn = lines[lines.index(line) + 1].strip()
               elif line.startswith("### Description"):
