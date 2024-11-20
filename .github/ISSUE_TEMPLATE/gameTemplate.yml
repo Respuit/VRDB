@@ -1,13 +1,74 @@
-name: test
-
-on:
-  issues:
-    types: [closed]  # This will run when an issue is closed
-
-jobs:
-  generate-mdd-file:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out the repository
-        uses: actions/checkout@v2
+name: Game Report
+description: Give feedback for a game.
+title: "[Rating]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: steamvr
+    attributes:
+      label: Steamvr
+      description: Provide the level of succes using the SteamVR runtime
+      options:
+        - Perfect
+        - Requires manual configuration
+        - Playable with graphical/controller issues
+        - Unplayable because of graphical/controller issues
+        - Crashes or won't start
+    validations:
+      required: false
+  - type: dropdown
+    id: monado
+    attributes:
+      label: Monado
+      description: Provide the level of succes using the Monado runtime
+      options:
+        - Perfect
+        - Requires manual configuration
+        - Playable with graphical/controller issues
+        - Unplayable because of graphical/controller issues
+        - Crashes or won't start
+    validations:
+      required: false
+  - type: dropdown
+    id: alvr
+    attributes:
+      label: ALVR
+      description: Provide the level of succes using the ALVR runtime
+      options:
+        - Perfect
+        - Requires manual configuration
+        - Playable with graphical/controller issues
+        - Unplayable because of graphical/controller issues
+        - Crashes or won't start
+    validations:
+      required: false
+  - type: dropdown
+    id: wivrn
+    attributes:
+      label: WIVRN
+      description: Provide the level of succes using the WIVRN runtime
+      options:
+        - Perfect
+        - Requires manual configuration
+        - Playable with graphical/controller issues
+        - Unplayable because of graphical/controller issues
+        - Crashes or won't start
+    validations:
+      required: false      
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Description
+      description: Please provide your experience with the software.
+      placeholder: Tell us what worked and what didn't. If possible verion information such as Distributon, kernel, gpu drivers, proton version... would be awesome!
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date  
+ 
