@@ -1,13 +1,1 @@
-name: test
 
-on:
-  issues:
-    types: [closed]  # This will run when an issue is closed
-
-jobs:
-  generate-mdd-file:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out the repository
-        uses: actions/checkout@v2
