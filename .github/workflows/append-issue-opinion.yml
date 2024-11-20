@@ -19,7 +19,7 @@ jobs:
           input: $BODY
       - run: |
           BODY = ${{ github.event.issue.body }}
-          input = BODY
+          input = $BODY
           cat "${{ github.action_path }}ideas.txt"
           echo A comment on body $input
         shell: bash
