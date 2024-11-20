@@ -1,4 +1,4 @@
-name: Generate Issue Report on Close
+name: test
 
 on:
   issues:
