@@ -52,7 +52,7 @@ jobs:
                   monado = lines[lines.index(line) + 1].strip()
               elif line.startswith("### ALVR"):
                   alvr = lines[lines.index(line) + 1].strip()
-                  if alvr is None:
+                  if alvr is NoneType:
                     alvr = "";    
               elif line.startswith("### WIVRN"):
                   wivrn = lines[lines.index(line) + 1].strip()
