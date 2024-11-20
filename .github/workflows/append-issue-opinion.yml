@@ -1,13 +1,73 @@
-name: Test Workflow
+name: Append Opinion to Markdown File
 
 on:
   issues:
-    types:
-      - closed
+    types: [closed]
 
 jobs:
-  test:
+  append_opinion:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug Event
-        run: echo '${{ toJson(github.event) }}'
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Markdown tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip
+          pip3 install markdownify
+
+      - name: Extract issue data
+        id: extract_data
+        run: |
+          echo "title=${{ github.event.issue.title }}" >> $GITHUB_ENV
+          echo "body=${{ github.event.issue.body }}" >> $GITHUB_ENV
+
+      - name: Append opinion to Markdown file
+        run: |
+          FILE_NAME="$(echo '${{ github.event.issue.title }}' | sed -E 's/\\s+/-/g' | tr '[:upper:]' '[:lower:]').md"
+
+          if [ ! -f "$FILE_NAME" ]; then
+            echo "Error: Markdown file for the title does not exist: $FILE_NAME"
+            exit 1
+          fi
+
+          python3 <<EOF
+            from datetime import datetime
+            
+            # Input variables
+            file_name = "${FILE_NAME}"
+            steamvr = "${{ github.event.issue.body.steamvr }}"
+            monado = "${{ github.event.issue.body.monado }}"
+            alvr = "${{ github.event.issue.body.alvr }}"
+            wivrn = "${{ github.event.issue.body.wivrn }}"
+            device = "${{ github.event.issue.body.device }}"
+            gpu_vendor = "${{ github.event.issue.body.gpu_vendor }}"
+            distro = "${{ github.event.issue.body.distro }}"
+            text = "${{ github.event.issue.body.text }}"
+            
+            # Opinion entry in Markdown format
+            new_opinion = f"""
+            - **SteamVR**: {steamvr}
+              **Monado**: {monado}
+              **ALVR**: {alvr}
+              **WIVRN**: {wivrn}
+              **Device**: {device}
+              **GPU Vendor**: {gpu_vendor}
+              **Distro**: {distro}
+              **Date**: {datetime.utcnow().isoformat()}
+              **Opinion**: {text}
+            """
+            
+            # Append to the Markdown file
+            with open(file_name, "a") as file:
+                file.write("\n" + new_opinion)
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Appended opinion to ${{ github.event.issue.title }}"
+          git push
