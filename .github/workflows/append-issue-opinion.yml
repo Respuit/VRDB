@@ -1,84 +1,50 @@
-name: Append Opinion to Markdown File
+name: Generate Issue Report on Close
 
 on:
   issues:
-    types: [closed]
+    types: [closed]  # Se ejecutará cuando un issue sea cerrado
 
 jobs:
-  append_opinion:
+  generate-md-file:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Check out the repository
+        uses: actions/checkout@v2
 
-      - name: Install Markdown tools
+      - name: Get Issue Data and Generate Report
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python3 python3-pip
-          pip3 install markdownify
+          ISSUE_URL="https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}"
+          ISSUE_DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" $ISSUE_URL)
 
-      - name: Extract issue data
-        id: extract_data
-        run: |
-          echo "title=${{ github.event.issue.title }}" >> $GITHUB_ENV
-          echo -e "body=$(echo ${{ github.event.issue.body }} | sed ':a;N;$!ba;s/\n/\\n/g')" >> $GITHUB_ENV
+          # Extraer los datos que necesitas del issue (por ejemplo, título, cuerpo, etiquetas)
+          TITLE=$(echo $ISSUE_DATA | jq -r .title)
+          BODY=$(echo $ISSUE_DATA | jq -r .body)
+          LABELS=$(echo $ISSUE_DATA | jq -r .labels | jq -r '.[].name' | paste -sd, -)
 
-      - name: Append opinion to Markdown file
-        run: |
-          FILE_NAME="src/games/$(echo '${{ github.event.issue.title }}' | sed -E 's/\\s+/-/g' | tr '[:upper:]' '[:lower:]').md"
-          if [ ! -f "$FILE_NAME" ]; then
-            echo "Error: Markdown file for the title does not exist: $FILE_NAME"
-            exit 1
-          fi
-          python3 <<EOF
-          import os
-            
-          # Input variables
-          file_name = os.environ.get("FILE_NAME")
-          body = os.environ.get("body")
-          print(f"DEBUG: Body received: {body}")
-            
-          # Example of parsing the body into specific fields
-          lines = body.split("\\n")
-          steamvr = "Unknown"
-          monado = "Unknown"
-          alvr = "Unknown"
-          wivrn = "Unknown"
-          description = "No description provided."
-          date = "Unknown"
-          for line in lines:
-              if line.startswith("### Steamvr"):
-                  steamvr = lines[lines.index(line) + 1].strip()
-              elif line.startswith("### Monado"):
-                  monado = lines[lines.index(line) + 1].strip()
-              elif line.startswith("### ALVR"):
-                  alvr = lines[lines.index(line) + 1].strip() if len(lines) > lines.index(line) + 1 else "No disponible"  
-              elif line.startswith("### WIVRN"):
-                  wivrn = lines[lines.index(line) + 1].strip()
-              elif line.startswith("### Description"):
-                  description = lines[lines.index(line) + 1].strip()
-              elif line.startswith("### Date"):
-                  date = lines[lines.index(line) + 1].strip()
-          
-          # Opinion entry in Markdown format
-          new_opinion = f"""
-          - **SteamVR**: {steamvr}
-            **Monado**: {monado}
-            **ALVR**: {alvr}
-            **WIVRN**: {wivrn}
-            **Date**: {date}
-            **Opinion**: {description}
-          """
-          
-          # Append to the Markdown file
-          with open(file_name, "a") as file:
-              file.write("\n" + new_opinion)
-          EOF
+          # Extraer los campos del issue, como las respuestas de los dropdowns (puedes ajustarlo según tu estructura)
+          STEAMVR=$(echo "$BODY" | grep -oP 'Steamvr: \K.*')
+          MONADO=$(echo "$BODY" | grep -oP 'Monado: \K.*')
+          ALVR=$(echo "$BODY" | grep -oP 'ALVR: \K.*')
+          WIVRN=$(echo "$BODY" | grep -oP 'WIVRN: \K.*')
+          DESCRIPTION=$(echo "$BODY" | grep -oP 'Description: \K.*')
+          DATE=$(echo "$BODY" | grep -oP 'Date: \K.*')
 
-      - name: Commit and push changes
+          # Crear el archivo Markdown
+          echo "# Issue Report: $TITLE" > issue_report.md
+          echo "**Labels**: $LABELS" >> issue_report.md
+          echo "## Report" >> issue_report.md
+          echo "**SteamVR**: $STEAMVR" >> issue_report.md
+          echo "**Monado**: $MONADO" >> issue_report.md
+          echo "**ALVR**: $ALVR" >> issue_report.md
+          echo "**WIVRN**: $WIVRN" >> issue_report.md
+          echo "**Description**: $DESCRIPTION" >> issue_report.md
+          echo "**Date**: $DATE" >> issue_report.md
+
+      - name: Commit and Push the Generated Report
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add .
-          git commit -m "Appended opinion to ${{ github.event.issue.title }}"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add issue_report.md
+          git commit -m "Generate issue report for closed issue #${{ github.event.issue.number }}"
           git push
