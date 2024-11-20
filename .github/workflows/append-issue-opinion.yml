@@ -17,4 +17,4 @@ jobs:
         env:
           BODY: ${{ github.event.issue.body }}
       - run: |
-          cat "${{ github.action_path }}/ideas.txt" > ideas.txt   
+          cat "${{ github.action_path }}ideas.txt" > ideas.txt   
