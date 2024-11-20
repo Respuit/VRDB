@@ -13,7 +13,8 @@ jobs:
         env:
           NUMBER: ${{ github.event.issue.number }}
       - run: |
-          echo A comment on body $BODY
+          input = $BODY
+          echo A comment on body $input
         env:
           BODY: ${{ github.event.issue.body }}
       - run: |
