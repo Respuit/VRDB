@@ -1,7 +1,7 @@
 name: Game Report
 description: Give feedback for a game.
 title: "[Rating]: "
-labels: ["bug", "triage"]
+labels: ["documentation"]
 body:
   - type: markdown
     attributes:
