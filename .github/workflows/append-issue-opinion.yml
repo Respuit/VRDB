@@ -53,7 +53,7 @@ jobs:
               elif line.startswith("### ALVR"):
                   alvr = lines[lines.index(line) + 1].strip()
                   if alvr is None:
-                    alvr = &quot;&quot;    
+                    alvr = "";    
               elif line.startswith("### WIVRN"):
                   wivrn = lines[lines.index(line) + 1].strip()
               elif line.startswith("### Description"):
