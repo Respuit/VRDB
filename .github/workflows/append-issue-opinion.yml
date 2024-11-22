@@ -19,6 +19,18 @@ jobs:
           input: $BODY
       - run: |
           BODY="${{ github.event.issue.body }}"
+          etiqueta_inicio="### Steamvr"
+          
+          # Usa sed para filtrar el contenido y guárdalo en una variable
+          contenido_filtrado=$(echo "$BODY" | sed -n "/$etiqueta_inicio/,/^###/{ /^###/d; p }")
+          
+          # Imprime la variable filtrada
+          echo "Contenido filtrado: $contenido_filtrado"
+          
+          # Imprime la información completa si es necesario
+          echo "A comment on body $BODY"
+
+          BODY="${{ github.event.issue.body }}"
           input="$BODY"
 
           etiqueta_inicio="### Steamvr"
