@@ -27,9 +27,9 @@ jobs:
           # Imprimir solo el contenido filtrado
           echo "Contenido filtrado: $content_steamvr"
 
-          file="${{ github.action_path }}/src/games/superhot-vr.md"
+          file="${{ github.action_path }}src/games/superhot-vr.md"
           
           sed -i '$ d' "$file"
-          cat "${{ github.action_path }}/src/games/superhot-vr.md"
+          cat "${{ github.action_path }}src/games/superhot-vr.md"
 
         shell: bash
