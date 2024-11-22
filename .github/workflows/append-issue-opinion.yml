@@ -48,6 +48,6 @@ jobs:
           
           # Subir los cambios al repositorio
           git push
-
-
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
