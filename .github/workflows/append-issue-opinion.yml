@@ -27,17 +27,4 @@ jobs:
           # Imprimir solo el contenido filtrado
           echo "Contenido filtrado: $contenido_filtrado"
 
-          BODY="${{ github.event.issue.body }}"
-          input="$BODY"
-
-          etiqueta_inicio="### Steamvr"
-
-          echo "$BODY" | sed -n "/$etiqueta_inicio/,/^###/{ /^###/d; p }" 
-
-          
-          cat "${{ github.action_path }}ideas.txt"
-          file="${{ github.action_path }}ideas.txt"
-          sed -i '$ d' "$file"
-          cat "${{ github.action_path }}ideas.txt"
-          echo "A comment on body $BODY"
         shell: bash
