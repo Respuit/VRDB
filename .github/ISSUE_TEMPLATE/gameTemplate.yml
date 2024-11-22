@@ -58,9 +58,28 @@ body:
         - Unplayable because of graphical/controller issues
         - Crashes or won't start
     validations:
-      required: false      
+      required: false
+  - type: dropdown
+    id: gpu
+    attributes:
+      label: GPU vendor
+      description: Are you using an Nvidia, Intel or AMD GPU?
+      options:
+        - AMD
+        - Nvidia
+        - Intel
+    validations:
+      required: false
+  - type: input
+    id: distro
+    attributes:
+      label: Distribution
+  - type: input
+    id: device
+    attributes:
+      label: Headset  
   - type: textarea
-    id: what-happened
+    id: text
     attributes:
       label: Description
       description: Please provide your experience with the software.
