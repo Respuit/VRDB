@@ -34,6 +34,7 @@ jobs:
           
           # Añadir el contenido filtrado al final del archivo
           echo -e "\n$content_steamvr" >> "$file"
+          echo -e "---" >> "$file"
           
           # Imprimir el archivo para confirmar los cambios
           cat "$file"
