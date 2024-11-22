@@ -21,5 +21,8 @@ jobs:
           BODY="${{ github.event.issue.body }}"
           input="$BODY"
           cat "${{ github.action_path }}ideas.txt"
+          file="${{ github.action_path }}ideas.txt"
+          sed -i '$ d' "$file"
+          cat "${{ github.action_path }}ideas.txt"
           echo "A comment on body $input"
         shell: bash
