@@ -20,9 +20,15 @@ jobs:
       - run: |
           BODY="${{ github.event.issue.body }}"
           input="$BODY"
+
+          etiqueta_inicio="### Steamvr"
+
+          sed -n "/$etiqueta_inicio/,/^###/{ /^###/d; p }" "$BODY"
+
+          
           cat "${{ github.action_path }}ideas.txt"
           file="${{ github.action_path }}ideas.txt"
           sed -i '$ d' "$file"
           cat "${{ github.action_path }}ideas.txt"
-          echo "A comment on body $input"
+          echo "A comment on body $BODY"
         shell: bash
