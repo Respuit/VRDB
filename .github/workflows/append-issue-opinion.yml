@@ -2,6 +2,8 @@ name: Generate Issue Report on Close
 on:
   issues:
     types: [closed]  # Se ejecutará cuando un issue sea cerrado
+permissions:
+  contents: write
 jobs:
   generate-md-file:
     name: Test
@@ -46,8 +48,13 @@ jobs:
           # Realizar un commit con un mensaje descriptivo
           git commit -m "Update superhot-vr.md with filtered content from issue"
           
+          # Configurar el repositorio remoto para usar GITHUB_TOKEN
+          repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git remote set-url origin "$repo_url"
+          
           # Subir los cambios al repositorio
-          git push
+          git push origin HEAD:${{ github.ref_name }}
+
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
