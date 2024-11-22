@@ -19,12 +19,12 @@ jobs:
           input: $BODY
       - run: |
           BODY="${{ github.event.issue.body }}"
-          etiqueta_inicio="### Steamvr"
+          tag-steamvr="### Steamvr"
           
           # Filtrar el contenido y asignarlo a una variable
-          contenido_filtrado=$(echo "$BODY" | sed -n "/$etiqueta_inicio/,/^###/{ /^###/d; p }")
+          content-steamvr=$(echo "$BODY" | sed -n "/$tag-steamvr/,/^###/{ /^###/d; p }")
           
           # Imprimir solo el contenido filtrado
-          echo "Contenido filtrado: $contenido_filtrado"
+          echo "Contenido filtrado: $content-steamvr"
 
         shell: bash
