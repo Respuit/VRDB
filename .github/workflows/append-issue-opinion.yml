@@ -23,7 +23,7 @@ jobs:
 
           etiqueta_inicio="### Steamvr"
 
-          sed -n "/$etiqueta_inicio/,/^###/{ /^###/d; p }" "$BODY"
+          echo "$BODY" | sed -n "/$etiqueta_inicio/,/^###/{ /^###/d; p }" 
 
           
           cat "${{ github.action_path }}ideas.txt"
