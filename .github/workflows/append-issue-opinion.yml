@@ -21,11 +21,12 @@ jobs:
           input: $BODY
       - run: |
           BODY="${{ github.event.issue.body }}"
-          tag_steamvr="### Steamvr"
           tags=("### Steamvr" "### Monado" "### ALVR" "### WIVRN" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
+          keys=("steamVR" "monado" "alvr" "wivrn" "GPUVendor" "distro" "device" "text" "date")
           
-          function filter_tags () {
-              local tag="$1"  # Recibe el argumento de la etiqueta actual
+          function filter_tags() {
+              local tag="$1"
+              local key="$2"
           
               # Filtrar el contenido y asignarlo a una variable
               content_filtered=$(echo "$BODY" | sed -n "/$tag/,/^###/{ /^###/d; p }")
@@ -33,28 +34,36 @@ jobs:
               # Eliminar saltos de línea al principio y al final
               content_filtered=$(echo "$content_filtered" | sed ':a; /^\s*$/d; N; s/^\n*//; s/\n*$//; ta')
               
-              # Ruta al archivo
-              file="${{ github.action_path }}src/games/superhot-vr.md"
-              
-              # Eliminar la última línea (opcional según lo que necesites)
-              sed -i '$ d' "$file"
-              
-              # Formatear el contenido con el prefijo
-              content_filtered="    - ${tag#\### }: $content_filtered"
-              
-              # Añadir el contenido formateado al final del archivo
-              echo -e "\n$content_filtered" >> "$file"
-              
-              # Añadir un separador (opcional)
-              echo -e "---" >> "$file"
-              
-              # Imprimir el archivo para confirmar los cambios
-              cat "$file"
+              # Si no hay contenido, establecer "None"
+              content_filtered=${content_filtered:-None}
+          
+              # Formatear en la línea correspondiente
+              echo "      $key: $content_filtered"
           }
           
-          for tag in "${tags[@]}"; do
-              filter_tags "$tag"  # Pasar cada etiqueta a la función
+          # Inicializar el bloque completo
+          output="    -"
+          
+          # Construir las líneas formateadas para cada etiqueta
+          for i in "${!tags[@]}"; do
+              output+=$'\n'$(filter_tags "${tags[$i]}" "${keys[$i]}")
           done
+          
+          # Ruta al archivo (ajustada con github.action_path)
+          file="${{ github.action_path }}/src/games/superhot-vr.md"
+          
+          # Eliminar la última línea del archivo (opcional según lo que necesites)
+          sed -i '$ d' "$file"
+          
+          # Añadir el bloque completo al archivo
+          echo -e "\n$output" >> "$file"
+          
+          # Añadir un separador (opcional)
+          echo -e "---" >> "$file"
+          
+          # Imprimir el archivo para confirmar los cambios
+          cat "$file"
+
 
 
 
