@@ -37,6 +37,11 @@ jobs:
               # Si no hay contenido, establecer "None"
               content_filtered=${content_filtered:-None}
           
+              # Si es la clave 'text', aplicar sangría adicional a las líneas adicionales
+              if [[ "$key" == "text" ]]; then
+                  content_filtered=$(echo "$content_filtered" | sed '2,$s/^/            /')
+              fi
+          
               # Si es la primera línea (guion), agregarla al inicio
               if [[ "$key" == "${keys[0]}" ]]; then
                   echo "    - $key: $content_filtered"
