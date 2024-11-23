@@ -22,9 +22,6 @@ jobs:
       - run: |
           BODY="${{ github.event.issue.body }}"
           tag_steamvr="### Steamvr"
-          
-          filter_tags "$tag_steamvr"
-
 
           function filter_tags () {
             # Filtrar el contenido y asignarlo a una variable
@@ -51,6 +48,11 @@ jobs:
             # Imprimir el archivo para confirmar los cambios
             cat "$file"
           }
+          
+          filter_tags "$tag_steamvr"
+
+
+
           
           # Configurar Git en GitHub Actions
           git config --global user.name "github-actions[bot]"
