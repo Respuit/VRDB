@@ -37,16 +37,21 @@ jobs:
               # Si no hay contenido, establecer "None"
               content_filtered=${content_filtered:-None}
           
-              # Formatear en la línea correspondiente
-              echo "      $key: $content_filtered"
+              # Si es la primera línea (guion), agregarla al inicio
+              if [[ "$key" == "${keys[0]}" ]]; then
+                  echo "    - $key: $content_filtered"
+              else
+                  echo "      $key: $content_filtered"
+              fi
           }
           
           # Inicializar el bloque completo
-          output="    -"
+          output=""
           
           # Construir las líneas formateadas para cada etiqueta
           for i in "${!tags[@]}"; do
-              output+=$'\n'$(filter_tags "${tags[$i]}" "${keys[$i]}")
+              line=$(filter_tags "${tags[$i]}" "${keys[$i]}")
+              output+=$'\n'"$line"
           done
           
           # Ruta al archivo (ajustada con github.action_path)
@@ -56,13 +61,14 @@ jobs:
           sed -i '$ d' "$file"
           
           # Añadir el bloque completo al archivo
-          echo -e "\n$output" >> "$file"
+          echo -e "$output" >> "$file"
           
           # Añadir un separador (opcional)
           echo -e "---" >> "$file"
           
           # Imprimir el archivo para confirmar los cambios
           cat "$file"
+
 
 
 
