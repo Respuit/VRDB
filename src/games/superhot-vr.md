@@ -74,4 +74,15 @@
       text: falskdjflaskjflkasdjf
             alskdfjl
       date: 2024-11-23
+
+    - steamVR: 0
+      monado: 1
+      alvr: 3
+      wivrn: 0
+      GPUVendor: None
+      distro: Endeavour
+      device: Quest2
+      text: something something
+            something something 2
+      date: 2024-11-25
 ---
