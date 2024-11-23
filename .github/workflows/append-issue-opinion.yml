@@ -27,18 +27,23 @@ jobs:
           content_steamvr=$(echo "$BODY" | sed -n "/$tag_steamvr/,/^###/{ /^###/d; p }")
           
           # Ruta al archivo
-          file="${{ github.action_path }}src/games/superhot-vr.md"
+          file="${{ github.action_path }}/src/games/superhot-vr.md"
           
           # Eliminar la última línea (opcional según lo que necesites)
           sed -i '$ d' "$file"
           
-          # Añadir el contenido filtrado al final del archivo
-          content_steamvr=$(echo -e "    - steamVR:\n$content_steamvr")
-          echo -e "$content_steamvr" >> "$file"
+          # Formatear el contenido en una sola línea con el prefijo
+          content_steamvr=$(echo -n "- steamVR: $content_steamvr")
+          
+          # Añadir el contenido formateado al final del archivo
+          echo -e "\n$content_steamvr" >> "$file"
+          
+          # Añadir un separador (opcional)
           echo -e "---" >> "$file"
           
           # Imprimir el archivo para confirmar los cambios
           cat "$file"
+
           
           # Configurar Git en GitHub Actions
           git config --global user.name "github-actions[bot]"
