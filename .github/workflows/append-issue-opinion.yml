@@ -23,10 +23,10 @@ jobs:
           BODY="${{ github.event.issue.body }}"
           tag_steamvr="### Steamvr"
           
-          filter_tags ($tag_steamvr)
+          filter_tags "$tag_steamvr"
 
 
-          function filter_tags (tag) {
+          function filter_tags () {
             # Filtrar el contenido y asignarlo a una variable
             content_steamvr=$(echo "$BODY" | sed -n "/$tag_steamvr/,/^###/{ /^###/d; p }")
             
