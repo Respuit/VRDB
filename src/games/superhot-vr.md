@@ -51,4 +51,16 @@
 something something 2
 
     - Date: 2024-11-25
+
+    -
+      steamVR: None
+      monado: Perfect
+      alvr: Playable with graphical/controller issues
+      wivrn: None
+      GPUVendor: None
+      distro: Endeavour
+      device: Quest2
+      text: something something
+something something 2
+      date: 2024-11-25
 ---
