@@ -27,7 +27,7 @@ jobs:
           content_steamvr=$(echo "$BODY" | sed -n "/$tag_steamvr/,/^###/{ /^###/d; p }")
           
           # Ruta al archivo
-          file="${{ github.action_path }}/src/games/superhot-vr.md"
+          file="${{ github.action_path }}src/games/superhot-vr.md"
           
           # Eliminar la última línea (opcional según lo que necesites)
           sed -i '$ d' "$file"
