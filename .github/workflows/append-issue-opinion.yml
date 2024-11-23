@@ -23,7 +23,7 @@ jobs:
           BODY="${{ github.event.issue.body }}"
           tag_steamvr="### Steamvr"
           
-          filter_tags ("$tag_steamvr")
+          filter_tags ($tag_steamvr)
 
 
           function filter_tags (tag) {
