@@ -52,4 +52,15 @@
       text: something something
             something something 2
       date: 2024-11-25
+
+    - steamVR: 1
+      monado: 2
+      alvr: 4
+      wivrn: 0
+      GPUVendor: AMD
+      distro: Arch
+      device: QUEST3
+      text: something something
+            something more lore ipsun 2
+      date: 2024-11-23
 ---
