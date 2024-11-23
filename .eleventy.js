@@ -14,5 +14,5 @@ module.exports = function (eleventyConfig) {
 }
 
 module.exports.config = {
-	pathPrefix: "/VRDB/",
+	pathPrefix: "/home/respuit/Documents/Projects/mockupwebvr/base/public/",
 }
