@@ -33,7 +33,8 @@ jobs:
           sed -i '$ d' "$file"
           
           # Añadir el contenido filtrado al final del archivo
-          echo -e "\n$content_steamvr" >> "$file"
+          content_steamvr=$(echo -e "    - steamVR:\n$content_steamvr")
+          echo -e "$content_steamvr" >> "$file"
           echo -e "---" >> "$file"
           
           # Imprimir el archivo para confirmar los cambios
