@@ -23,36 +23,39 @@ jobs:
           BODY="${{ github.event.issue.body }}"
           tag_steamvr="### Steamvr"
           tags=("### Steamvr" "### Monado" "### ALVR" "### WIVRN" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
-
+          
           function filter_tags () {
-            # Filtrar el contenido y asignarlo a una variable
-            content_steamvr=$(echo "$BODY" | sed -n "/$tag_steamvr/,/^###/{ /^###/d; p }")
-            
-            # Eliminar saltos de línea al principio y al final
-            content_steamvr=$(echo "$content_steamvr" | sed ':a; /^\s*$/d; N; s/^\n*//; s/\n*$//; ta')
-            
-            # Ruta al archivo
-            file="${{ github.action_path }}src/games/superhot-vr.md"
-            
-            # Eliminar la última línea (opcional según lo que necesites)
-            sed -i '$ d' "$file"
-            
-            # Formatear el contenido con el prefijo
-            content_steamvr="    - steamVR: $content_steamvr"
-            
-            # Añadir el contenido formateado al final del archivo
-            echo -e "\n$content_steamvr" >> "$file"
-            
-            # Añadir un separador (opcional)
-            echo -e "---" >> "$file"
-            
-            # Imprimir el archivo para confirmar los cambios
-            cat "$file"
+              local tag="$1"  # Recibe el argumento de la etiqueta actual
+          
+              # Filtrar el contenido y asignarlo a una variable
+              content_filtered=$(echo "$BODY" | sed -n "/$tag/,/^###/{ /^###/d; p }")
+              
+              # Eliminar saltos de línea al principio y al final
+              content_filtered=$(echo "$content_filtered" | sed ':a; /^\s*$/d; N; s/^\n*//; s/\n*$//; ta')
+              
+              # Ruta al archivo
+              file="${{ github.action_path }}/src/games/superhot-vr.md"
+              
+              # Eliminar la última línea (opcional según lo que necesites)
+              sed -i '$ d' "$file"
+              
+              # Formatear el contenido con el prefijo
+              content_filtered="    - ${tag#\### }: $content_filtered"
+              
+              # Añadir el contenido formateado al final del archivo
+              echo -e "\n$content_filtered" >> "$file"
+              
+              # Añadir un separador (opcional)
+              echo -e "---" >> "$file"
+              
+              # Imprimir el archivo para confirmar los cambios
+              cat "$file"
           }
           
-          for tag in ${tags[@]}; do
-              filter_tags "$tag"
+          for tag in "${tags[@]}"; do
+              filter_tags "$tag"  # Pasar cada etiqueta a la función
           done
+
 
 
 
