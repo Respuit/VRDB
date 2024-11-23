@@ -22,6 +22,7 @@ jobs:
       - run: |
           BODY="${{ github.event.issue.body }}"
           tag_steamvr="### Steamvr"
+          tags=("### Steamvr" "### Monado" "### ALVR" "### WIVRN" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
 
           function filter_tags () {
             # Filtrar el contenido y asignarlo a una variable
@@ -49,7 +50,9 @@ jobs:
             cat "$file"
           }
           
-          filter_tags "$tag_steamvr"
+          for tag in ${tags[@]}; do
+              filter_tags "$tag"
+          done
 
 
 
