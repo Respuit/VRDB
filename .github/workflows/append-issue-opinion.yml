@@ -24,6 +24,15 @@ jobs:
           tags=("### Steamvr" "### Monado" "### ALVR" "### WIVRN" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
           keys=("steamVR" "monado" "alvr" "wivrn" "GPUVendor" "distro" "device" "text" "date")
           
+          declare -A value_map=(
+              ["Perfect"]=1
+              ["Requires manual configuration"]=2
+              ["Playable with graphical/controller issues"]=3
+              ["Unplayable because of graphical/controller issues"]=4
+              ["Crashes or won't start"]=5
+              ["None"]=0
+          )
+          
           function filter_tags() {
               local tag="$1"
               local key="$2"
@@ -36,6 +45,13 @@ jobs:
               
               # Si no hay contenido, establecer "None"
               content_filtered=${content_filtered:-None}
+          
+              # Si el valor está en el mapeo, asignarlo; de lo contrario, usar "0" para "None"
+              if [[ ${value_map[$content_filtered]+_} ]]; then
+                  content_filtered="${value_map[$content_filtered]}"
+              else
+                  content_filtered=0
+              fi
           
               # Si es la clave 'text', aplicar sangría adicional a las líneas adicionales
               if [[ "$key" == "text" ]]; then
@@ -73,6 +89,7 @@ jobs:
           
           # Imprimir el archivo para confirmar los cambios
           cat "$file"
+
 
 
 
