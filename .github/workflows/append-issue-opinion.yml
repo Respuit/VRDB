@@ -46,7 +46,7 @@ jobs:
           
           # Construir las líneas formateadas para cada etiqueta
           for i in "${!tags[@]}"; do
-              output+=$'\n'$(filter_tags "${tags[$i]}" "${keys[$i]}")
+              output+=$(filter_tags "${tags[$i]}" "${keys[$i]}")
           done
           
           # Ruta al archivo (ajustada con github.action_path)
