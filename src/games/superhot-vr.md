@@ -63,4 +63,15 @@
       text: something something
             something more lore ipsun 2
       date: 2024-11-23
+
+    - steamVR: 1
+      monado: 2
+      alvr: 0
+      wivrn: 5
+      GPUVendor: Nvidia
+      distro: PopOs
+      device: quest2
+      text: falskdjflaskjflkasdjf
+            alskdfjl
+      date: 2024-11-23
 ---
