@@ -5,6 +5,16 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/images");
     eleventyConfig.setDataDirectory("../_data");
 
+    eleventyConfig.addFilter("escapeAndReplace", (content) => {
+
+        const escapedContent = content
+            .replace(/&/g, "&amp;") // Escapar `&`
+            .replace(/</g, "&lt;") // Escapar `<`
+            .replace(/>/g, "&gt;"); // Escapar `>`
+
+        return escapedContent.replace(/\n/g, "<br>");
+    });
+
     return {
         dir: {
             input: "src",
@@ -14,5 +24,7 @@ module.exports = function (eleventyConfig) {
 }
 
 module.exports.config = {
-	pathPrefix: "/home/respuit/Documents/Projects/mockupwebvr/base/public/",
+	pathPrefix: "/home/respuit/Documents/Projects/mockupwebvr/vrdb/VRDB-SOURCE/VRDB/public/",
+    breaks: true
+    
 }

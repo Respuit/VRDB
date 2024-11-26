@@ -6,6 +6,7 @@ permalink: "games/{{ page.fileSlug }}.html"
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/pico.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -17,7 +18,7 @@ permalink: "games/{{ page.fileSlug }}.html"
 {% for opinion in opinions %}
     <article class="game-card opinion-card">
         <div class="game-info">
-            <p>{{ opinion.text }}</p>
+            <p>{{ opinion.text | escapeAndReplace | safe}}</p>
             <p>{{ opinion.runtime }}</p>
             <p>{{ opinion.software }}</p>
         </div>
@@ -31,17 +32,45 @@ permalink: "games/{{ page.fileSlug }}.html"
                     <td class="rating-text">wivrn</td>
                 </tr>
                 <tr>
+                    {% set icons = {
+                        '1': 'fa-solid fa-face-laugh-beam',
+                        '2': 'fa-solid fa-face-smile',
+                        '3': 'fa-solid fa-face-meh',
+                        '4': 'fa-solid fa-face-frown',
+                        '5': 'fa-solid fa-face-angry'
+                    } %}
+
                     <td>
-                        <i class="rating rating-{{ opinion.steamVR }}" title="Rating: {{ ratings[opinion.steamVR] }}"></i>
+                        {% if opinion.steamVR %}
+                        
+                            <i class="rating rating-{{ opinion.steamVR }} {{ icons[opinion.steamVR|string] }} icon-dark icon-size" title="Rating: {{ ratings[opinion.steamVR] }}"></i>
+                        {% else %}
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        {% endif %}
                     </td>
+
                     <td>
-                        <i class="rating rating-{{ opinion.monado }}" title="Rating: {{ ratings[opinion.monado] }}"></i>
+                        {% if opinion.monado %}
+                            <i class="rating rating-{{ opinion.monado }} {{ icons[opinion.monado|string] }} icon-dark icon-size" title="Rating: {{ ratings[opinion.monado] }}"></i>
+                        {% else %}
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        {% endif %}
                     </td>
+
                     <td>
-                        <i class="rating rating-{{ opinion.alvr }}" title="Rating: {{ ratings[opinion.alvr] }}"></i>
+                        {% if opinion.alvr %}
+                            <i class="rating rating-{{ opinion.alvr }} {{ icons[opinion.alvr|string] }} icon-dark icon-size" title="Rating: {{ ratings[opinion.alvr] }}"></i>
+                        {% else %}
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        {% endif %}
                     </td>
+
                     <td>
-                        <i class="rating rating-{{ opinion.wivrn }}" title="Rating: {{ ratings[opinion.wivrn] }}"></i>
+                        {% if opinion.wivrn %}
+                            <i class="rating rating-{{ opinion.wivrn }} {{ icons[opinion.wivrn|string] }} icon-dark icon-size" title="Rating: {{ ratings[opinion.wivrn] }}"></i>
+                        {% else %}
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        {% endif %}
                     </td>
                 </tr>
             </table>

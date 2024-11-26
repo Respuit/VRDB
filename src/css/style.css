@@ -88,19 +88,27 @@
 }
 
 .rating-2 {
-    background-color: orange;
+    background-color: rgb(146, 255, 56);
 }
 
 .rating-3 {
-    background-color: red;
+    background-color: rgb(238, 255, 0);
 }
 
 .rating-4 {
-    background-color: gray;
+    background-color: orange;
 }
 
 .rating-5 {
-    background-color: black;
+    background-color: rgb(233, 58, 58);
+}
+
+.icon-dark {
+    color: #333;
+}
+
+.icon-size {
+    font-size: 1.5rem;
 }
 
 .rating-table {
