@@ -13,6 +13,8 @@
     transition: background-color 0.3s ease;
     text-decoration: none;
     color: inherit !important;
+    
+    
 }
 
 .game-info {
@@ -44,6 +46,14 @@
 
 .game-card p {
     margin: 0.5rem 0;
+}
+
+.game-image {
+    height: 12rem;
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid var(--muted) !important;
+    border-radius: 2rem !important;
 }
 
 .rating-container {
@@ -161,4 +171,75 @@
 
 .opinion-card {
     cursor: default; 
+}
+
+.games-container {
+    max-height: 45rem;
+    overflow-y: scroll;
+    display: block;
+    margin-bottom: 4rem;
+    
+}
+
+.report-button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.game-header {
+    display: flex; /* Activa Flexbox para organizar los hijos */
+    align-items: center; /* Centra verticalmente la imagen, el título y las descripciones */
+    justify-content: space-between; /* Empuja el título+imagen a la izquierda y las descripciones a la derecha */
+    gap: 1rem; /* Espacio entre los elementos (opcional) */
+}
+.game-header-left {
+    display: flex; /* Agrupa la imagen y el título en un bloque */
+    align-items: center; /* Centra verticalmente la imagen con el título */
+    gap: 1rem; /* Espacio entre la imagen y el título */
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Evitar scroll global */
+    display: flex; /* Flex para manejar el contenido */
+    flex-direction: column;
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=73c2f7&c2=1f2139&gt=r&gd=dtt
+*/
+background: #73C2F7;
+background: radial-gradient(at center bottom, #73C2F7, #1F2139);
+}
+
+.rating-descriptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-desc-element {
+    display: flex;
+    float: right;
+}
+
+.rating-desc-element p {
+    padding-left: 0.7rem;
+    padding-right: 1rem;
+}
+
+button {
+    background-color: #3A4F7A; /* Azul oscuro complementario */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2F3C5B; /* Azul aún más oscuro para hover */
 }
