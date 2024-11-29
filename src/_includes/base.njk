@@ -13,7 +13,7 @@
     <h1>{{ title }}</h1>
     
     <input type="text" id="search-input" placeholder="Buscar juegos...">
-      <select id="software-filter" onchange="softFilter(this.value)">
+      <select id="software-filter">
       <option value="">All</option>
       <option value="SteamVR">SteamVR</option>
       <option value="Monado">Monado</option>
@@ -69,13 +69,13 @@
 
 
                         <table class="rating-table">
-                            <tr>
+                            <tr class="software-list">
                                 <td class="rating-text">SteamVR</td>
                                 <td class="rating-text">Monado</td>
                                 <td class="rating-text">ALVR</td>
                                 <td class="rating-text">wivrn</td>
                             </tr>
-<tr>
+<tr class="rating-list">
     {% set icons = {
         '1': 'fa-solid fa-face-laugh-beam',
         '2': 'fa-solid fa-face-smile',
@@ -166,16 +166,32 @@ function applyFilters() {
     const satisfiesSearch = searchValue === "" || gameTitle.includes(searchValue);
 
     let satisfiesRating = true;
-    if (ratingValue) {
-      satisfiesRating = Array.from(ratings).some(rating => {
-        // Aquí comprobamos si la clase 'rating-X' existe para el valor que queremos
-        const classList = Array.from(rating.classList);
-        const ratingClass = classList.find(c => c.startsWith('rating-'));
-        const ratingNumber = parseInt(ratingClass.split('-')[1]);
 
-        return ratingNumber <= ratingValue;
+    // Mapa de ratings y software 
+    const softwareList = game.querySelectorAll('.software-list td');
+    const ratingList = game.querySelectorAll('.rating-list td');
+    const ratingMap = new Map();
+    softwareList.forEach((sft, k) => {
+
+      const classList = Array.from(ratingList[k].querySelector('i').classList);
+      const ratingClass = classList.find(c => c.startsWith('rating-'));
+      const ratingNumber = parseInt(ratingClass.split('-')[1]);
+
+      ratingMap.set(sft.innerText.toLowerCase(), ratingNumber);
+    });
+
+    // Aunque a este caso nunca se podría llegar ahora mismo, porque el filtro de rating
+    // está deshabilitado hasta que se indica un software en el filtro de software.
+    if (ratingValue && !softwareValue && !searchValue) {
+      satisfiesRating = ratingMap.values().some(rating => {
+        // Aquí comprobamos si la clase 'rating-X' existe para el valor que queremos
+        return rating <= ratingValue;
       });
+    } else if (ratingValue && softwareValue && !searchValue) {
+      satisfiesRating = ratingMap.has(softwareValue) && ratingMap.get(softwareValue) <= ratingValue;
     }
+
+    $satisfiesRating = satisfiesSearch && satisfiesSoftware && satisfiesRating;
 
     if (satisfiesSoftware && satisfiesRating && satisfiesSearch) {
       game.parentElement.style.display = ''; 
