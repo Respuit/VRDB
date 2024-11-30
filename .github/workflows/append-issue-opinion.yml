@@ -76,7 +76,7 @@ jobs:
               else
                   echo "      $key: $content_filtered"
               fi
-          }
+          
           
           # Inicializar el bloque completo
           output=""
