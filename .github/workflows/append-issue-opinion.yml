@@ -9,6 +9,21 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
+      - name: Get user permissions
+        id: check-permissions
+        run: |
+          curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               "https://api.github.com/repos/${{ github.repository }}/collaborators/${{ github.actor }}/permission" > permissions.json
+
+          permission=$(jq -r '.permission' permissions.json)
+
+          if [[ "$permission" != "admin" && "$permission" != "write" ]]; then
+            echo "Actor does not have sufficient permissions: $permission"
+            exit 1
+          fi
+
+          echo "Actor has sufficient permissions: $permission"
       - uses: actions/checkout@v4
       - run: |
           echo A comment on issue $NUMBER
