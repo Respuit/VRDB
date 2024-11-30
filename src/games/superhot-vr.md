@@ -70,4 +70,14 @@
       text: |
       text: Vivamus metus massa, lobortis non venenatis quis, dapibus nec tortor. Morbi nisl arcu, dignissim at scelerisque dignissim, efficitur id augue. Nam maximus interdum vehicula. Morbi porttitor risus eros, in ultricies lectus vehicula eu. Sed tincidunt nisl lectus. Donec ut ligula volutpat, porttitor est nec, lacinia ante. Quisque a luctus velit, vitae gravida elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam purus diam, faucibus a eros vel, eleifend varius elit. Donec consequat justo pretium, facilisis felis sed, faucibus risus. Etiam efficitur elit nulla, vel pharetra lorem condimentum gravida. Fusce semper mauris a mauris tincidunt, vitae iaculis ante tempus. 
       date: 2024-11-30
+
+    - steamVR: 1
+      monado: 2
+      alvr: 3
+      wivrn: 2
+      GPUVendor: AMD
+      distro: PopOS
+      device: MetaQuest 3S
+      text: Vivamus metus massa, lobortis non venenatis quis, dapibus nec tortor. Morbi nisl arcu, dignissim at scelerisque dignissim, efficitur id augue. Nam maximus interdum vehicula. Morbi porttitor risus eros, in ultricies lectus vehicula eu. Sed tincidunt nisl lectus. Donec ut ligula volutpat, porttitor est nec, lacinia ante. Quisque a luctus velit, vitae gravida elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam purus diam, faucibus a eros vel, eleifend varius elit. Donec consequat justo pretium, facilisis felis sed, faucibus risus. Etiam efficitur elit nulla, vel pharetra lorem condimentum gravida. Fusce semper mauris a mauris tincidunt, vitae iaculis ante tempus. 
+      date: 2024-11-30
 ---
