@@ -57,8 +57,10 @@ jobs:
           
               # Si es la clave 'text', aplicar sangría adicional a las líneas adicionales
               if [[ "$key" == "text" ]]; then
+                  "$key" = "$key" + " |"
                   content_filtered=$(echo "$content_filtered" | sed '2,$s/^/            /')
               fi
+              
           
               # Si es la primera línea (guion), agregarla al inicio
               if [[ "$key" == "${keys[0]}" ]]; then
