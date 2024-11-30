@@ -227,7 +227,6 @@ background: radial-gradient(at center bottom, #73C2F7, #1F2139);
 .rating-desc-element p {
     padding-left: 0.7rem;
     padding-right: 1rem;
-    max-width: calc(100% - 40px);
 }
 
 button {
