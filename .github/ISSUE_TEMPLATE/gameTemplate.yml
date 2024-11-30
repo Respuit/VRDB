@@ -65,9 +65,9 @@ body:
       label: GPU vendor
       description: Are you using an Nvidia, Intel or AMD GPU?
       options:
-        - AMD
         - Nvidia
         - Intel
+        - AMD
     validations:
       required: false
   - type: input
