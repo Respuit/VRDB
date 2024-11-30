@@ -2,7 +2,7 @@
   id: superhot-vr
   title: SPERHOT
 
-  image: images/header.jpg
+  image: https://steamcdn-a.akamaihd.net/steam/apps/620980/header.jpg
 
   opinions:      
     - steamVR: 0
