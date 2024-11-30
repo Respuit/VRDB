@@ -57,7 +57,7 @@ jobs:
           
               # Si es la clave 'text', aplicar sangría adicional a las líneas adicionales
               if [[ "$key" == "text" ]]; then
-                  content_filtered=${content_filtered: |}
+
                   content_filtered=$(echo "$content_filtered" | sed '2,$s/^/            /')
               fi
               
