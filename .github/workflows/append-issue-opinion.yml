@@ -55,7 +55,6 @@ jobs:
                   fi
               fi
           
-
               # Si es la clave 'text', aplicar sangría adicional a las líneas adicionales
               if [[ "$key" == "text" ]]; then
                   "$key" = "$key" + " |"
@@ -69,7 +68,7 @@ jobs:
               else
                   echo "      $key: $content_filtered"
               fi
-          
+          }
           
           # Inicializar el bloque completo
           output=""
