@@ -83,7 +83,7 @@ jobs:
           done
           
           # Ruta al archivo (ajustada con github.action_path)
-          file="${{ github.action_path }}src/games/superhot-vr.md"
+          file="${{ github.action_path }}src/games/${{ github.event.issue.title }}.md"
           
           # Eliminar la última línea del archivo (opcional según lo que necesites)
           sed -i '$ d' "$file"
