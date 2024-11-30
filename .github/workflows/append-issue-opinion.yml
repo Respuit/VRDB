@@ -55,19 +55,12 @@ jobs:
                   fi
               fi
           
+
               # Si es la clave 'text', aplicar sangría adicional a las líneas adicionales
               if [[ "$key" == "text" ]]; then
-                  # Separar la primera línea del resto del contenido
-                  first_line=$(echo "$content_filtered" | head -n 1)
-                  remaining_lines=$(echo "$content_filtered" | tail -n +2)
-              
-                  # Imprimir la primera línea compacta con `|`
-                  echo "      $key: | $first_line"
-              
-                  # Agregar las líneas adicionales con sangría (si las hay)
-                  if [[ -n "$remaining_lines" ]]; then
-                      echo "$remaining_lines" | sed 's/^/            /'
-                  fi
+                  "$key" = "$key" + " |"
+                  content_filtered=$(echo "$content_filtered" | sed '2,$s/^/            /')
+              fi
               
           
               # Si es la primera línea (guion), agregarla al inicio
