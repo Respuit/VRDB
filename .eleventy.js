@@ -2,6 +2,8 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("./src/css/");
     eleventyConfig.addWatchTarget("./src/css/");
+    eleventyConfig.addPassthroughCopy("./src/scss/");
+    eleventyConfig.addWatchTarget("./src/scss/");
     eleventyConfig.addPassthroughCopy("./src/images");
     eleventyConfig.setDataDirectory("../_data");
 
@@ -24,7 +26,7 @@ module.exports = function (eleventyConfig) {
 }
 
 module.exports.config = {
-	pathPrefix: "/home/respuit/Documents/Projects/mockupwebvr/vrdb/VRDB-SOURCE/VRDB/public/",
+	pathPrefix: "/home/underlion/Documents/VR/VRDB/public/",
     breaks: true
     
 }
