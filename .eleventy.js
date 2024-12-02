@@ -2,6 +2,8 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("./src/css/");
     eleventyConfig.addWatchTarget("./src/css/");
+    eleventyConfig.addPassthroughCopy("./src/scss/");
+    eleventyConfig.addWatchTarget("./src/scss/");
     eleventyConfig.addPassthroughCopy("./src/images");
     eleventyConfig.setDataDirectory("../_data");
 
