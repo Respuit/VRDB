@@ -10,8 +10,8 @@ body:
   - type: dropdown
     id: steamvr
     attributes:
-      label: Steamvr
-      description: Provide the level of succes using the SteamVR runtime
+      label: SteamVr
+      description: Did you try using SteamVR? How did it work?
       options:
         - Perfect
         - Requires manual configuration
@@ -24,7 +24,7 @@ body:
     id: monado
     attributes:
       label: Monado
-      description: Provide the level of succes using the Monado runtime
+      description: Did you try using Monado? How did it work?
       options:
         - Perfect
         - Requires manual configuration
@@ -37,7 +37,7 @@ body:
     id: alvr
     attributes:
       label: ALVR
-      description: Provide the level of succes using the ALVR runtime
+      description: Did you try using ALVR? How did it work?
       options:
         - Perfect
         - Requires manual configuration
@@ -49,8 +49,8 @@ body:
   - type: dropdown
     id: wivrn
     attributes:
-      label: WIVRN
-      description: Provide the level of succes using the WIVRN runtime
+      label: WiVRn
+      description: Did you try using WiVRn? How did it work?
       options:
         - Perfect
         - Requires manual configuration
@@ -65,9 +65,9 @@ body:
       label: GPU vendor
       description: Are you using an Nvidia, Intel or AMD GPU?
       options:
-        - AMD
         - Nvidia
         - Intel
+        - AMD
     validations:
       required: false
   - type: input
