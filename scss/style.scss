@@ -1,0 +1,337 @@
+.game-list {
+    gap: 1rem;
+}
+
+.game-card {
+    cursor: pointer;
+    display: flex; 
+    flex-direction: row; 
+    gap: 1rem; 
+    padding: 1rem;
+    border: 1px solid var(--muted);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit !important;
+
+    h3 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0.5rem 0;
+    }
+    
+    
+}
+
+.game-info {
+    flex: 7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+
+    p {
+        margin: 0.5rem 0;
+    }
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.game-img {
+    border-radius: 1rem;
+    width: 10rem; 
+    height: 6rem; 
+    max-width: 100%; 
+    object-fit: fill; 
+}
+
+.game-image {
+    object-fit: cover;
+    height: 12rem;
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid var(--muted) !important;
+    border-radius: 2rem !important;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column; 
+    flex: 3; 
+}
+
+.game-rating {
+    font-weight: bold;
+    color: var(--success);
+
+    &.gold {
+        color: gold;
+    }
+
+    &.silver {
+        color: silver;
+    }
+
+    &.bronze {
+        color: #cd7f32;
+    }
+}
+
+.rating {
+    display: inline-block;
+    width: 2rem; 
+    height: 2rem;
+    background-color: gray;
+    border-radius: 0.5rem; 
+    text-align: center;
+    line-height: 2rem; 
+    color: white; 
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.rating-1 {
+    background-color: rgb(37, 167, 65);
+}
+
+.rating-2 {
+    background-color: rgb(146, 255, 56);
+}
+
+.rating-3 {
+    background-color: rgb(238, 255, 0);
+}
+
+.rating-4 {
+    background-color: orange;
+}
+
+.rating-5 {
+    background-color: rgb(233, 58, 58);
+}
+
+.icon-dark {
+    color: #333;
+}
+
+.icon-size {
+    font-size: 1.5rem;
+}
+
+.rating-table {
+    width: 80%; 
+    border-collapse: collapse;
+    text-align: center;
+
+    td {
+        padding: 0.25rem 0.5rem; 
+        text-align: center;
+    }
+
+    td.rating-text {
+        font-size: 0.8rem; 
+        font-weight: bold;
+        padding-right: 0.5rem; 
+        width: 25%;
+    }
+
+    td.rating-icon {
+        width: 40%;
+    }
+}
+
+.device-info {
+
+}
+
+.device-info p {
+    font-size: 0.7rem;
+    margin: 0.5rem 0; 
+}
+
+.device-info strong {
+    font-weight: bold; 
+}
+
+.game-link,
+.game-link:link,
+.game-link:visited {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+.game-link:hover .game-card {
+    background-color: var(--hover-background); 
+    color: var(--hover-color); 
+}
+
+.opinion-card {
+    cursor: default; 
+}
+
+.games-container {
+    max-height: 45rem;
+    overflow-y: scroll;
+    display: block;
+    margin-bottom: 4rem;
+    
+}
+
+.report-button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.game-header {
+    display: flex; /* Activa Flexbox para organizar los hijos */
+    align-items: center; /* Centra verticalmente la imagen, el título y las descripciones */
+    justify-content: space-between; /* Empuja el título+imagen a la izquierda y las descripciones a la derecha */
+    gap: 1rem; /* Espacio entre los elementos (opcional) */
+}
+.game-header-left {
+    display: flex; /* Agrupa la imagen y el título en un bloque */
+    align-items: center; /* Centra verticalmente la imagen con el título */
+    gap: 1rem; /* Espacio entre la imagen y el título */
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Evitar scroll global */
+    display: flex; /* Flex para manejar el contenido */
+    flex-direction: column;
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=73c2f7&c2=1f2139&gt=r&gd=dtt
+*/
+background: #73C2F7;
+background: radial-gradient(at center bottom, #73C2F7, #1F2139);
+}
+
+.rating-descriptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-desc-element {
+    display: flex;
+    float: right;
+}
+
+.rating-desc-element p {
+    padding-left: 0.7rem;
+    padding-right: 1rem;
+}
+
+button {
+    background-color: #3A4F7A; /* Azul oscuro complementario */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #2F3C5B; /* Azul aún más oscuro para hover */
+    }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+
+        h1 {
+            margin-top: 10px;
+        }
+    }
+
+    .game-header {
+        padding: 1rem;
+        flex-wrap: wrap;
+
+        .game-header-left {
+            width: 100%;
+    
+            flex-wrap: wrap;
+    
+            .game-image {
+                width: 50%;
+                padding: 0;
+                height: auto;
+                border-radius: 1rem !important;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        overflow: scroll;
+        background-repeat: repeat;
+        height: auto;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+        max-height: none;
+        overflow-y: unset;
+    }
+
+    .game-header {
+        .game-header-left {
+            .game-image {
+                width: 100%;
+            }
+        }
+    }
+
+    .game-card {
+        flex-wrap: wrap;
+        padding: 0.5rem;
+
+        .game-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .game-info {
+            display: block;
+            min-width: 100%;
+
+            h3 {
+                padding-left: 0.5rem;
+            }
+
+            td {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .report-button {
+        font-size: 1rem;
+        border-radius: 0;
+        box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
+    }
+}

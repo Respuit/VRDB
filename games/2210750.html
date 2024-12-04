@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/pico.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+                        
+ <div class="game-header">   
+    <div class="game-header-left">
+        <img class="game-image" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2210750/header.jpg?t=1678779004" alt="Descripción de VR Dinosaur Hunter">
+        <h1>VR Dinosaur Hunter</h1>
+    </div>
+    <div class="rating-descriptions">
+        <div class="rating-desc-element">
+            <i class="rating rating-0 fa-solid fa-circle-question icon-dark icon-size" title="Rating: Perfect"></i>
+            <p> Unknown </p>
+        </div>
+        <div class="rating-desc-element">
+            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+            <p> Perfect </p>
+        </div>
+        <div class="rating-desc-element"> 
+            <i class="rating rating-2 fa-solid fa-face-smile icon-dark icon-size" title="Rating: Perfect"></i>
+            <p> Requires manual configuration </p>  
+        </div>
+
+    </div>
+        <div class="rating-descriptions">
+
+        <div class="rating-desc-element">
+            <i class="rating rating-3 fa-solid fa-face-meh icon-dark icon-size" title="Rating: Perfect"></i>
+            <p> Playable with graphical/controller issues </p>  
+        </div>
+        <div class="rating-desc-element">
+            <i class="rating rating-4 fa-solid fa-face-frown icon-dark icon-size" title="Rating: Perfect"></i>
+            <p> Unplayable because of graphical/controller issues </p>
+        </div>
+        <div class="rating-desc-element">
+            <i class="rating rating-5 fa-solid fa-face-angry icon-dark icon-size" title="Rating: Perfect"></i>
+            <p> Crashes or won't start </p>            
+        </div>
+    </div>
+</div>
+
+<div class="container games-container">
+
+</div>
+<button class="report-button" onclick="redirectToGitHub()">ADD YOUR REPORT!</button>
+<script>
+    function redirectToGitHub() {
+
+      const baseURL = "https://github.com/Respuit/VRDB/issues/new";
+      const assignees = "";
+      const labels = "documentation";
+      const projects = "";
+      const template = "gameTemplate.yml";
+      const title = "2210750";
+
+      const currentDate = new Date().toISOString().split('T')[0];
+
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+
+      window.location.href = fullURL;
+    }
+</script>
+</body>
+</html>
