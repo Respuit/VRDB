@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Get user permissions
         id: check-permissions
+        if: contains(join(github.event.issue.labels.*.name, ','), 'report') && contains(join(github.event.issue.labels.*.name, ','), 'approved report')
         run: |
           curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
                -H "Accept: application/vnd.github.v3+json" \
