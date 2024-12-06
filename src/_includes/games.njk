@@ -22,10 +22,90 @@ permalink: "games/{{ page.fileSlug }}.html"
                     } %}   
  <div class="game-header">   
     <div class="game-header-left">
-        <img class="game-image" src="{{ image }}" alt="Descripción de {{ title }}">
+        <img data-pagefind-meta="image[src], image_alt[alt]" class="game-image" src="{{ image }}" alt="Descripción de {{ title }}">
         <h1>{{ title }}</h1>
     </div>
-    <div class="rating-descriptions">
+    <div class="rating-container">
+    {% set steamVR_total = 0 %}
+    {% set monado_total = 0 %}
+    {% set alvr_total = 0 %}
+    {% set wivrn_total = 0 %}
+    {% set opinions_count = opinions | length %}
+
+    {% for opinion in opinions %}
+        {% set steamVR_total = steamVR_total + opinion.steamVR %}
+        {% set monado_total = monado_total + opinion.monado %}
+        {% set alvr_total = alvr_total + opinion.alvr %}
+        {% set wivrn_total = wivrn_total + opinion.wivrn %}
+    {% endfor %}
+
+    {% if opinions_count > 0 %}
+        {% set steamVR_avg = steamVR_total / opinions_count %}
+        {% set monado_avg = monado_total / opinions_count %}
+        {% set alvr_avg = alvr_total / opinions_count %}
+        {% set wivrn_avg = wivrn_total / opinions_count %}
+    {% else %}
+        {% set steamVR_avg = 0 %}
+        {% set monado_avg = 0 %}
+        {% set alvr_avg = 0 %}
+        {% set wivrn_avg = 0 %}
+    {% endif %}
+
+    <table class="rating-table">
+        <tr class="software-list">
+            <td class="rating-text">SteamVR</td>
+            <td class="rating-text">Monado</td>
+            <td class="rating-text">ALVR</td>
+            <td class="rating-text">wivrn</td>
+        </tr>
+        <tr class="rating-list">
+            {% set icons = {
+                '1': 'fa-solid fa-face-laugh-beam',
+                '2': 'fa-solid fa-face-smile',
+                '3': 'fa-solid fa-face-meh',
+                '4': 'fa-solid fa-face-frown',
+                '5': 'fa-solid fa-face-angry'
+            } %}
+
+            <td>
+                {% set steamVR_avg_rounded = steamVR_avg | round %}
+                {% if steamVR_avg_rounded %}
+                    <i class="rating rating-{{ steamVR_avg_rounded }} {{ icons[steamVR_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ steamVR_avg_rounded }}"></i>
+                {% else %}
+                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                {% endif %}
+            </td>
+
+            <td>
+                {% set monado_avg_rounded = monado_avg | round %}
+                {% if monado_avg_rounded %}
+                    <i class="rating rating-{{ monado_avg_rounded }} {{ icons[monado_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ monado_avg_rounded }}"></i>
+                {% else %}
+                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                {% endif %}
+            </td>
+
+            <td>
+                {% set alvr_avg_rounded = alvr_avg | round %}
+                {% if alvr_avg_rounded %}
+                    <i class="rating rating-{{ alvr_avg_rounded }} {{ icons[alvr_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ alvr_avg_rounded }}"></i>
+                {% else %}
+                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                {% endif %}
+            </td>
+
+            <td>
+                {% set wivrn_avg_rounded = wivrn_avg | round %}
+                {% if wivrn_avg_rounded %}
+                    <i class="rating rating-{{ wivrn_avg_rounded }} {{ icons[wivrn_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ wivrn_avg_rounded }}"></i>
+                {% else %}
+                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
+    <div class="rating-descriptions" data-pagefind-ignore>
         <div class="rating-desc-element">
             <i class="rating rating-0 fa-solid fa-circle-question icon-dark icon-size" title="Rating: Perfect"></i>
             <p> Unknown </p>
@@ -40,7 +120,7 @@ permalink: "games/{{ page.fileSlug }}.html"
         </div>
 
     </div>
-        <div class="rating-descriptions">
+        <div class="rating-descriptions" data-pagefind-ignore>
 
         <div class="rating-desc-element">
             <i class="rating rating-3 fa-solid fa-face-meh icon-dark icon-size" title="Rating: Perfect"></i>
@@ -55,18 +135,19 @@ permalink: "games/{{ page.fileSlug }}.html"
             <p> Crashes or won't start </p>            
         </div>
     </div>
+    
 </div>
 
-<div class="container games-container">
+<div class="container games-container" data-pagefind-ignore>
 {% for opinion in opinions %}
     <article class="game-card opinion-card">
         <div class="game-info">
-            <p>{{ opinion.text | escapeAndReplace | safe}}</p>
+            <p data-pagefind-ignore>{{ opinion.text | escapeAndReplace | safe}}</p>
             <p>{{ opinion.runtime }}</p>
             <p>{{ opinion.software }}</p>
         </div>
 
-        <div class="rating-container">
+        <div class="rating-container" data-pagefind-weight="7">
             <table class="rating-table">
                 <tr>
                     <td class="rating-text">SteamVR</td>
@@ -121,7 +202,11 @@ permalink: "games/{{ page.fileSlug }}.html"
     </article>
 {% endfor %}
 </div>
-<button class="report-button" onclick="redirectToGitHub()">ADD YOUR REPORT!</button>
+
+
+
+
+<button data-pagefind-ignore class="report-button" onclick="redirectToGitHub()">ADD YOUR REPORT!</button>
 <script>
     function redirectToGitHub() {
 
