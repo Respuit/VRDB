@@ -8,6 +8,7 @@ jobs:
   generate-md-file:
     name: Test
     runs-on: ubuntu-latest
+    if: contains(join(github.event.issue.labels.*.name, ','), 'report') && contains(join(github.event.issue.labels.*.name, ','), 'approved report')    
     steps:
       - name: Get user permissions
         id: check-permissions
