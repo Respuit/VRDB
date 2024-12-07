@@ -1,0 +1,18 @@
+---
+layout: null
+permalink: /games-data.json
+eleventyExcludeFromCollections: true
+---
+[
+{% for games in collections.gamesList %}
+  {
+    "id": "{{ games.fileSlug }}",
+    "averages": {
+        "steamVR": {% if (games.data.opinions | sum('steamVR') / games.data.opinions | length) != games.data.opinions | sum('steamVR') / games.data.opinions | length %} null {% else %} {{ games.data.opinions | sum('steamVR') / games.data.opinions | length | round(2) }} {% endif %},
+        "monado": {% if (games.data.opinions | sum('monado') / games.data.opinions | length) != games.data.opinions | sum('monado') / games.data.opinions | length %} null {% else %} {{ games.data.opinions | sum('monado') / games.data.opinions | length | round(2) }} {% endif %},
+        "alvr": {% if (games.data.opinions | sum('alvr') / games.data.opinions | length) != games.data.opinions | sum('alvr') / games.data.opinions | length %} null {% else %} {{ games.data.opinions | sum('alvr') / games.data.opinions | length | round(2) }} {% endif %},
+        "wivrn": {% if (games.data.opinions | sum('wivrn') / games.data.opinions | length) != games.data.opinions | sum('wivrn') / games.data.opinions | length %} null {% else %} {{ games.data.opinions | sum('wivrn') / games.data.opinions | length | round(2) }} {% endif %}
+    }
+  }{% if not loop.last %},{% endif %}
+{% endfor %}
+]

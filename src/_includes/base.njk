@@ -37,109 +37,70 @@
   </div>
 
 <div id="search" class="container game-list games-container"></div>
-<script>
-  
-    window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showSubResults: true });
-    });
+ <!-- en una etiqueta meta se supone que no se carga en el DOM y luego se podría recuperar con algo como este ejemplo
+    html
+    <div id="myDiv">Hola mundo</div>
+    js
+    const templateContent = document.getElementById('template').content;
+    const div = templateContent.querySelector('#myDiv');
+    console.log(div.textContent); // "Hola mundo"
 
-    
+    el contenido que tengo comentado ya se genera comentado en la pagina tambien con algun regex
+  -->
+<script>
+  let resultShow;
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: false,
+      processResult: async function (result) {
+        resultShow = result;
+        console.log(resultShow);
+        // Llamar a la función para obtener los datos de ALVR
+        
+        result = await fetchGameData('244210').then((alvrValue) => {
+          result.excerpt = alvrValue; // Asignar el valor de ALVR al resultado
+          console.log('ALVR Value:', alvrValue);
+          return result;
+        });
+
+        
+        console.log('RESULTADOOOOO:', result);
+      }
+    });
+  });
+
+  // Función para obtener los datos del juego usando fetch
+  async function fetchGameData(id) {
+    try {
+      // Hacer fetch al archivo JSON generado por Eleventy
+      const response = await fetch('games-data.json');
+      const gamesData = await response.json();
+      
+      // Buscar el juego por id
+      const game = gamesData.find(game => game.id === id);
+      
+      // Si se encuentra el juego, devolver el valor de ALVR
+      if (game) {
+        return game.averages.alvr;
+      } else {
+        console.log(`No se encontró el juego con el id: ${id}`);
+        return null;
+      }
+    } catch (error) {
+      console.error("Error al obtener los datos del juego:", error);
+      return null;
+    }
+  }
 </script>
 
+
 <section>
-  <!--<div id="game-list" class="container game-list games-container">
-    {% for games in collections.gamesList %}
-    <a href="{{ games.url | url }}" class="game-link">
-      <article class="game-card">
-        
-        <img class="game-img" src="{{ games.data.image }}" alt="Descripción de {{ games.data.title }}" >
-        <div class="game-info">
-            
-            <h3>{{ games.data.title }}</h3>
-                    <div class="rating-container">
-                        {% set steamVR_total = 0 %}
-                        {% set monado_total = 0 %}
-                        {% set alvr_total = 0 %}
-                        {% set wivrn_total = 0 %}
-                        {% set opinions_count = games.data.opinions | length %}
-
-                        {% for opinion in games.data.opinions %}
-                        
-                        {% set steamVR_total = steamVR_total + opinion.steamVR %}
-                        
-                        {% set monado_total = monado_total + opinion.monado %}
-                        {% set alvr_total = alvr_total + opinion.alvr %}
-                        {% set wivrn_total = wivrn_total + opinion.wivrn %}
-                        {% endfor %}
-
-                        {% set steamVR_avg = steamVR_total / opinions_count %}
-
-                        {% set monado_avg = monado_total / opinions_count %}
-                        {% set alvr_avg = alvr_total / opinions_count %}
-                        {% set wivrn_avg = wivrn_total / opinions_count %}                        
+  <!--
 
 
-
-                        <table class="rating-table">
-                            <tr class="software-list">
-                                <td class="rating-text">SteamVR</td>
-                                <td class="rating-text">Monado</td>
-                                <td class="rating-text">ALVR</td>
-                                <td class="rating-text">wivrn</td>
-                            </tr>
-<tr class="rating-list">
-    {% set icons = {
-        '1': 'fa-solid fa-face-laugh-beam',
-        '2': 'fa-solid fa-face-smile',
-        '3': 'fa-solid fa-face-meh',
-        '4': 'fa-solid fa-face-frown',
-        '5': 'fa-solid fa-face-angry'
-    } %}
-
-    <td>
-        {% set steamVR_avg_rounded = steamVR_avg | round %}
-        {% if steamVR_avg_rounded %}
-            <i class="rating rating-{{ steamVR_avg_rounded }} {{ icons[steamVR_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ steamVR_avg_rounded }}"></i>
-        {% else %}
-            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
-        {% endif %}
-    </td>
-
-    <td>
-        {% set monado_avg_rounded = monado_avg | round %}
-        {% if monado_avg_rounded %}
-            <i class="rating rating-{{ monado_avg_rounded }} {{ icons[monado_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ monado_avg_rounded }}"></i>
-        {% else %}
-            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
-        {% endif %}
-    </td>
-
-    <td>
-        {% set alvr_avg_rounded = alvr_avg | round %}
-        {% if alvr_avg_rounded %}
-            <i class="rating rating-{{ alvr_avg_rounded }} {{ icons[alvr_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ alvr_avg_rounded }}"></i>
-        {% else %}
-            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
-        {% endif %}
-    </td>
-
-    <td>
-        {% set wivrn_avg_rounded = wivrn_avg | round %}
-        {% if wivrn_avg_rounded %}
-            <i class="rating rating-{{ wivrn_avg_rounded }} {{ icons[wivrn_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ wivrn_avg_rounded }}"></i>
-        {% else %}
-            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
-        {% endif %}
-    </td>
-</tr>
-                        </table>
-                    </div>
-                
-        </div>
-      </article>
-      </a>
-    {% endfor %}
-  </div>-->
+-->
 </section>
 
 <script>
