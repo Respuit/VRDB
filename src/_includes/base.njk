@@ -36,64 +36,98 @@
 
   </div>
 
-<div id="search" class="container game-list games-container"></div>
- <!-- en una etiqueta meta se supone que no se carga en el DOM y luego se podría recuperar con algo como este ejemplo
-    html
-    <div id="myDiv">Hola mundo</div>
-    js
-    const templateContent = document.getElementById('template').content;
-    const div = templateContent.querySelector('#myDiv');
-    console.log(div.textContent); // "Hola mundo"
+ <input type="text" id="searchInput" placeholder="Ingresa el nombre del juego" />
+  <button id="searchButton">Buscar</button>
 
-    el contenido que tengo comentado ya se genera comentado en la pagina tambien con algun regex
-  -->
-<script>
-  let resultShow;
+  <!-- Contenedor para los resultados -->
+  <div id="game-list" class="container game-list games-container"></div>
 
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({
-      element: "#search",
-      showSubResults: false,
-      processResult: async function (result) {
-        resultShow = result;
-        console.log(resultShow);
-        // Llamar a la función para obtener los datos de ALVR
-        
-        result = await fetchGameData('244210').then((alvrValue) => {
-          result.excerpt = alvrValue; // Asignar el valor de ALVR al resultado
-          console.log('ALVR Value:', alvrValue);
-          return result;
+  <script>
+    // Función para obtener los datos del archivo JSON
+    async function fetchGameData() {
+      try {
+        const response = await fetch('games-data.json'); // Cambia a tu ruta real
+        if (!response.ok) {
+          throw new Error("Error al cargar el JSON");
+        }
+        return await response.json();
+      } catch (error) {
+        console.error("Error al obtener los datos del juego:", error);
+        return [];
+      }
+    }
+
+    // Función para buscar por nombre de manera flexible
+    async function searchByName(query) {
+      const gamesData = await fetchGameData();
+
+      // Normalizar el query y buscar coincidencias parciales en el nombre
+      const regex = new RegExp(query, 'i'); // 'i' para que sea insensible a mayúsculas/minúsculas
+
+      // Filtrar los juegos que contengan el query dentro del nombre
+      const results = gamesData.filter(game => regex.test(game.title));
+
+      return results;
+    }
+
+    // Función para generar la estructura HTML para los resultados
+    function generateGameCard(game) {
+      return `
+        <a href="games/${game.id}.html" class="game-link">
+          <article class="game-card">
+            <img class="game-img" src="${game.image}" alt="Descripción de ${game.title}">
+            <div class="game-info">
+              <h3>${game.title}</h3>
+              <div class="rating-container">
+                <table class="rating-table">
+                  <tbody>
+                    <tr class="software-list">
+                      <td class="rating-text">SteamVR</td>
+                      <td class="rating-text">Monado</td>
+                      <td class="rating-text">ALVR</td>
+                      <td class="rating-text">WiVRn</td>
+                    </tr>
+                    <tr class="rating-list">
+                      <td><i class="rating rating-${game.averages.steamVR} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                      <td><i class="rating rating-${game.averages.monado} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                      <td><i class="rating rating-${game.averages.alvr} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                      <td><i class="rating rating-${game.averages.wivrn} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+        </a>
+      `;
+    }
+
+    // Manejar el evento de búsqueda
+    document.getElementById('searchButton').addEventListener('click', async () => {
+      const searchInput = document.getElementById('searchInput').value.trim();
+      const resultsContainer = document.getElementById('game-list');
+
+      if (searchInput === "") {
+        resultsContainer.textContent = "Por favor, ingresa un nombre de juego.";
+        return;
+      }
+
+      const games = await searchByName(searchInput);
+
+      // Limpiar resultados previos
+      resultsContainer.innerHTML = "";
+
+      // Mostrar resultados
+      if (games.length > 0) {
+        games.forEach(game => {
+          const gameCardHTML = generateGameCard(game);
+          resultsContainer.innerHTML += gameCardHTML;  // Agregar la tarjeta del juego
         });
-
-        
-        console.log('RESULTADOOOOO:', result);
+      } else {
+        resultsContainer.textContent = `No se encontró ningún juego que coincida con: ${searchInput}`;
       }
     });
-  });
-
-  // Función para obtener los datos del juego usando fetch
-  async function fetchGameData(id) {
-    try {
-      // Hacer fetch al archivo JSON generado por Eleventy
-      const response = await fetch('games-data.json');
-      const gamesData = await response.json();
-      
-      // Buscar el juego por id
-      const game = gamesData.find(game => game.id === id);
-      
-      // Si se encuentra el juego, devolver el valor de ALVR
-      if (game) {
-        return game.averages.alvr;
-      } else {
-        console.log(`No se encontró el juego con el id: ${id}`);
-        return null;
-      }
-    } catch (error) {
-      console.error("Error al obtener los datos del juego:", error);
-      return null;
-    }
-  }
-</script>
+  </script>
 
 
 <section>
