@@ -7,15 +7,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/pico.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="pagefind/pagefind-ui.js"></script>
 </head>
 <body>
 
   <div class="container"> 
     <h1>{{ title }}</h1>
     
-    <input type="text" id="search-input" placeholder="Search...">
+    <input type="text" id="searchInput" placeholder="Search games..." />
       <select id="software-filter">
       <option value="">All</option>
       <option value="SteamVR">SteamVR</option>
@@ -34,188 +32,16 @@
       <option value="5">Crashes or won't start or better</option>
       </select>
 
-  </div>
+      
+      <button id="searchButton">Search</button>
 
- <input type="text" id="searchInput" placeholder="Ingresa el nombre del juego" />
-  <button id="searchButton">Buscar</button>
+  </div>
 
   <!-- Contenedor para los resultados -->
   <div id="game-list" class="container game-list games-container"></div>
+  <div id="pagination"></div>
 
-  <script>
-    // Función para obtener los datos del archivo JSON
-    async function fetchGameData() {
-      try {
-        const response = await fetch('games-data.json'); // Cambia a tu ruta real
-        if (!response.ok) {
-          throw new Error("Error al cargar el JSON");
-        }
-        return await response.json();
-      } catch (error) {
-        console.error("Error al obtener los datos del juego:", error);
-        return [];
-      }
-    }
+  <script src="js/index.js"></script>
 
-    // Función para buscar por nombre de manera flexible
-    async function searchByName(query) {
-      const gamesData = await fetchGameData();
-
-      // Normalizar el query y buscar coincidencias parciales en el nombre
-      const regex = new RegExp(query, 'i'); // 'i' para que sea insensible a mayúsculas/minúsculas
-
-      // Filtrar los juegos que contengan el query dentro del nombre
-      const results = gamesData.filter(game => regex.test(game.title));
-
-      return results;
-    }
-
-    // Función para generar la estructura HTML para los resultados
-    function generateGameCard(game) {
-      return `
-        <a href="games/${game.id}.html" class="game-link">
-          <article class="game-card">
-            <img class="game-img" src="${game.image}" alt="Descripción de ${game.title}">
-            <div class="game-info">
-              <h3>${game.title}</h3>
-              <div class="rating-container">
-                <table class="rating-table">
-                  <tbody>
-                    <tr class="software-list">
-                      <td class="rating-text">SteamVR</td>
-                      <td class="rating-text">Monado</td>
-                      <td class="rating-text">ALVR</td>
-                      <td class="rating-text">WiVRn</td>
-                    </tr>
-                    <tr class="rating-list">
-                      <td><i class="rating rating-${game.averages.steamVR} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                      <td><i class="rating rating-${game.averages.monado} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                      <td><i class="rating rating-${game.averages.alvr} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                      <td><i class="rating rating-${game.averages.wivrn} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </article>
-        </a>
-      `;
-    }
-
-    // Manejar el evento de búsqueda
-    document.getElementById('searchButton').addEventListener('click', async () => {
-      const searchInput = document.getElementById('searchInput').value.trim();
-      const resultsContainer = document.getElementById('game-list');
-
-      if (searchInput === "") {
-        resultsContainer.textContent = "Por favor, ingresa un nombre de juego.";
-        return;
-      }
-
-      const games = await searchByName(searchInput);
-
-      // Limpiar resultados previos
-      resultsContainer.innerHTML = "";
-
-      // Mostrar resultados
-      if (games.length > 0) {
-        games.forEach(game => {
-          const gameCardHTML = generateGameCard(game);
-          resultsContainer.innerHTML += gameCardHTML;  // Agregar la tarjeta del juego
-        });
-      } else {
-        resultsContainer.textContent = `No se encontró ningún juego que coincida con: ${searchInput}`;
-      }
-    });
-  </script>
-
-
-<section>
-  <!--
-
-
--->
-</section>
-
-<script>
-function applyFilters() {
-  const softwareValue = document.getElementById('software-filter').value.toLowerCase();
-  const ratingFilter = document.getElementById('rating-filter');
-  const ratingValue = parseFloat(ratingFilter.value);
-  const searchValue = document.getElementById('search-input').value.toLowerCase(); 
-
-  const games = document.querySelectorAll('.game-card');
-
-  if (softwareValue === "") {
-    ratingFilter.value = "";
-    ratingFilter.disabled = true;
-
-    games.forEach(game => {
-      const gameTitle = game.querySelector('h3').innerText.toLowerCase();
-      if (searchValue === "" || gameTitle.includes(searchValue)) {
-        game.parentElement.style.display = ''; 
-      } else {
-        game.parentElement.style.display = 'none'; 
-      }
-    });
-    return; 
-  } else {
-    ratingFilter.disabled = false;
-  }
-
-  games.forEach(game => {
-    const gameInfo = game.querySelector('.game-info').innerText.toLowerCase();
-    const gameTitle = game.querySelector('h3').innerText.toLowerCase();
-
-    // Aquí filtramos por la clase 'rating-X', donde X es el valor de la media
-    const ratings = game.querySelectorAll('.rating');
-    const satisfiesSoftware = gameInfo.includes(softwareValue);
-    const satisfiesSearch = searchValue === "" || gameTitle.includes(searchValue);
-
-    let satisfiesRating = true;
-
-    // Mapa de ratings y software 
-    const softwareList = game.querySelectorAll('.software-list td');
-    const ratingList = game.querySelectorAll('.rating-list td');
-    const ratingMap = new Map();
-    softwareList.forEach((sft, k) => {
-
-      const classList = Array.from(ratingList[k].querySelector('i').classList);
-      const ratingClass = classList.find(c => c.startsWith('rating-'));
-      const ratingNumber = parseInt(ratingClass.split('-')[1]);
-
-      ratingMap.set(sft.innerText.toLowerCase(), ratingNumber);
-    });
-
-    // Aunque a este caso nunca se podría llegar ahora mismo, porque el filtro de rating
-    // está deshabilitado hasta que se indica un software en el filtro de software.
-    if (ratingValue && !softwareValue && !searchValue) {
-      satisfiesRating = ratingMap.values().some(rating => {
-        // Aquí comprobamos si la clase 'rating-X' existe para el valor que queremos
-        return rating <= ratingValue;
-      });
-    } else if (ratingValue && softwareValue && !searchValue) {
-      satisfiesRating = ratingMap.has(softwareValue) && ratingMap.get(softwareValue) <= ratingValue;
-    }
-
-    $satisfiesRating = satisfiesSearch && satisfiesSoftware && satisfiesRating;
-
-    if (satisfiesSoftware && satisfiesRating && satisfiesSearch) {
-      game.parentElement.style.display = ''; 
-    } else {
-      game.parentElement.style.display = 'none'; 
-    }
-  });
-}
-
-document.getElementById('software-filter').addEventListener('change', applyFilters);
-document.getElementById('rating-filter').addEventListener('change', applyFilters);
-document.getElementById('search-input').addEventListener('input', applyFilters);
-
-</script>
-
-
-
-  
 </body>
 </html>
