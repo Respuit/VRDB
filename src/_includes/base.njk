@@ -7,39 +7,43 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/pico.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/pagination-system/dist/pagination-system.min.css"/>
+  <script src="https://unpkg.com/pagination-system/dist/pagination-system.umd.min.js"></script>
 </head>
 <body>
 
   <div class="container"> 
     <h1>{{ title }}</h1>
-    
-    <input type="text" id="searchInput" placeholder="Search games..." />
-      <select id="software-filter">
-      <option value="">All</option>
-      <option value="SteamVR">SteamVR</option>
-      <option value="Monado">Monado</option>
-      <option value="ALVR">ALVR</option>
-      <option value="wivrn">wivrn</option>
-      </select>
+
+    <form onsubmit="return false;"> 
+      <input type="text" id="searchInput" placeholder="Search games..." autocomplete=off />
+        <select id="software-filter">
+        <option value="" selected>All</option>
+        <option value="SteamVR">SteamVR</option>
+        <option value="Monado">Monado</option>
+        <option value="ALVR">ALVR</option>
+        <option value="wivrn">wivrn</option>
+        </select>
 
 
-      <select id="rating-filter" disabled>
-      <option value="">Any</option>
-      <option value="1">Perfect</option>
-      <option value="2">Requires manual configuration or better</option>
-      <option value="3">Playable with graphical/controller issues or better</option>
-      <option value="4">Unplayable because of graphical/controller issues or better</option>
-      <option value="5">Crashes or won't start or better</option>
-      </select>
+        <select id="rating-filter" disabled>
+        <option value="" selected>Any</option>
+        <option value="1">Perfect</option>
+        <option value="2">Requires manual configuration or better</option>
+        <option value="3">Playable with graphical/controller issues or better</option>
+        <option value="4">Unplayable because of graphical/controller issues or better</option>
+        <option value="5">Crashes or won't start or better</option>
+        </select>
 
-      
-      <button id="searchButton">Search</button>
+        
+        <button id="searchButton">Search</button>
+      </form>
 
   </div>
 
   <!-- Contenedor para los resultados -->
   <div id="game-list" class="container game-list games-container"></div>
-  <div id="pagination"></div>
+  <div class="paging-container"></div>
 
   <script src="js/index.js"></script>
 
