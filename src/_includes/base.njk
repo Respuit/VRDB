@@ -7,12 +7,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/pico.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/pagination-system/dist/pagination-system.min.css"/>
+  <script src="https://unpkg.com/pagination-system/dist/pagination-system.umd.min.js"></script>
 </head>
 <body>
 
   <div class="container"> 
-    <h1>{{ title }}</h1>
-    
+    <h1>{{ title }}</h1>  
     <article class="info-card"> 
       <p>Welcome to <strong>LVRA DB (Linux VR Adventure Database)</strong>! Here, you can find or report information about various VR games running on Linux. This website is a community-driven effort to provide an open database that helps users determine if their VR games are compatible with Linux and potentially discover solutions or workarounds for specific issues.</p>
       
@@ -56,7 +57,7 @@
 
   <!-- Contenedor para los resultados -->
   <div id="game-list" class="container game-list games-container"></div>
-  <div id="pagination"></div>
+  <div class="paging-container"></div>
 
   <script src="js/index.js"></script>
 

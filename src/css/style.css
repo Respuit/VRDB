@@ -1,6 +1,14 @@
 @charset "UTF-8";
 .game-list {
   gap: 1rem;
+  margin-top: 20px;
+}
+
+.game-link {
+  margin-bottom: 10px;
+}
+.game-link:last-child {
+  margin-bottom: 0;
 }
 
 .game-card {
@@ -14,6 +22,7 @@
   transition: background-color 0.3s ease;
   text-decoration: none;
   color: inherit !important;
+  margin-bottom: 0;
 }
 .game-card h3 {
   margin: 0;
@@ -162,7 +171,7 @@
   max-height: 45rem;
   overflow-y: scroll;
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 20px;
 }
 
 .report-button {
@@ -226,6 +235,40 @@ button {
 }
 button:hover {
   background-color: #2F3C5B; /* Azul aún más oscuro para hover */
+}
+
+.paging-container {
+  display: flex;
+}
+.paging-container .dg-status-box {
+  margin: auto;
+  padding: 0;
+  min-height: auto;
+  margin-bottom: 10px;
+}
+.paging-container .dg-status-box .pagination {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.paging-container .dg-status-box .pagination button {
+  margin-bottom: 0;
+}
+.paging-container .dg-status-box .pagination button[data-index=next]:hover:enabled, .paging-container .dg-status-box .pagination button[data-index=prev]:hover:enabled {
+  color: #181c25;
+}
+.paging-container .dg-status-box .pagination .dg-number-pages button {
+  margin-right: 5px;
+  width: 55px;
+  color: #181c25;
+}
+.paging-container .dg-status-box .pagination .dg-number-pages button:hover {
+  border-color: #181c25;
+}
+.paging-container .dg-status-box .pagination .dg-number-pages button.active {
+  background-color: #181c25;
+  border: none;
+  color: #fff;
 }
 
 /* Media queries */
@@ -297,19 +340,6 @@ button:hover {
     border-radius: 0;
     box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
   }
-}
-#pagination {
-  display: flex;
-  flex-wrap: wrap;
-}
-#pagination .page-item {
-  cursor: pointer;
-  min-width: 30px;
-  text-align: center;
-  padding: 5px;
-  border: 1px solid white;
-  border-radius: 5px;
-  margin: 5px;
 }
 
 .user-content {
