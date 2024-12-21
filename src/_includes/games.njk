@@ -142,6 +142,11 @@ permalink: "games/{{ page.fileSlug }}.html"
 {% for opinion in opinions %}
     <article class="game-card opinion-card">
         <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/{{ opinion.user }}.png" alt="Descripción de {{ opinion.user }}">
+                <a href= "https://github.com/{{ opinion.user }}"> {{ opinion.user }} </a>
+            </div>
+            
             <p data-pagefind-ignore>{{ opinion.text | escapeAndReplace | safe}}</p>
             <p>{{ opinion.runtime }}</p>
             <p>{{ opinion.software }}</p>
@@ -197,6 +202,8 @@ permalink: "games/{{ page.fileSlug }}.html"
                 <p><strong>Device:</strong> {{ opinion.device }}</p>
                 <p><strong>GPU:</strong> {{ opinion.GPUVendor }}</p>
                 <p><strong>Distro:</strong> {{ opinion.distro }}</p>
+                <p><strong>Date:</strong> {{ opinion.date.toLocaleString( undefined, { year: 'numeric', month:
+  'long', day: 'numeric' }) }}</p>
             </div>
         </div>
     </article>
