@@ -388,3 +388,32 @@ button {
     }
 
 }
+
+#pagination {
+    display: flex;
+    flex-wrap: wrap;
+    .page-item {
+        cursor: pointer;
+        min-width: 30px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin: 5px;
+    }
+}
+
+.user-content {
+    display: flex;
+    align-items: center;
+}
+
+.user-content img {
+    border-radius: 50%;
+    height: 2.5rem;
+}
+
+.user-content a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+}
