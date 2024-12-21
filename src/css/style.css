@@ -312,4 +312,19 @@ button:hover {
   margin: 5px;
 }
 
+.user-content {
+  display: flex;
+  align-items: center;
+}
+
+.user-content img {
+  border-radius: 50%;
+  height: 2.5rem;
+}
+
+.user-content a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */
