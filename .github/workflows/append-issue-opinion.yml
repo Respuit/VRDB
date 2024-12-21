@@ -38,6 +38,7 @@ jobs:
       - run: |
           echo "${{ github.event.issue.user.login }}"
           BODY="${{ github.event.issue.body }}"
+          USER_LOGIN="${{ github.event.issue.user.login }}"
           tags=("### Steamvr" "### Monado" "### ALVR" "### WIVRN" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
           keys=("steamVR" "monado" "alvr" "wivrn" "GPUVendor" "distro" "device" "text" "date")
           
@@ -98,6 +99,8 @@ jobs:
               line=$(filter_tags "${tags[$i]}" "${keys[$i]}")
               output+=$'\n'"$line"
           done
+
+          output+=$'\n'"      user: https://github.com/$USER_LOGIN"
           
           # Ruta al archivo (ajustada con github.action_path)
           file="${{ github.action_path }}src/games/${{ github.event.issue.title }}.md"
