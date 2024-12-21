@@ -417,3 +417,66 @@ button {
     margin-left: 0.5rem;
     text-decoration: none;
 }
+
+.info-card {
+    background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+    background-blend-mode: overlay, hard-light, normal;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem;
+  }
+  
+  .search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  
+  .search input {
+    width: 100%; /* Ajusta el tamaño del campo de búsqueda */
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    height: 1.8rem;
+  }
+  
+  .search button {
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .filters-right {
+    display: flex;
+    gap: 0.3rem;
+  }
+  
+  .filters-right select {
+    font-size: 0.8rem; /* Tamaño más pequeño */
+    padding: 0.3rem;
+  }
+  
+  .links {
+    display: flex;
+    gap: 15px; /* Espaciado entre enlaces */
+    flex-wrap: wrap; /* Para que se ajusten si el espacio es pequeño */
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #007BFF; /* Color del enlace */
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .links a:hover {
+    background-color: #007BFF;
+    color: #fff; /* Color del texto al pasar el cursor */
+  }
+  
