@@ -100,7 +100,7 @@ jobs:
               output+=$'\n'"$line"
           done
 
-          output+=$'\n'"      user: https://github.com/$USER_LOGIN"
+          output+=$'\n'"      user: $USER_LOGIN"
           
           # Ruta al archivo (ajustada con github.action_path)
           file="${{ github.action_path }}src/games/${{ github.event.issue.title }}.md"
