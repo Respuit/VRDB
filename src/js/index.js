@@ -4,6 +4,46 @@ let softwareValue = '';
 let searchValue = '';
 let ratingValue = '';
 
+const dataRenderFn = (dataPage) => {
+    return `${dataPage
+      .map(
+        (game) => {
+          const imageHTML = game.image;
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(imageHTML, 'text/html');
+          const imgElem = doc.body.firstChild;
+          const gameAverages = game.averages;
+          const averages = JSON.parse(gameAverages.replace('\n', ''));
+          return `<a href="games/${game.id}.html" class="game-link">
+                <article class="game-card">
+                <img class="game-img" src="${imgElem.href}" alt="Descripción de ${game.title}">
+                <div class="game-info">
+                    <h3>${game.title}</h3>
+                    <div class="rating-container">
+                    <table class="rating-table">
+                        <tbody>
+                        <tr class="software-list">
+                            <td class="rating-text">SteamVR</td>
+                            <td class="rating-text">Monado</td>
+                            <td class="rating-text">ALVR</td>
+                            <td class="rating-text">WiVRn</td>
+                        </tr>
+                        <tr class="rating-list">
+                            <td><i class="rating rating-${averages.steamVR} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.monado} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.alvr} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.wivrn} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                </article>
+            </a>`;
+        })
+      .join('')}`;
+  };
+
 
 // Función para obtener los datos del archivo JSON
 async function fetchGameData() {
@@ -69,6 +109,8 @@ function generateGamesPage(index) {
 }
 
 function filters(game) {
+    const gameAverages = game.averages;
+    const averages = JSON.parse(gameAverages.replace('\n', ''));
     if (searchValue !== '') {
         const regex = new RegExp(searchValue, 'i');
         if (!regex.test(game.title)) {
@@ -81,14 +123,14 @@ function filters(game) {
         let ratingGame = 0;
         switch(softwareValue) {
             case 'steamvr':
-                ratingGame = game.averages['steamVR'];
+                ratingGame = averages['steamVR'];
                 break;
             default:
-                ratingGame = game.averages[softwareValue];
+                ratingGame = averages[softwareValue];
                 break;
         }
     
-        if (ratingGame > ratingValue || !ratingGame) {
+        if (softwareValue !== '' && (ratingGame > ratingValue || !ratingGame)) {
             return false;
         }
     }
@@ -116,8 +158,6 @@ function movePage(event) {
 
 function applyFilters() {
     const ratingFilter = document.getElementById('rating-filter');
-    const resultsContainer = document.getElementById('game-list');
-    const pagination = document.getElementById('pagination');
     softwareValue = document.getElementById('software-filter').value.toLowerCase();
     ratingValue = parseFloat(ratingFilter.value);
     searchValue = document.getElementById('searchInput').value.toLowerCase(); 
@@ -125,44 +165,24 @@ function applyFilters() {
     //const games = document.querySelectorAll('.game-card');
 
     filteredGamesData = gamesData.filter(filters);
+    
 
-    let chunkData = filteredGamesData;
-    let pages = 0;
-
-    if (filteredGamesData.length > 50) {
-        chunkData = filteredGamesData.slice(0, 50);
-        pages = Math.round(filteredGamesData.length / 50);
-    }
-
-    resultsContainer.innerHTML = "";
-    pagination.innerHTML = "";
-
-    if (chunkData.length > 0) {
-        chunkData.forEach(game => {
-            const gameCardHTML = generateGameCard(game);
-            resultsContainer.innerHTML += gameCardHTML;  // Agregar la tarjeta del juego
+    if (filteredGamesData.length > 0) {
+        new PaginationSystem({
+            dataContainer: document.querySelector('.game-list'),
+            dataRenderFn: dataRenderFn,
+            perPage: 50,
+            isShowPerPage: false,
+            data: filteredGamesData || [],
+            pagingContainer: document.querySelector('.paging-container'),
+            countRecords: filteredGamesData.length || 0,
         });
-        for (let index = 0; index < pages; index++) {
-            const element = generateGamesPage(index);
-            pagination.innerHTML += element;
-            let pages = document.getElementsByClassName('page-item');
-            for (let k = 0; k < pages.length; k++) {
-                pages[k].addEventListener('click', movePage);
-            }
-        }
     } else {
-        resultsContainer.textContent = `No games could be found that match the requested filters: ${searchValue}`;
+        document.querySelector('.game-list').innerHTML = '<p>No results found</p>';
+        document.querySelector('.paging-container').innerHTML = '';
     }
   
-    if (softwareValue === "") {
-      ratingFilter.value = "";
-      ratingFilter.disabled = true;
-      const regex = new RegExp(searchValue, 'i');
-
-      filteredGamesData = gamesData.filter(game => regex.test(game.title))
-    } else {
-      ratingFilter.disabled = false;
-    }
+    ratingFilter.disabled = softwareValue === '';
 }
 
 // En desuso
@@ -171,7 +191,7 @@ async function search() {
     const resultsContainer = document.getElementById('game-list');
 
     if (searchInput === "") {
-    resultsContainer.textContent = "Please, introduce a game title.";
+    resultsContainer.textContent = "Please, search a game title.";
     return;
     }
 
@@ -200,6 +220,15 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
     await fetchGameData().then(function(result) {
         gamesData = result;
-        console.log(gamesData);
+
+        new PaginationSystem({
+            dataContainer: document.querySelector('.game-list'),
+            dataRenderFn: dataRenderFn,
+            perPage: 50,
+            isShowPerPage: false,
+            data: gamesData || [],
+            pagingContainer: document.querySelector('.paging-container'),
+            countRecords: gamesData.length || 0,
+        });
     });
 });
