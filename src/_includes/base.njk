@@ -13,27 +13,44 @@
   <div class="container"> 
     <h1>{{ title }}</h1>
     
+    <article class="info-card"> 
+      <p>Welcome to <strong>LVRA DB (Linux VR Adventure Database)</strong>! Here, you can find or report information about various VR games running on Linux. This website is a community-driven effort to provide an open database that helps users determine if their VR games are compatible with Linux and potentially discover solutions or workarounds for specific issues.</p>
+      
+      <p>If you don't find your game listed here, please feel free to create an issue!</p>
+      
+      <p>Additionally, you can explore more information about different runtimes and software. Don't forget to check out the <strong>LVRA Wiki</strong>. Thank you for your support!</p>
+      
+      <p>Useful links:</p>
+      <div class="links">
+        <a href="https://github.com/alvr-org/ALVR" target="_blank">ALVR GitHub</a>
+        <a href="https://wivrn.github.io/" target="_blank">WiVRN Website</a>
+        <a href="https://lvra.gitlab.io/" target="_blank">LVRA Wiki</a>
+      </div>
+    </article>
+    <div class="filters">
+  <div class="search">
     <input type="text" id="searchInput" placeholder="Search games..." />
-      <select id="software-filter">
+    <button id="searchButton">Search</button>
+  </div>
+  <div class="filters-right">
+    <select id="software-filter">
       <option value="">All</option>
       <option value="SteamVR">SteamVR</option>
       <option value="Monado">Monado</option>
       <option value="ALVR">ALVR</option>
       <option value="wivrn">wivrn</option>
-      </select>
+    </select>
 
-
-      <select id="rating-filter" disabled>
+    <select id="rating-filter" disabled>
       <option value="">Any</option>
       <option value="1">Perfect</option>
       <option value="2">Requires manual configuration or better</option>
       <option value="3">Playable with graphical/controller issues or better</option>
       <option value="4">Unplayable because of graphical/controller issues or better</option>
       <option value="5">Crashes or won't start or better</option>
-      </select>
-
-      
-      <button id="searchButton">Search</button>
+    </select>
+  </div>
+</div>
 
   </div>
 
