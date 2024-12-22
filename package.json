@@ -12,8 +12,9 @@
   "description": "",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "pagination-system": "^2.0.2",
     "build-css": "^0.2.0",
+    "compass": "^0.1.1",
+    "pagination-system": "^2.0.2",
     "sass": "^1.81.0",
     "scss": "^0.2.4"
   }

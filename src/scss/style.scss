@@ -180,6 +180,7 @@ $accent-color: #181c25;
 .game-link:hover .game-card {
     background-color: var(--hover-background); 
     color: var(--hover-color); 
+    border: 1px solid;
 }
 
 .opinion-card {
@@ -222,9 +223,9 @@ body {
 /*
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=73c2f7&c2=1f2139&gt=r&gd=dtt
-*/
+
 background: #73C2F7;
-background: radial-gradient(at center bottom, #73C2F7, #1F2139);
+background: radial-gradient(at center bottom, #73C2F7, #1F2139);*/
 }
 
 .rating-descriptions {
@@ -418,9 +419,10 @@ button {
     text-decoration: none;
 }
 
+
 .info-card {
-    background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
-    background-blend-mode: overlay, hard-light, normal;
+  // Apply the default gradient styles
+  background: rgba(32, 36, 47, 0.6);
 }
 
 .filters {
@@ -479,4 +481,97 @@ button {
     background-color: #007BFF;
     color: #fff; /* Color del texto al pasar el cursor */
   }
+  
+
+@function multiple-box-shadow($n) {
+    $value: "#{random(100)}vw #{random(100)}vw #FFF";
+    @for $i from 2 through $n {
+      $value: "#{$value}, #{random(100)}vw #{random(100)}vw #FFF";
+    }
+    @return unquote($value);
+  }
+  
+  $shadows-small: multiple-box-shadow(700);
+  $shadows-medium: multiple-box-shadow(200);
+  $shadows-big: multiple-box-shadow(100);
+  
+  html {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(ellipse at bottom, #3e444b 0%, #090A0F 100%);
+    overflow: hidden;
+  }
+  
+  #stars, #stars2, #stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; // Asegura que se rendericen sobre el fondo
+  }
+  
+  #stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 50s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      box-shadow: $shadows-small;
+    }
+  }
+  
+  #stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 100s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 2px;
+      height: 2px;
+      background: transparent;
+      box-shadow: $shadows-medium;
+    }
+  }
+  
+  #stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 150s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 3px;
+      height: 3px;
+      background: transparent;
+      box-shadow: $shadows-big;
+    }
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+  
   
