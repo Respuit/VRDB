@@ -1,6 +1,14 @@
 @charset "UTF-8";
 .game-list {
   gap: 1rem;
+  margin-top: 20px;
+}
+
+.game-link {
+  margin-bottom: 10px;
+}
+.game-link:last-child {
+  margin-bottom: 0;
 }
 
 .game-card {
@@ -14,6 +22,7 @@
   transition: background-color 0.3s ease;
   text-decoration: none;
   color: inherit !important;
+  margin-bottom: 0;
 }
 .game-card h3 {
   margin: 0;
@@ -152,6 +161,7 @@
 .game-link:hover .game-card {
   background-color: var(--hover-background);
   color: var(--hover-color);
+  border: 1px solid;
 }
 
 .opinion-card {
@@ -162,7 +172,7 @@
   max-height: 45rem;
   overflow-y: scroll;
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 20px;
 }
 
 .report-button {
@@ -194,9 +204,9 @@ body {
   /*
   * Created with https://www.css-gradient.com
   * Gradient link: https://www.css-gradient.com/?c1=73c2f7&c2=1f2139&gt=r&gd=dtt
-  */
+
   background: #73C2F7;
-  background: radial-gradient(at center bottom, #73C2F7, #1F2139);
+  background: radial-gradient(at center bottom, #73C2F7, #1F2139);*/
 }
 
 .rating-descriptions {
@@ -226,6 +236,40 @@ button {
 }
 button:hover {
   background-color: #2F3C5B; /* Azul aún más oscuro para hover */
+}
+
+.paging-container {
+  display: flex;
+}
+.paging-container .dg-status-box {
+  margin: auto;
+  padding: 0;
+  min-height: auto;
+  margin-bottom: 10px;
+}
+.paging-container .dg-status-box .pagination {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.paging-container .dg-status-box .pagination button {
+  margin-bottom: 0;
+}
+.paging-container .dg-status-box .pagination button[data-index=next]:hover:enabled, .paging-container .dg-status-box .pagination button[data-index=prev]:hover:enabled {
+  color: #181c25;
+}
+.paging-container .dg-status-box .pagination .dg-number-pages button {
+  margin-right: 5px;
+  width: 55px;
+  color: #181c25;
+}
+.paging-container .dg-status-box .pagination .dg-number-pages button:hover {
+  border-color: #181c25;
+}
+.paging-container .dg-status-box .pagination .dg-number-pages button.active {
+  background-color: #181c25;
+  border: none;
+  color: #fff;
 }
 
 /* Media queries */
@@ -296,6 +340,171 @@ button:hover {
     font-size: 1rem;
     border-radius: 0;
     box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+#pagination {
+  display: flex;
+  flex-wrap: wrap;
+}
+#pagination .page-item {
+  cursor: pointer;
+  min-width: 30px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.user-content {
+  display: flex;
+  align-items: center;
+}
+
+.user-content img {
+  border-radius: 50%;
+  height: 2.5rem;
+}
+
+.user-content a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.info-card {
+  background: rgba(32, 36, 47, 0.6);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.search input {
+  width: 100%; /* Ajusta el tamaño del campo de búsqueda */
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  height: 1.8rem;
+}
+
+.search button {
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.filters-right {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.filters-right select {
+  font-size: 0.8rem; /* Tamaño más pequeño */
+  padding: 0.3rem;
+}
+
+.links {
+  display: flex;
+  gap: 15px; /* Espaciado entre enlaces */
+  flex-wrap: wrap; /* Para que se ajusten si el espacio es pequeño */
+}
+
+.links a {
+  text-decoration: none;
+  color: #007BFF; /* Color del enlace */
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.links a:hover {
+  background-color: #007BFF;
+  color: #fff; /* Color del texto al pasar el cursor */
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(ellipse at bottom, #3e444b 0%, #090A0F 100%);
+  overflow: hidden;
+}
+
+#stars, #stars2, #stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 88vw 2vw #FFF, 22vw 21vw #FFF, 69vw 81vw #FFF, 94vw 24vw #FFF, 86vw 53vw #FFF, 64vw 27vw #FFF, 42vw 7vw #FFF, 63vw 48vw #FFF, 39vw 48vw #FFF, 96vw 2vw #FFF, 59vw 71vw #FFF, 32vw 29vw #FFF, 9vw 64vw #FFF, 60vw 23vw #FFF, 22vw 77vw #FFF, 82vw 51vw #FFF, 59vw 8vw #FFF, 48vw 15vw #FFF, 65vw 80vw #FFF, 53vw 78vw #FFF, 50vw 56vw #FFF, 60vw 44vw #FFF, 8vw 53vw #FFF, 92vw 77vw #FFF, 52vw 65vw #FFF, 44vw 15vw #FFF, 27vw 93vw #FFF, 83vw 79vw #FFF, 96vw 16vw #FFF, 38vw 72vw #FFF, 100vw 91vw #FFF, 12vw 29vw #FFF, 76vw 15vw #FFF, 41vw 15vw #FFF, 30vw 97vw #FFF, 83vw 44vw #FFF, 56vw 27vw #FFF, 89vw 49vw #FFF, 7vw 35vw #FFF, 27vw 56vw #FFF, 8vw 18vw #FFF, 86vw 74vw #FFF, 75vw 25vw #FFF, 84vw 48vw #FFF, 80vw 83vw #FFF, 36vw 27vw #FFF, 47vw 78vw #FFF, 63vw 23vw #FFF, 56vw 93vw #FFF, 97vw 25vw #FFF, 79vw 48vw #FFF, 86vw 57vw #FFF, 4vw 28vw #FFF, 77vw 60vw #FFF, 78vw 43vw #FFF, 60vw 52vw #FFF, 42vw 86vw #FFF, 82vw 12vw #FFF, 29vw 43vw #FFF, 94vw 18vw #FFF, 36vw 69vw #FFF, 77vw 37vw #FFF, 99vw 88vw #FFF, 34vw 50vw #FFF, 61vw 40vw #FFF, 25vw 66vw #FFF, 1vw 89vw #FFF, 95vw 83vw #FFF, 3vw 80vw #FFF, 33vw 28vw #FFF, 77vw 47vw #FFF, 48vw 31vw #FFF, 13vw 17vw #FFF, 52vw 28vw #FFF, 40vw 39vw #FFF, 22vw 74vw #FFF, 32vw 56vw #FFF, 7vw 18vw #FFF, 12vw 16vw #FFF, 13vw 55vw #FFF, 22vw 98vw #FFF, 91vw 44vw #FFF, 44vw 58vw #FFF, 73vw 80vw #FFF, 71vw 85vw #FFF, 22vw 53vw #FFF, 15vw 63vw #FFF, 78vw 69vw #FFF, 13vw 10vw #FFF, 46vw 47vw #FFF, 94vw 93vw #FFF, 46vw 10vw #FFF, 93vw 78vw #FFF, 54vw 85vw #FFF, 72vw 22vw #FFF, 20vw 51vw #FFF, 21vw 21vw #FFF, 19vw 92vw #FFF, 92vw 70vw #FFF, 12vw 27vw #FFF, 54vw 76vw #FFF, 83vw 97vw #FFF, 36vw 16vw #FFF, 51vw 21vw #FFF, 49vw 86vw #FFF, 57vw 91vw #FFF, 89vw 92vw #FFF, 84vw 93vw #FFF, 100vw 93vw #FFF, 61vw 75vw #FFF, 24vw 27vw #FFF, 77vw 59vw #FFF, 32vw 59vw #FFF, 80vw 62vw #FFF, 59vw 8vw #FFF, 20vw 89vw #FFF, 39vw 34vw #FFF, 83vw 52vw #FFF, 91vw 69vw #FFF, 27vw 34vw #FFF, 7vw 66vw #FFF, 34vw 56vw #FFF, 45vw 40vw #FFF, 97vw 48vw #FFF, 90vw 84vw #FFF, 92vw 97vw #FFF, 60vw 63vw #FFF, 44vw 81vw #FFF, 7vw 73vw #FFF, 35vw 85vw #FFF, 30vw 46vw #FFF, 46vw 4vw #FFF, 39vw 82vw #FFF, 58vw 56vw #FFF, 59vw 69vw #FFF, 49vw 62vw #FFF, 95vw 6vw #FFF, 12vw 63vw #FFF, 21vw 55vw #FFF, 20vw 21vw #FFF, 81vw 8vw #FFF, 64vw 79vw #FFF, 12vw 28vw #FFF, 82vw 28vw #FFF, 19vw 31vw #FFF, 95vw 63vw #FFF, 3vw 77vw #FFF, 17vw 12vw #FFF, 37vw 23vw #FFF, 85vw 78vw #FFF, 4vw 8vw #FFF, 29vw 1vw #FFF, 14vw 69vw #FFF, 78vw 28vw #FFF, 13vw 59vw #FFF, 12vw 18vw #FFF, 90vw 50vw #FFF, 50vw 47vw #FFF, 49vw 5vw #FFF, 29vw 99vw #FFF, 7vw 27vw #FFF, 27vw 16vw #FFF, 100vw 25vw #FFF, 58vw 6vw #FFF, 50vw 14vw #FFF, 71vw 91vw #FFF, 64vw 32vw #FFF, 59vw 42vw #FFF, 62vw 57vw #FFF, 23vw 91vw #FFF, 78vw 36vw #FFF, 48vw 74vw #FFF, 62vw 10vw #FFF, 54vw 1vw #FFF, 29vw 69vw #FFF, 74vw 31vw #FFF, 33vw 45vw #FFF, 28vw 9vw #FFF, 85vw 21vw #FFF, 82vw 5vw #FFF, 50vw 91vw #FFF, 82vw 93vw #FFF, 26vw 42vw #FFF, 44vw 20vw #FFF, 81vw 5vw #FFF, 53vw 61vw #FFF, 56vw 80vw #FFF, 2vw 71vw #FFF, 81vw 11vw #FFF, 52vw 88vw #FFF, 40vw 51vw #FFF, 16vw 92vw #FFF, 51vw 32vw #FFF, 5vw 11vw #FFF, 74vw 94vw #FFF, 32vw 29vw #FFF, 87vw 35vw #FFF, 33vw 35vw #FFF, 32vw 36vw #FFF, 47vw 15vw #FFF, 52vw 36vw #FFF, 61vw 40vw #FFF, 1vw 41vw #FFF, 3vw 45vw #FFF, 24vw 30vw #FFF, 15vw 56vw #FFF, 96vw 19vw #FFF, 29vw 67vw #FFF, 33vw 28vw #FFF, 4vw 52vw #FFF, 14vw 64vw #FFF, 53vw 85vw #FFF, 33vw 90vw #FFF, 48vw 4vw #FFF, 81vw 77vw #FFF, 49vw 51vw #FFF, 6vw 97vw #FFF, 13vw 57vw #FFF, 36vw 82vw #FFF, 5vw 73vw #FFF, 82vw 13vw #FFF, 41vw 82vw #FFF, 88vw 18vw #FFF, 25vw 73vw #FFF, 58vw 52vw #FFF, 59vw 97vw #FFF, 62vw 38vw #FFF, 24vw 3vw #FFF, 53vw 72vw #FFF, 81vw 11vw #FFF, 92vw 41vw #FFF, 57vw 57vw #FFF, 1vw 20vw #FFF, 74vw 56vw #FFF, 17vw 58vw #FFF, 48vw 85vw #FFF, 68vw 12vw #FFF, 13vw 33vw #FFF, 1vw 63vw #FFF, 17vw 44vw #FFF, 100vw 34vw #FFF, 13vw 66vw #FFF, 82vw 32vw #FFF, 41vw 84vw #FFF, 60vw 85vw #FFF, 11vw 13vw #FFF, 4vw 62vw #FFF, 50vw 94vw #FFF, 78vw 56vw #FFF, 44vw 57vw #FFF, 90vw 78vw #FFF, 6vw 60vw #FFF, 78vw 71vw #FFF, 44vw 63vw #FFF, 89vw 31vw #FFF, 66vw 12vw #FFF, 61vw 20vw #FFF, 91vw 40vw #FFF, 52vw 59vw #FFF, 21vw 41vw #FFF, 38vw 73vw #FFF, 4vw 24vw #FFF, 29vw 32vw #FFF, 32vw 72vw #FFF, 75vw 66vw #FFF, 86vw 83vw #FFF, 57vw 35vw #FFF, 6vw 45vw #FFF, 36vw 8vw #FFF, 75vw 83vw #FFF, 52vw 85vw #FFF, 46vw 32vw #FFF, 5vw 91vw #FFF, 75vw 27vw #FFF, 18vw 100vw #FFF, 55vw 62vw #FFF, 65vw 86vw #FFF, 6vw 76vw #FFF, 98vw 95vw #FFF, 81vw 80vw #FFF, 59vw 67vw #FFF, 2vw 16vw #FFF, 24vw 21vw #FFF, 98vw 3vw #FFF, 29vw 45vw #FFF, 10vw 41vw #FFF, 99vw 38vw #FFF, 73vw 14vw #FFF, 82vw 6vw #FFF, 64vw 67vw #FFF, 91vw 53vw #FFF, 28vw 91vw #FFF, 63vw 52vw #FFF, 92vw 19vw #FFF, 68vw 58vw #FFF, 58vw 50vw #FFF, 55vw 62vw #FFF, 48vw 60vw #FFF, 21vw 62vw #FFF, 43vw 11vw #FFF, 38vw 67vw #FFF, 38vw 5vw #FFF, 18vw 95vw #FFF, 60vw 5vw #FFF, 10vw 65vw #FFF, 73vw 98vw #FFF, 77vw 73vw #FFF, 6vw 46vw #FFF, 12vw 52vw #FFF, 81vw 26vw #FFF, 7vw 1vw #FFF, 85vw 39vw #FFF, 83vw 34vw #FFF, 42vw 5vw #FFF, 72vw 69vw #FFF, 59vw 59vw #FFF, 45vw 75vw #FFF, 59vw 52vw #FFF, 1vw 2vw #FFF, 10vw 24vw #FFF, 53vw 57vw #FFF, 70vw 51vw #FFF, 69vw 9vw #FFF, 62vw 60vw #FFF, 31vw 89vw #FFF, 46vw 85vw #FFF, 8vw 6vw #FFF, 34vw 83vw #FFF, 44vw 22vw #FFF, 59vw 74vw #FFF, 40vw 32vw #FFF, 50vw 45vw #FFF, 21vw 87vw #FFF, 86vw 33vw #FFF, 29vw 28vw #FFF, 39vw 39vw #FFF, 30vw 83vw #FFF, 27vw 2vw #FFF, 9vw 63vw #FFF, 16vw 59vw #FFF, 70vw 43vw #FFF, 11vw 18vw #FFF, 97vw 61vw #FFF, 70vw 25vw #FFF, 74vw 24vw #FFF, 42vw 38vw #FFF, 77vw 98vw #FFF, 18vw 91vw #FFF, 18vw 57vw #FFF, 60vw 99vw #FFF, 33vw 57vw #FFF, 38vw 18vw #FFF, 65vw 50vw #FFF, 84vw 32vw #FFF, 20vw 68vw #FFF, 86vw 3vw #FFF, 83vw 77vw #FFF, 95vw 28vw #FFF, 55vw 3vw #FFF, 73vw 34vw #FFF, 50vw 15vw #FFF, 30vw 52vw #FFF, 68vw 44vw #FFF, 93vw 70vw #FFF, 18vw 62vw #FFF, 56vw 94vw #FFF, 75vw 85vw #FFF, 65vw 73vw #FFF, 76vw 73vw #FFF, 79vw 80vw #FFF, 18vw 35vw #FFF, 76vw 38vw #FFF, 79vw 59vw #FFF, 5vw 98vw #FFF, 81vw 34vw #FFF, 83vw 18vw #FFF, 68vw 95vw #FFF, 22vw 49vw #FFF, 98vw 11vw #FFF, 70vw 59vw #FFF, 44vw 53vw #FFF, 72vw 39vw #FFF, 30vw 83vw #FFF, 36vw 25vw #FFF, 77vw 52vw #FFF, 82vw 4vw #FFF, 99vw 24vw #FFF, 28vw 49vw #FFF, 62vw 30vw #FFF, 68vw 88vw #FFF, 31vw 48vw #FFF, 62vw 76vw #FFF, 78vw 68vw #FFF, 34vw 12vw #FFF, 29vw 78vw #FFF, 36vw 24vw #FFF, 45vw 47vw #FFF, 37vw 72vw #FFF, 61vw 4vw #FFF, 17vw 76vw #FFF, 47vw 37vw #FFF, 55vw 41vw #FFF, 3vw 34vw #FFF, 6vw 98vw #FFF, 71vw 79vw #FFF, 11vw 35vw #FFF, 26vw 75vw #FFF, 55vw 49vw #FFF, 13vw 47vw #FFF, 30vw 73vw #FFF, 82vw 95vw #FFF, 40vw 14vw #FFF, 35vw 26vw #FFF, 44vw 43vw #FFF, 16vw 66vw #FFF, 91vw 62vw #FFF, 26vw 11vw #FFF, 96vw 52vw #FFF, 71vw 32vw #FFF, 62vw 69vw #FFF, 97vw 36vw #FFF, 72vw 97vw #FFF, 30vw 49vw #FFF, 78vw 100vw #FFF, 64vw 94vw #FFF, 42vw 7vw #FFF, 49vw 23vw #FFF, 12vw 88vw #FFF, 69vw 50vw #FFF, 43vw 16vw #FFF, 64vw 93vw #FFF, 2vw 45vw #FFF, 23vw 20vw #FFF, 97vw 53vw #FFF, 71vw 13vw #FFF, 22vw 99vw #FFF, 16vw 74vw #FFF, 7vw 65vw #FFF, 7vw 52vw #FFF, 15vw 100vw #FFF, 17vw 87vw #FFF, 64vw 92vw #FFF, 59vw 71vw #FFF, 55vw 6vw #FFF, 40vw 54vw #FFF, 18vw 63vw #FFF, 62vw 30vw #FFF, 1vw 32vw #FFF, 1vw 44vw #FFF, 94vw 16vw #FFF, 69vw 79vw #FFF, 60vw 44vw #FFF, 70vw 43vw #FFF, 40vw 34vw #FFF, 44vw 60vw #FFF, 29vw 52vw #FFF, 78vw 93vw #FFF, 67vw 84vw #FFF, 4vw 25vw #FFF, 73vw 41vw #FFF, 79vw 62vw #FFF, 61vw 35vw #FFF, 83vw 86vw #FFF, 7vw 74vw #FFF, 4vw 88vw #FFF, 95vw 69vw #FFF, 51vw 83vw #FFF, 48vw 55vw #FFF, 37vw 57vw #FFF, 66vw 63vw #FFF, 24vw 93vw #FFF, 68vw 89vw #FFF, 54vw 2vw #FFF, 48vw 100vw #FFF, 93vw 27vw #FFF, 1vw 11vw #FFF, 49vw 69vw #FFF, 70vw 52vw #FFF, 36vw 94vw #FFF, 96vw 77vw #FFF, 39vw 87vw #FFF, 22vw 8vw #FFF, 57vw 96vw #FFF, 98vw 76vw #FFF, 46vw 76vw #FFF, 78vw 37vw #FFF, 7vw 51vw #FFF, 29vw 47vw #FFF, 94vw 13vw #FFF, 91vw 17vw #FFF, 52vw 55vw #FFF, 10vw 53vw #FFF, 74vw 60vw #FFF, 26vw 1vw #FFF, 64vw 33vw #FFF, 75vw 97vw #FFF, 89vw 3vw #FFF, 41vw 35vw #FFF, 45vw 38vw #FFF, 57vw 86vw #FFF, 96vw 5vw #FFF, 44vw 76vw #FFF, 92vw 78vw #FFF, 14vw 92vw #FFF, 100vw 99vw #FFF, 69vw 48vw #FFF, 8vw 65vw #FFF, 54vw 24vw #FFF, 36vw 67vw #FFF, 32vw 14vw #FFF, 46vw 88vw #FFF, 88vw 82vw #FFF, 66vw 79vw #FFF, 94vw 42vw #FFF, 74vw 100vw #FFF, 57vw 65vw #FFF, 57vw 80vw #FFF, 21vw 43vw #FFF, 8vw 69vw #FFF, 8vw 79vw #FFF, 14vw 76vw #FFF, 39vw 83vw #FFF, 71vw 1vw #FFF, 22vw 47vw #FFF, 88vw 15vw #FFF, 10vw 65vw #FFF, 89vw 18vw #FFF, 99vw 20vw #FFF, 82vw 91vw #FFF, 40vw 79vw #FFF, 47vw 23vw #FFF, 18vw 44vw #FFF, 73vw 1vw #FFF, 55vw 54vw #FFF, 56vw 51vw #FFF, 25vw 14vw #FFF, 70vw 8vw #FFF, 94vw 92vw #FFF, 80vw 90vw #FFF, 86vw 35vw #FFF, 83vw 54vw #FFF, 67vw 15vw #FFF, 31vw 46vw #FFF, 93vw 76vw #FFF, 92vw 21vw #FFF, 47vw 6vw #FFF, 2vw 95vw #FFF, 42vw 84vw #FFF, 21vw 96vw #FFF, 10vw 66vw #FFF, 72vw 26vw #FFF, 72vw 97vw #FFF, 46vw 67vw #FFF, 36vw 17vw #FFF, 46vw 67vw #FFF, 100vw 33vw #FFF, 22vw 66vw #FFF, 66vw 5vw #FFF, 15vw 93vw #FFF, 8vw 92vw #FFF, 42vw 100vw #FFF, 94vw 96vw #FFF, 56vw 20vw #FFF, 4vw 25vw #FFF, 77vw 17vw #FFF, 57vw 61vw #FFF, 74vw 88vw #FFF, 63vw 73vw #FFF, 20vw 33vw #FFF, 83vw 49vw #FFF, 51vw 98vw #FFF, 70vw 83vw #FFF, 86vw 35vw #FFF, 87vw 88vw #FFF, 38vw 88vw #FFF, 52vw 52vw #FFF, 99vw 84vw #FFF, 15vw 64vw #FFF, 85vw 8vw #FFF, 49vw 48vw #FFF, 92vw 87vw #FFF, 42vw 57vw #FFF, 26vw 58vw #FFF, 95vw 56vw #FFF, 96vw 10vw #FFF, 90vw 6vw #FFF, 23vw 63vw #FFF, 26vw 91vw #FFF, 61vw 41vw #FFF, 20vw 23vw #FFF, 4vw 57vw #FFF, 22vw 60vw #FFF, 43vw 83vw #FFF, 65vw 22vw #FFF, 92vw 78vw #FFF, 9vw 43vw #FFF, 77vw 25vw #FFF, 51vw 63vw #FFF, 80vw 98vw #FFF, 30vw 6vw #FFF, 27vw 9vw #FFF, 56vw 21vw #FFF, 80vw 100vw #FFF, 39vw 22vw #FFF, 55vw 98vw #FFF, 83vw 65vw #FFF, 18vw 83vw #FFF, 79vw 77vw #FFF, 63vw 89vw #FFF, 56vw 78vw #FFF, 18vw 71vw #FFF, 48vw 42vw #FFF, 64vw 66vw #FFF, 78vw 33vw #FFF, 92vw 99vw #FFF, 81vw 87vw #FFF, 79vw 91vw #FFF, 79vw 66vw #FFF, 14vw 66vw #FFF, 50vw 61vw #FFF, 65vw 51vw #FFF, 100vw 23vw #FFF, 28vw 63vw #FFF, 94vw 30vw #FFF, 18vw 22vw #FFF, 73vw 5vw #FFF, 62vw 13vw #FFF, 48vw 25vw #FFF, 95vw 22vw #FFF, 31vw 37vw #FFF, 83vw 60vw #FFF, 8vw 41vw #FFF, 49vw 86vw #FFF, 61vw 63vw #FFF, 44vw 92vw #FFF, 10vw 91vw #FFF, 87vw 3vw #FFF, 100vw 35vw #FFF, 65vw 59vw #FFF, 1vw 95vw #FFF, 38vw 64vw #FFF, 83vw 37vw #FFF, 41vw 56vw #FFF, 53vw 96vw #FFF, 98vw 11vw #FFF, 9vw 31vw #FFF, 3vw 12vw #FFF, 66vw 34vw #FFF, 51vw 9vw #FFF, 90vw 81vw #FFF, 67vw 77vw #FFF, 56vw 45vw #FFF, 29vw 84vw #FFF, 27vw 95vw #FFF, 91vw 30vw #FFF, 31vw 77vw #FFF, 39vw 23vw #FFF, 58vw 74vw #FFF, 24vw 30vw #FFF, 19vw 13vw #FFF, 21vw 50vw #FFF, 70vw 70vw #FFF, 17vw 36vw #FFF, 87vw 60vw #FFF, 62vw 92vw #FFF, 51vw 72vw #FFF, 18vw 70vw #FFF, 46vw 68vw #FFF, 25vw 28vw #FFF, 5vw 99vw #FFF, 10vw 52vw #FFF, 32vw 92vw #FFF, 4vw 39vw #FFF, 89vw 97vw #FFF, 76vw 16vw #FFF, 53vw 99vw #FFF, 30vw 31vw #FFF, 1vw 61vw #FFF, 72vw 75vw #FFF, 98vw 46vw #FFF, 57vw 36vw #FFF, 100vw 46vw #FFF, 64vw 2vw #FFF, 76vw 88vw #FFF, 73vw 84vw #FFF, 88vw 35vw #FFF, 83vw 41vw #FFF, 72vw 43vw #FFF, 17vw 75vw #FFF, 14vw 37vw #FFF, 49vw 85vw #FFF, 56vw 1vw #FFF, 29vw 87vw #FFF, 86vw 80vw #FFF, 12vw 76vw #FFF, 2vw 94vw #FFF, 60vw 91vw #FFF, 72vw 99vw #FFF, 40vw 100vw #FFF, 10vw 5vw #FFF;
+  animation: animStar 50s linear infinite;
+}
+#stars:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 88vw 2vw #FFF, 22vw 21vw #FFF, 69vw 81vw #FFF, 94vw 24vw #FFF, 86vw 53vw #FFF, 64vw 27vw #FFF, 42vw 7vw #FFF, 63vw 48vw #FFF, 39vw 48vw #FFF, 96vw 2vw #FFF, 59vw 71vw #FFF, 32vw 29vw #FFF, 9vw 64vw #FFF, 60vw 23vw #FFF, 22vw 77vw #FFF, 82vw 51vw #FFF, 59vw 8vw #FFF, 48vw 15vw #FFF, 65vw 80vw #FFF, 53vw 78vw #FFF, 50vw 56vw #FFF, 60vw 44vw #FFF, 8vw 53vw #FFF, 92vw 77vw #FFF, 52vw 65vw #FFF, 44vw 15vw #FFF, 27vw 93vw #FFF, 83vw 79vw #FFF, 96vw 16vw #FFF, 38vw 72vw #FFF, 100vw 91vw #FFF, 12vw 29vw #FFF, 76vw 15vw #FFF, 41vw 15vw #FFF, 30vw 97vw #FFF, 83vw 44vw #FFF, 56vw 27vw #FFF, 89vw 49vw #FFF, 7vw 35vw #FFF, 27vw 56vw #FFF, 8vw 18vw #FFF, 86vw 74vw #FFF, 75vw 25vw #FFF, 84vw 48vw #FFF, 80vw 83vw #FFF, 36vw 27vw #FFF, 47vw 78vw #FFF, 63vw 23vw #FFF, 56vw 93vw #FFF, 97vw 25vw #FFF, 79vw 48vw #FFF, 86vw 57vw #FFF, 4vw 28vw #FFF, 77vw 60vw #FFF, 78vw 43vw #FFF, 60vw 52vw #FFF, 42vw 86vw #FFF, 82vw 12vw #FFF, 29vw 43vw #FFF, 94vw 18vw #FFF, 36vw 69vw #FFF, 77vw 37vw #FFF, 99vw 88vw #FFF, 34vw 50vw #FFF, 61vw 40vw #FFF, 25vw 66vw #FFF, 1vw 89vw #FFF, 95vw 83vw #FFF, 3vw 80vw #FFF, 33vw 28vw #FFF, 77vw 47vw #FFF, 48vw 31vw #FFF, 13vw 17vw #FFF, 52vw 28vw #FFF, 40vw 39vw #FFF, 22vw 74vw #FFF, 32vw 56vw #FFF, 7vw 18vw #FFF, 12vw 16vw #FFF, 13vw 55vw #FFF, 22vw 98vw #FFF, 91vw 44vw #FFF, 44vw 58vw #FFF, 73vw 80vw #FFF, 71vw 85vw #FFF, 22vw 53vw #FFF, 15vw 63vw #FFF, 78vw 69vw #FFF, 13vw 10vw #FFF, 46vw 47vw #FFF, 94vw 93vw #FFF, 46vw 10vw #FFF, 93vw 78vw #FFF, 54vw 85vw #FFF, 72vw 22vw #FFF, 20vw 51vw #FFF, 21vw 21vw #FFF, 19vw 92vw #FFF, 92vw 70vw #FFF, 12vw 27vw #FFF, 54vw 76vw #FFF, 83vw 97vw #FFF, 36vw 16vw #FFF, 51vw 21vw #FFF, 49vw 86vw #FFF, 57vw 91vw #FFF, 89vw 92vw #FFF, 84vw 93vw #FFF, 100vw 93vw #FFF, 61vw 75vw #FFF, 24vw 27vw #FFF, 77vw 59vw #FFF, 32vw 59vw #FFF, 80vw 62vw #FFF, 59vw 8vw #FFF, 20vw 89vw #FFF, 39vw 34vw #FFF, 83vw 52vw #FFF, 91vw 69vw #FFF, 27vw 34vw #FFF, 7vw 66vw #FFF, 34vw 56vw #FFF, 45vw 40vw #FFF, 97vw 48vw #FFF, 90vw 84vw #FFF, 92vw 97vw #FFF, 60vw 63vw #FFF, 44vw 81vw #FFF, 7vw 73vw #FFF, 35vw 85vw #FFF, 30vw 46vw #FFF, 46vw 4vw #FFF, 39vw 82vw #FFF, 58vw 56vw #FFF, 59vw 69vw #FFF, 49vw 62vw #FFF, 95vw 6vw #FFF, 12vw 63vw #FFF, 21vw 55vw #FFF, 20vw 21vw #FFF, 81vw 8vw #FFF, 64vw 79vw #FFF, 12vw 28vw #FFF, 82vw 28vw #FFF, 19vw 31vw #FFF, 95vw 63vw #FFF, 3vw 77vw #FFF, 17vw 12vw #FFF, 37vw 23vw #FFF, 85vw 78vw #FFF, 4vw 8vw #FFF, 29vw 1vw #FFF, 14vw 69vw #FFF, 78vw 28vw #FFF, 13vw 59vw #FFF, 12vw 18vw #FFF, 90vw 50vw #FFF, 50vw 47vw #FFF, 49vw 5vw #FFF, 29vw 99vw #FFF, 7vw 27vw #FFF, 27vw 16vw #FFF, 100vw 25vw #FFF, 58vw 6vw #FFF, 50vw 14vw #FFF, 71vw 91vw #FFF, 64vw 32vw #FFF, 59vw 42vw #FFF, 62vw 57vw #FFF, 23vw 91vw #FFF, 78vw 36vw #FFF, 48vw 74vw #FFF, 62vw 10vw #FFF, 54vw 1vw #FFF, 29vw 69vw #FFF, 74vw 31vw #FFF, 33vw 45vw #FFF, 28vw 9vw #FFF, 85vw 21vw #FFF, 82vw 5vw #FFF, 50vw 91vw #FFF, 82vw 93vw #FFF, 26vw 42vw #FFF, 44vw 20vw #FFF, 81vw 5vw #FFF, 53vw 61vw #FFF, 56vw 80vw #FFF, 2vw 71vw #FFF, 81vw 11vw #FFF, 52vw 88vw #FFF, 40vw 51vw #FFF, 16vw 92vw #FFF, 51vw 32vw #FFF, 5vw 11vw #FFF, 74vw 94vw #FFF, 32vw 29vw #FFF, 87vw 35vw #FFF, 33vw 35vw #FFF, 32vw 36vw #FFF, 47vw 15vw #FFF, 52vw 36vw #FFF, 61vw 40vw #FFF, 1vw 41vw #FFF, 3vw 45vw #FFF, 24vw 30vw #FFF, 15vw 56vw #FFF, 96vw 19vw #FFF, 29vw 67vw #FFF, 33vw 28vw #FFF, 4vw 52vw #FFF, 14vw 64vw #FFF, 53vw 85vw #FFF, 33vw 90vw #FFF, 48vw 4vw #FFF, 81vw 77vw #FFF, 49vw 51vw #FFF, 6vw 97vw #FFF, 13vw 57vw #FFF, 36vw 82vw #FFF, 5vw 73vw #FFF, 82vw 13vw #FFF, 41vw 82vw #FFF, 88vw 18vw #FFF, 25vw 73vw #FFF, 58vw 52vw #FFF, 59vw 97vw #FFF, 62vw 38vw #FFF, 24vw 3vw #FFF, 53vw 72vw #FFF, 81vw 11vw #FFF, 92vw 41vw #FFF, 57vw 57vw #FFF, 1vw 20vw #FFF, 74vw 56vw #FFF, 17vw 58vw #FFF, 48vw 85vw #FFF, 68vw 12vw #FFF, 13vw 33vw #FFF, 1vw 63vw #FFF, 17vw 44vw #FFF, 100vw 34vw #FFF, 13vw 66vw #FFF, 82vw 32vw #FFF, 41vw 84vw #FFF, 60vw 85vw #FFF, 11vw 13vw #FFF, 4vw 62vw #FFF, 50vw 94vw #FFF, 78vw 56vw #FFF, 44vw 57vw #FFF, 90vw 78vw #FFF, 6vw 60vw #FFF, 78vw 71vw #FFF, 44vw 63vw #FFF, 89vw 31vw #FFF, 66vw 12vw #FFF, 61vw 20vw #FFF, 91vw 40vw #FFF, 52vw 59vw #FFF, 21vw 41vw #FFF, 38vw 73vw #FFF, 4vw 24vw #FFF, 29vw 32vw #FFF, 32vw 72vw #FFF, 75vw 66vw #FFF, 86vw 83vw #FFF, 57vw 35vw #FFF, 6vw 45vw #FFF, 36vw 8vw #FFF, 75vw 83vw #FFF, 52vw 85vw #FFF, 46vw 32vw #FFF, 5vw 91vw #FFF, 75vw 27vw #FFF, 18vw 100vw #FFF, 55vw 62vw #FFF, 65vw 86vw #FFF, 6vw 76vw #FFF, 98vw 95vw #FFF, 81vw 80vw #FFF, 59vw 67vw #FFF, 2vw 16vw #FFF, 24vw 21vw #FFF, 98vw 3vw #FFF, 29vw 45vw #FFF, 10vw 41vw #FFF, 99vw 38vw #FFF, 73vw 14vw #FFF, 82vw 6vw #FFF, 64vw 67vw #FFF, 91vw 53vw #FFF, 28vw 91vw #FFF, 63vw 52vw #FFF, 92vw 19vw #FFF, 68vw 58vw #FFF, 58vw 50vw #FFF, 55vw 62vw #FFF, 48vw 60vw #FFF, 21vw 62vw #FFF, 43vw 11vw #FFF, 38vw 67vw #FFF, 38vw 5vw #FFF, 18vw 95vw #FFF, 60vw 5vw #FFF, 10vw 65vw #FFF, 73vw 98vw #FFF, 77vw 73vw #FFF, 6vw 46vw #FFF, 12vw 52vw #FFF, 81vw 26vw #FFF, 7vw 1vw #FFF, 85vw 39vw #FFF, 83vw 34vw #FFF, 42vw 5vw #FFF, 72vw 69vw #FFF, 59vw 59vw #FFF, 45vw 75vw #FFF, 59vw 52vw #FFF, 1vw 2vw #FFF, 10vw 24vw #FFF, 53vw 57vw #FFF, 70vw 51vw #FFF, 69vw 9vw #FFF, 62vw 60vw #FFF, 31vw 89vw #FFF, 46vw 85vw #FFF, 8vw 6vw #FFF, 34vw 83vw #FFF, 44vw 22vw #FFF, 59vw 74vw #FFF, 40vw 32vw #FFF, 50vw 45vw #FFF, 21vw 87vw #FFF, 86vw 33vw #FFF, 29vw 28vw #FFF, 39vw 39vw #FFF, 30vw 83vw #FFF, 27vw 2vw #FFF, 9vw 63vw #FFF, 16vw 59vw #FFF, 70vw 43vw #FFF, 11vw 18vw #FFF, 97vw 61vw #FFF, 70vw 25vw #FFF, 74vw 24vw #FFF, 42vw 38vw #FFF, 77vw 98vw #FFF, 18vw 91vw #FFF, 18vw 57vw #FFF, 60vw 99vw #FFF, 33vw 57vw #FFF, 38vw 18vw #FFF, 65vw 50vw #FFF, 84vw 32vw #FFF, 20vw 68vw #FFF, 86vw 3vw #FFF, 83vw 77vw #FFF, 95vw 28vw #FFF, 55vw 3vw #FFF, 73vw 34vw #FFF, 50vw 15vw #FFF, 30vw 52vw #FFF, 68vw 44vw #FFF, 93vw 70vw #FFF, 18vw 62vw #FFF, 56vw 94vw #FFF, 75vw 85vw #FFF, 65vw 73vw #FFF, 76vw 73vw #FFF, 79vw 80vw #FFF, 18vw 35vw #FFF, 76vw 38vw #FFF, 79vw 59vw #FFF, 5vw 98vw #FFF, 81vw 34vw #FFF, 83vw 18vw #FFF, 68vw 95vw #FFF, 22vw 49vw #FFF, 98vw 11vw #FFF, 70vw 59vw #FFF, 44vw 53vw #FFF, 72vw 39vw #FFF, 30vw 83vw #FFF, 36vw 25vw #FFF, 77vw 52vw #FFF, 82vw 4vw #FFF, 99vw 24vw #FFF, 28vw 49vw #FFF, 62vw 30vw #FFF, 68vw 88vw #FFF, 31vw 48vw #FFF, 62vw 76vw #FFF, 78vw 68vw #FFF, 34vw 12vw #FFF, 29vw 78vw #FFF, 36vw 24vw #FFF, 45vw 47vw #FFF, 37vw 72vw #FFF, 61vw 4vw #FFF, 17vw 76vw #FFF, 47vw 37vw #FFF, 55vw 41vw #FFF, 3vw 34vw #FFF, 6vw 98vw #FFF, 71vw 79vw #FFF, 11vw 35vw #FFF, 26vw 75vw #FFF, 55vw 49vw #FFF, 13vw 47vw #FFF, 30vw 73vw #FFF, 82vw 95vw #FFF, 40vw 14vw #FFF, 35vw 26vw #FFF, 44vw 43vw #FFF, 16vw 66vw #FFF, 91vw 62vw #FFF, 26vw 11vw #FFF, 96vw 52vw #FFF, 71vw 32vw #FFF, 62vw 69vw #FFF, 97vw 36vw #FFF, 72vw 97vw #FFF, 30vw 49vw #FFF, 78vw 100vw #FFF, 64vw 94vw #FFF, 42vw 7vw #FFF, 49vw 23vw #FFF, 12vw 88vw #FFF, 69vw 50vw #FFF, 43vw 16vw #FFF, 64vw 93vw #FFF, 2vw 45vw #FFF, 23vw 20vw #FFF, 97vw 53vw #FFF, 71vw 13vw #FFF, 22vw 99vw #FFF, 16vw 74vw #FFF, 7vw 65vw #FFF, 7vw 52vw #FFF, 15vw 100vw #FFF, 17vw 87vw #FFF, 64vw 92vw #FFF, 59vw 71vw #FFF, 55vw 6vw #FFF, 40vw 54vw #FFF, 18vw 63vw #FFF, 62vw 30vw #FFF, 1vw 32vw #FFF, 1vw 44vw #FFF, 94vw 16vw #FFF, 69vw 79vw #FFF, 60vw 44vw #FFF, 70vw 43vw #FFF, 40vw 34vw #FFF, 44vw 60vw #FFF, 29vw 52vw #FFF, 78vw 93vw #FFF, 67vw 84vw #FFF, 4vw 25vw #FFF, 73vw 41vw #FFF, 79vw 62vw #FFF, 61vw 35vw #FFF, 83vw 86vw #FFF, 7vw 74vw #FFF, 4vw 88vw #FFF, 95vw 69vw #FFF, 51vw 83vw #FFF, 48vw 55vw #FFF, 37vw 57vw #FFF, 66vw 63vw #FFF, 24vw 93vw #FFF, 68vw 89vw #FFF, 54vw 2vw #FFF, 48vw 100vw #FFF, 93vw 27vw #FFF, 1vw 11vw #FFF, 49vw 69vw #FFF, 70vw 52vw #FFF, 36vw 94vw #FFF, 96vw 77vw #FFF, 39vw 87vw #FFF, 22vw 8vw #FFF, 57vw 96vw #FFF, 98vw 76vw #FFF, 46vw 76vw #FFF, 78vw 37vw #FFF, 7vw 51vw #FFF, 29vw 47vw #FFF, 94vw 13vw #FFF, 91vw 17vw #FFF, 52vw 55vw #FFF, 10vw 53vw #FFF, 74vw 60vw #FFF, 26vw 1vw #FFF, 64vw 33vw #FFF, 75vw 97vw #FFF, 89vw 3vw #FFF, 41vw 35vw #FFF, 45vw 38vw #FFF, 57vw 86vw #FFF, 96vw 5vw #FFF, 44vw 76vw #FFF, 92vw 78vw #FFF, 14vw 92vw #FFF, 100vw 99vw #FFF, 69vw 48vw #FFF, 8vw 65vw #FFF, 54vw 24vw #FFF, 36vw 67vw #FFF, 32vw 14vw #FFF, 46vw 88vw #FFF, 88vw 82vw #FFF, 66vw 79vw #FFF, 94vw 42vw #FFF, 74vw 100vw #FFF, 57vw 65vw #FFF, 57vw 80vw #FFF, 21vw 43vw #FFF, 8vw 69vw #FFF, 8vw 79vw #FFF, 14vw 76vw #FFF, 39vw 83vw #FFF, 71vw 1vw #FFF, 22vw 47vw #FFF, 88vw 15vw #FFF, 10vw 65vw #FFF, 89vw 18vw #FFF, 99vw 20vw #FFF, 82vw 91vw #FFF, 40vw 79vw #FFF, 47vw 23vw #FFF, 18vw 44vw #FFF, 73vw 1vw #FFF, 55vw 54vw #FFF, 56vw 51vw #FFF, 25vw 14vw #FFF, 70vw 8vw #FFF, 94vw 92vw #FFF, 80vw 90vw #FFF, 86vw 35vw #FFF, 83vw 54vw #FFF, 67vw 15vw #FFF, 31vw 46vw #FFF, 93vw 76vw #FFF, 92vw 21vw #FFF, 47vw 6vw #FFF, 2vw 95vw #FFF, 42vw 84vw #FFF, 21vw 96vw #FFF, 10vw 66vw #FFF, 72vw 26vw #FFF, 72vw 97vw #FFF, 46vw 67vw #FFF, 36vw 17vw #FFF, 46vw 67vw #FFF, 100vw 33vw #FFF, 22vw 66vw #FFF, 66vw 5vw #FFF, 15vw 93vw #FFF, 8vw 92vw #FFF, 42vw 100vw #FFF, 94vw 96vw #FFF, 56vw 20vw #FFF, 4vw 25vw #FFF, 77vw 17vw #FFF, 57vw 61vw #FFF, 74vw 88vw #FFF, 63vw 73vw #FFF, 20vw 33vw #FFF, 83vw 49vw #FFF, 51vw 98vw #FFF, 70vw 83vw #FFF, 86vw 35vw #FFF, 87vw 88vw #FFF, 38vw 88vw #FFF, 52vw 52vw #FFF, 99vw 84vw #FFF, 15vw 64vw #FFF, 85vw 8vw #FFF, 49vw 48vw #FFF, 92vw 87vw #FFF, 42vw 57vw #FFF, 26vw 58vw #FFF, 95vw 56vw #FFF, 96vw 10vw #FFF, 90vw 6vw #FFF, 23vw 63vw #FFF, 26vw 91vw #FFF, 61vw 41vw #FFF, 20vw 23vw #FFF, 4vw 57vw #FFF, 22vw 60vw #FFF, 43vw 83vw #FFF, 65vw 22vw #FFF, 92vw 78vw #FFF, 9vw 43vw #FFF, 77vw 25vw #FFF, 51vw 63vw #FFF, 80vw 98vw #FFF, 30vw 6vw #FFF, 27vw 9vw #FFF, 56vw 21vw #FFF, 80vw 100vw #FFF, 39vw 22vw #FFF, 55vw 98vw #FFF, 83vw 65vw #FFF, 18vw 83vw #FFF, 79vw 77vw #FFF, 63vw 89vw #FFF, 56vw 78vw #FFF, 18vw 71vw #FFF, 48vw 42vw #FFF, 64vw 66vw #FFF, 78vw 33vw #FFF, 92vw 99vw #FFF, 81vw 87vw #FFF, 79vw 91vw #FFF, 79vw 66vw #FFF, 14vw 66vw #FFF, 50vw 61vw #FFF, 65vw 51vw #FFF, 100vw 23vw #FFF, 28vw 63vw #FFF, 94vw 30vw #FFF, 18vw 22vw #FFF, 73vw 5vw #FFF, 62vw 13vw #FFF, 48vw 25vw #FFF, 95vw 22vw #FFF, 31vw 37vw #FFF, 83vw 60vw #FFF, 8vw 41vw #FFF, 49vw 86vw #FFF, 61vw 63vw #FFF, 44vw 92vw #FFF, 10vw 91vw #FFF, 87vw 3vw #FFF, 100vw 35vw #FFF, 65vw 59vw #FFF, 1vw 95vw #FFF, 38vw 64vw #FFF, 83vw 37vw #FFF, 41vw 56vw #FFF, 53vw 96vw #FFF, 98vw 11vw #FFF, 9vw 31vw #FFF, 3vw 12vw #FFF, 66vw 34vw #FFF, 51vw 9vw #FFF, 90vw 81vw #FFF, 67vw 77vw #FFF, 56vw 45vw #FFF, 29vw 84vw #FFF, 27vw 95vw #FFF, 91vw 30vw #FFF, 31vw 77vw #FFF, 39vw 23vw #FFF, 58vw 74vw #FFF, 24vw 30vw #FFF, 19vw 13vw #FFF, 21vw 50vw #FFF, 70vw 70vw #FFF, 17vw 36vw #FFF, 87vw 60vw #FFF, 62vw 92vw #FFF, 51vw 72vw #FFF, 18vw 70vw #FFF, 46vw 68vw #FFF, 25vw 28vw #FFF, 5vw 99vw #FFF, 10vw 52vw #FFF, 32vw 92vw #FFF, 4vw 39vw #FFF, 89vw 97vw #FFF, 76vw 16vw #FFF, 53vw 99vw #FFF, 30vw 31vw #FFF, 1vw 61vw #FFF, 72vw 75vw #FFF, 98vw 46vw #FFF, 57vw 36vw #FFF, 100vw 46vw #FFF, 64vw 2vw #FFF, 76vw 88vw #FFF, 73vw 84vw #FFF, 88vw 35vw #FFF, 83vw 41vw #FFF, 72vw 43vw #FFF, 17vw 75vw #FFF, 14vw 37vw #FFF, 49vw 85vw #FFF, 56vw 1vw #FFF, 29vw 87vw #FFF, 86vw 80vw #FFF, 12vw 76vw #FFF, 2vw 94vw #FFF, 60vw 91vw #FFF, 72vw 99vw #FFF, 40vw 100vw #FFF, 10vw 5vw #FFF;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 72vw 80vw #FFF, 78vw 2vw #FFF, 88vw 54vw #FFF, 35vw 15vw #FFF, 35vw 63vw #FFF, 17vw 19vw #FFF, 100vw 42vw #FFF, 25vw 77vw #FFF, 14vw 41vw #FFF, 63vw 97vw #FFF, 40vw 14vw #FFF, 88vw 1vw #FFF, 9vw 46vw #FFF, 64vw 96vw #FFF, 60vw 57vw #FFF, 28vw 42vw #FFF, 46vw 91vw #FFF, 46vw 65vw #FFF, 82vw 41vw #FFF, 81vw 98vw #FFF, 90vw 85vw #FFF, 16vw 20vw #FFF, 72vw 92vw #FFF, 75vw 10vw #FFF, 90vw 17vw #FFF, 3vw 9vw #FFF, 38vw 27vw #FFF, 19vw 8vw #FFF, 69vw 85vw #FFF, 40vw 94vw #FFF, 21vw 20vw #FFF, 39vw 39vw #FFF, 66vw 96vw #FFF, 33vw 78vw #FFF, 61vw 93vw #FFF, 93vw 34vw #FFF, 49vw 14vw #FFF, 38vw 88vw #FFF, 56vw 66vw #FFF, 46vw 12vw #FFF, 77vw 36vw #FFF, 91vw 4vw #FFF, 94vw 59vw #FFF, 23vw 78vw #FFF, 75vw 1vw #FFF, 64vw 67vw #FFF, 42vw 97vw #FFF, 47vw 22vw #FFF, 88vw 48vw #FFF, 2vw 15vw #FFF, 81vw 87vw #FFF, 71vw 37vw #FFF, 88vw 61vw #FFF, 65vw 50vw #FFF, 53vw 99vw #FFF, 22vw 70vw #FFF, 85vw 87vw #FFF, 37vw 12vw #FFF, 70vw 57vw #FFF, 41vw 66vw #FFF, 36vw 53vw #FFF, 45vw 76vw #FFF, 29vw 58vw #FFF, 2vw 73vw #FFF, 28vw 4vw #FFF, 35vw 81vw #FFF, 52vw 73vw #FFF, 67vw 18vw #FFF, 8vw 33vw #FFF, 72vw 48vw #FFF, 5vw 21vw #FFF, 52vw 65vw #FFF, 98vw 44vw #FFF, 91vw 32vw #FFF, 71vw 74vw #FFF, 74vw 77vw #FFF, 35vw 55vw #FFF, 40vw 78vw #FFF, 89vw 51vw #FFF, 50vw 97vw #FFF, 41vw 21vw #FFF, 80vw 63vw #FFF, 44vw 80vw #FFF, 98vw 16vw #FFF, 95vw 19vw #FFF, 53vw 45vw #FFF, 84vw 31vw #FFF, 27vw 73vw #FFF, 16vw 23vw #FFF, 16vw 17vw #FFF, 56vw 63vw #FFF, 67vw 33vw #FFF, 95vw 5vw #FFF, 88vw 65vw #FFF, 25vw 10vw #FFF, 73vw 44vw #FFF, 98vw 84vw #FFF, 95vw 39vw #FFF, 17vw 61vw #FFF, 19vw 33vw #FFF, 41vw 11vw #FFF, 81vw 33vw #FFF, 18vw 69vw #FFF, 53vw 81vw #FFF, 72vw 73vw #FFF, 69vw 19vw #FFF, 7vw 18vw #FFF, 61vw 51vw #FFF, 43vw 18vw #FFF, 65vw 69vw #FFF, 74vw 95vw #FFF, 63vw 64vw #FFF, 65vw 63vw #FFF, 10vw 41vw #FFF, 97vw 12vw #FFF, 49vw 95vw #FFF, 32vw 88vw #FFF, 84vw 98vw #FFF, 53vw 1vw #FFF, 11vw 71vw #FFF, 10vw 32vw #FFF, 73vw 85vw #FFF, 50vw 98vw #FFF, 90vw 71vw #FFF, 25vw 2vw #FFF, 77vw 51vw #FFF, 73vw 72vw #FFF, 31vw 43vw #FFF, 59vw 57vw #FFF, 11vw 11vw #FFF, 24vw 26vw #FFF, 20vw 52vw #FFF, 98vw 66vw #FFF, 50vw 24vw #FFF, 25vw 49vw #FFF, 2vw 29vw #FFF, 2vw 45vw #FFF, 8vw 6vw #FFF, 36vw 20vw #FFF, 88vw 35vw #FFF, 59vw 99vw #FFF, 94vw 11vw #FFF, 31vw 21vw #FFF, 92vw 55vw #FFF, 69vw 65vw #FFF, 84vw 65vw #FFF, 64vw 57vw #FFF, 70vw 17vw #FFF, 2vw 35vw #FFF, 88vw 56vw #FFF, 14vw 59vw #FFF, 34vw 74vw #FFF, 92vw 20vw #FFF, 19vw 44vw #FFF, 11vw 85vw #FFF, 84vw 30vw #FFF, 12vw 18vw #FFF, 49vw 7vw #FFF, 87vw 43vw #FFF, 84vw 28vw #FFF, 96vw 21vw #FFF, 18vw 82vw #FFF, 51vw 92vw #FFF, 25vw 21vw #FFF, 47vw 75vw #FFF, 74vw 100vw #FFF, 50vw 20vw #FFF, 17vw 54vw #FFF, 99vw 66vw #FFF, 18vw 39vw #FFF, 96vw 88vw #FFF, 81vw 9vw #FFF, 45vw 28vw #FFF, 52vw 60vw #FFF, 72vw 63vw #FFF, 15vw 13vw #FFF, 93vw 28vw #FFF, 97vw 47vw #FFF, 79vw 47vw #FFF, 61vw 6vw #FFF, 55vw 34vw #FFF, 18vw 38vw #FFF, 7vw 45vw #FFF, 2vw 81vw #FFF, 2vw 83vw #FFF, 57vw 24vw #FFF, 24vw 43vw #FFF, 74vw 58vw #FFF, 31vw 66vw #FFF, 71vw 35vw #FFF, 16vw 64vw #FFF, 41vw 90vw #FFF, 92vw 63vw #FFF, 100vw 88vw #FFF, 51vw 66vw #FFF, 51vw 17vw #FFF, 21vw 19vw #FFF, 87vw 68vw #FFF, 6vw 15vw #FFF, 97vw 10vw #FFF;
+  animation: animStar 100s linear infinite;
+}
+#stars2:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 72vw 80vw #FFF, 78vw 2vw #FFF, 88vw 54vw #FFF, 35vw 15vw #FFF, 35vw 63vw #FFF, 17vw 19vw #FFF, 100vw 42vw #FFF, 25vw 77vw #FFF, 14vw 41vw #FFF, 63vw 97vw #FFF, 40vw 14vw #FFF, 88vw 1vw #FFF, 9vw 46vw #FFF, 64vw 96vw #FFF, 60vw 57vw #FFF, 28vw 42vw #FFF, 46vw 91vw #FFF, 46vw 65vw #FFF, 82vw 41vw #FFF, 81vw 98vw #FFF, 90vw 85vw #FFF, 16vw 20vw #FFF, 72vw 92vw #FFF, 75vw 10vw #FFF, 90vw 17vw #FFF, 3vw 9vw #FFF, 38vw 27vw #FFF, 19vw 8vw #FFF, 69vw 85vw #FFF, 40vw 94vw #FFF, 21vw 20vw #FFF, 39vw 39vw #FFF, 66vw 96vw #FFF, 33vw 78vw #FFF, 61vw 93vw #FFF, 93vw 34vw #FFF, 49vw 14vw #FFF, 38vw 88vw #FFF, 56vw 66vw #FFF, 46vw 12vw #FFF, 77vw 36vw #FFF, 91vw 4vw #FFF, 94vw 59vw #FFF, 23vw 78vw #FFF, 75vw 1vw #FFF, 64vw 67vw #FFF, 42vw 97vw #FFF, 47vw 22vw #FFF, 88vw 48vw #FFF, 2vw 15vw #FFF, 81vw 87vw #FFF, 71vw 37vw #FFF, 88vw 61vw #FFF, 65vw 50vw #FFF, 53vw 99vw #FFF, 22vw 70vw #FFF, 85vw 87vw #FFF, 37vw 12vw #FFF, 70vw 57vw #FFF, 41vw 66vw #FFF, 36vw 53vw #FFF, 45vw 76vw #FFF, 29vw 58vw #FFF, 2vw 73vw #FFF, 28vw 4vw #FFF, 35vw 81vw #FFF, 52vw 73vw #FFF, 67vw 18vw #FFF, 8vw 33vw #FFF, 72vw 48vw #FFF, 5vw 21vw #FFF, 52vw 65vw #FFF, 98vw 44vw #FFF, 91vw 32vw #FFF, 71vw 74vw #FFF, 74vw 77vw #FFF, 35vw 55vw #FFF, 40vw 78vw #FFF, 89vw 51vw #FFF, 50vw 97vw #FFF, 41vw 21vw #FFF, 80vw 63vw #FFF, 44vw 80vw #FFF, 98vw 16vw #FFF, 95vw 19vw #FFF, 53vw 45vw #FFF, 84vw 31vw #FFF, 27vw 73vw #FFF, 16vw 23vw #FFF, 16vw 17vw #FFF, 56vw 63vw #FFF, 67vw 33vw #FFF, 95vw 5vw #FFF, 88vw 65vw #FFF, 25vw 10vw #FFF, 73vw 44vw #FFF, 98vw 84vw #FFF, 95vw 39vw #FFF, 17vw 61vw #FFF, 19vw 33vw #FFF, 41vw 11vw #FFF, 81vw 33vw #FFF, 18vw 69vw #FFF, 53vw 81vw #FFF, 72vw 73vw #FFF, 69vw 19vw #FFF, 7vw 18vw #FFF, 61vw 51vw #FFF, 43vw 18vw #FFF, 65vw 69vw #FFF, 74vw 95vw #FFF, 63vw 64vw #FFF, 65vw 63vw #FFF, 10vw 41vw #FFF, 97vw 12vw #FFF, 49vw 95vw #FFF, 32vw 88vw #FFF, 84vw 98vw #FFF, 53vw 1vw #FFF, 11vw 71vw #FFF, 10vw 32vw #FFF, 73vw 85vw #FFF, 50vw 98vw #FFF, 90vw 71vw #FFF, 25vw 2vw #FFF, 77vw 51vw #FFF, 73vw 72vw #FFF, 31vw 43vw #FFF, 59vw 57vw #FFF, 11vw 11vw #FFF, 24vw 26vw #FFF, 20vw 52vw #FFF, 98vw 66vw #FFF, 50vw 24vw #FFF, 25vw 49vw #FFF, 2vw 29vw #FFF, 2vw 45vw #FFF, 8vw 6vw #FFF, 36vw 20vw #FFF, 88vw 35vw #FFF, 59vw 99vw #FFF, 94vw 11vw #FFF, 31vw 21vw #FFF, 92vw 55vw #FFF, 69vw 65vw #FFF, 84vw 65vw #FFF, 64vw 57vw #FFF, 70vw 17vw #FFF, 2vw 35vw #FFF, 88vw 56vw #FFF, 14vw 59vw #FFF, 34vw 74vw #FFF, 92vw 20vw #FFF, 19vw 44vw #FFF, 11vw 85vw #FFF, 84vw 30vw #FFF, 12vw 18vw #FFF, 49vw 7vw #FFF, 87vw 43vw #FFF, 84vw 28vw #FFF, 96vw 21vw #FFF, 18vw 82vw #FFF, 51vw 92vw #FFF, 25vw 21vw #FFF, 47vw 75vw #FFF, 74vw 100vw #FFF, 50vw 20vw #FFF, 17vw 54vw #FFF, 99vw 66vw #FFF, 18vw 39vw #FFF, 96vw 88vw #FFF, 81vw 9vw #FFF, 45vw 28vw #FFF, 52vw 60vw #FFF, 72vw 63vw #FFF, 15vw 13vw #FFF, 93vw 28vw #FFF, 97vw 47vw #FFF, 79vw 47vw #FFF, 61vw 6vw #FFF, 55vw 34vw #FFF, 18vw 38vw #FFF, 7vw 45vw #FFF, 2vw 81vw #FFF, 2vw 83vw #FFF, 57vw 24vw #FFF, 24vw 43vw #FFF, 74vw 58vw #FFF, 31vw 66vw #FFF, 71vw 35vw #FFF, 16vw 64vw #FFF, 41vw 90vw #FFF, 92vw 63vw #FFF, 100vw 88vw #FFF, 51vw 66vw #FFF, 51vw 17vw #FFF, 21vw 19vw #FFF, 87vw 68vw #FFF, 6vw 15vw #FFF, 97vw 10vw #FFF;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 100vw 54vw #FFF, 99vw 27vw #FFF, 5vw 6vw #FFF, 55vw 36vw #FFF, 83vw 31vw #FFF, 91vw 91vw #FFF, 36vw 86vw #FFF, 66vw 52vw #FFF, 58vw 67vw #FFF, 23vw 33vw #FFF, 59vw 3vw #FFF, 62vw 35vw #FFF, 16vw 16vw #FFF, 87vw 69vw #FFF, 66vw 88vw #FFF, 56vw 77vw #FFF, 54vw 87vw #FFF, 75vw 18vw #FFF, 39vw 9vw #FFF, 97vw 7vw #FFF, 53vw 11vw #FFF, 33vw 75vw #FFF, 4vw 10vw #FFF, 12vw 30vw #FFF, 4vw 69vw #FFF, 7vw 36vw #FFF, 57vw 22vw #FFF, 42vw 4vw #FFF, 2vw 84vw #FFF, 41vw 54vw #FFF, 21vw 66vw #FFF, 26vw 69vw #FFF, 94vw 62vw #FFF, 45vw 9vw #FFF, 59vw 50vw #FFF, 36vw 84vw #FFF, 19vw 10vw #FFF, 29vw 17vw #FFF, 83vw 92vw #FFF, 5vw 23vw #FFF, 43vw 2vw #FFF, 87vw 43vw #FFF, 88vw 16vw #FFF, 78vw 28vw #FFF, 25vw 3vw #FFF, 67vw 56vw #FFF, 62vw 35vw #FFF, 36vw 97vw #FFF, 70vw 96vw #FFF, 77vw 50vw #FFF, 100vw 26vw #FFF, 91vw 66vw #FFF, 98vw 62vw #FFF, 4vw 8vw #FFF, 35vw 80vw #FFF, 11vw 21vw #FFF, 5vw 57vw #FFF, 32vw 41vw #FFF, 71vw 86vw #FFF, 61vw 14vw #FFF, 97vw 64vw #FFF, 74vw 32vw #FFF, 91vw 25vw #FFF, 42vw 70vw #FFF, 58vw 44vw #FFF, 77vw 5vw #FFF, 1vw 13vw #FFF, 22vw 88vw #FFF, 87vw 28vw #FFF, 96vw 97vw #FFF, 94vw 3vw #FFF, 69vw 77vw #FFF, 70vw 86vw #FFF, 85vw 49vw #FFF, 98vw 40vw #FFF, 74vw 30vw #FFF, 100vw 66vw #FFF, 70vw 74vw #FFF, 78vw 29vw #FFF, 29vw 99vw #FFF, 16vw 59vw #FFF, 59vw 8vw #FFF, 93vw 34vw #FFF, 60vw 56vw #FFF, 33vw 34vw #FFF, 45vw 17vw #FFF, 2vw 61vw #FFF, 45vw 15vw #FFF, 76vw 93vw #FFF, 43vw 25vw #FFF, 44vw 36vw #FFF, 66vw 93vw #FFF, 2vw 13vw #FFF, 59vw 56vw #FFF, 7vw 32vw #FFF, 12vw 28vw #FFF, 92vw 40vw #FFF, 50vw 43vw #FFF, 65vw 63vw #FFF, 20vw 19vw #FFF;
+  animation: animStar 150s linear infinite;
+}
+#stars3:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 100vw 54vw #FFF, 99vw 27vw #FFF, 5vw 6vw #FFF, 55vw 36vw #FFF, 83vw 31vw #FFF, 91vw 91vw #FFF, 36vw 86vw #FFF, 66vw 52vw #FFF, 58vw 67vw #FFF, 23vw 33vw #FFF, 59vw 3vw #FFF, 62vw 35vw #FFF, 16vw 16vw #FFF, 87vw 69vw #FFF, 66vw 88vw #FFF, 56vw 77vw #FFF, 54vw 87vw #FFF, 75vw 18vw #FFF, 39vw 9vw #FFF, 97vw 7vw #FFF, 53vw 11vw #FFF, 33vw 75vw #FFF, 4vw 10vw #FFF, 12vw 30vw #FFF, 4vw 69vw #FFF, 7vw 36vw #FFF, 57vw 22vw #FFF, 42vw 4vw #FFF, 2vw 84vw #FFF, 41vw 54vw #FFF, 21vw 66vw #FFF, 26vw 69vw #FFF, 94vw 62vw #FFF, 45vw 9vw #FFF, 59vw 50vw #FFF, 36vw 84vw #FFF, 19vw 10vw #FFF, 29vw 17vw #FFF, 83vw 92vw #FFF, 5vw 23vw #FFF, 43vw 2vw #FFF, 87vw 43vw #FFF, 88vw 16vw #FFF, 78vw 28vw #FFF, 25vw 3vw #FFF, 67vw 56vw #FFF, 62vw 35vw #FFF, 36vw 97vw #FFF, 70vw 96vw #FFF, 77vw 50vw #FFF, 100vw 26vw #FFF, 91vw 66vw #FFF, 98vw 62vw #FFF, 4vw 8vw #FFF, 35vw 80vw #FFF, 11vw 21vw #FFF, 5vw 57vw #FFF, 32vw 41vw #FFF, 71vw 86vw #FFF, 61vw 14vw #FFF, 97vw 64vw #FFF, 74vw 32vw #FFF, 91vw 25vw #FFF, 42vw 70vw #FFF, 58vw 44vw #FFF, 77vw 5vw #FFF, 1vw 13vw #FFF, 22vw 88vw #FFF, 87vw 28vw #FFF, 96vw 97vw #FFF, 94vw 3vw #FFF, 69vw 77vw #FFF, 70vw 86vw #FFF, 85vw 49vw #FFF, 98vw 40vw #FFF, 74vw 30vw #FFF, 100vw 66vw #FFF, 70vw 74vw #FFF, 78vw 29vw #FFF, 29vw 99vw #FFF, 16vw 59vw #FFF, 59vw 8vw #FFF, 93vw 34vw #FFF, 60vw 56vw #FFF, 33vw 34vw #FFF, 45vw 17vw #FFF, 2vw 61vw #FFF, 45vw 15vw #FFF, 76vw 93vw #FFF, 43vw 25vw #FFF, 44vw 36vw #FFF, 66vw 93vw #FFF, 2vw 13vw #FFF, 59vw 56vw #FFF, 7vw 32vw #FFF, 12vw 28vw #FFF, 92vw 40vw #FFF, 50vw 43vw #FFF, 65vw 63vw #FFF, 20vw 19vw #FFF;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
   }
 }
 
