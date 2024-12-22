@@ -1,5 +1,35 @@
 $accent-color: #181c25;
 
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 5rem;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header h2 {
+    margin-left: 1.5rem;
+}
+
+header .fa-github {
+    margin-left: auto;
+    width: 3rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+.cont-scroll {
+    overflow-y: scroll;
+    margin-top: 5rem;
+    height: calc(100vh - 5rem);
+}
+
 .game-list {
     gap: 1rem;
     margin-top: 20px;
@@ -188,10 +218,8 @@ $accent-color: #181c25;
 }
 
 .games-container {
-    max-height: 45rem;
-    overflow-y: scroll;
-    display: block;
-    margin-bottom: 20px;
+    max-height: none;
+    height: auto;
     
 }
 
@@ -214,10 +242,11 @@ $accent-color: #181c25;
   }
 
 body {
+    
     margin: 0;
     padding: 0;
-    height: 100vh;
-    overflow: hidden; /* Evitar scroll global */
+    /*height: 100vh;
+    /* overflow: hidden; Evitar scroll global */
     display: flex; /* Flex para manejar el contenido */
     flex-direction: column;
 /*
@@ -304,6 +333,7 @@ button {
     .container {
         max-width: 100%;
         padding: 0 30px;
+
     }
 }
 
@@ -429,7 +459,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.8rem;
+    padding-left: 5rem;
   }
   
   .search {
@@ -454,6 +484,7 @@ button {
   .filters-right {
     display: flex;
     gap: 0.3rem;
+    margin-left: 5rem;
   }
   
   .filters-right select {
