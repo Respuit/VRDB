@@ -11,10 +11,11 @@
   <script src="https://unpkg.com/pagination-system/dist/pagination-system.umd.min.js"></script>
 </head>
 <body>
-<div id="stars"></div>
+
+<header>
+      <div id="stars"></div>
 <div id="stars2"></div>
 <div id="stars3"></div>
-<header>
 <h2>{{ title }}</h2>  
 <form onsubmit="return false;"> 
         <div class="filters">
@@ -42,7 +43,14 @@
           </div>
         </div>
       </form>
+      <div class="right-header">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
 <a href="https://github.com/Respuit/VRDB" class="fa-brands fa-github"></a>
+</div>
 </header>
   
   <div class="cont-scroll">
@@ -70,7 +78,9 @@
     <div id="game-list" class="container game-list games-container"></div>
     <div class="paging-container"></div>
   </div>
+
   <script src="js/index.js"></script>
 
 </body>
+
 </html>

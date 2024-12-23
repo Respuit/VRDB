@@ -4,6 +4,11 @@ let softwareValue = '';
 let searchValue = '';
 let ratingValue = '';
 
+document.getElementById("hamburger").addEventListener("click", function() {
+    document.querySelector("header").classList.toggle("menu-active");
+  });
+  
+
 const dataRenderFn = (dataPage) => {
     return `${dataPage
       .map(

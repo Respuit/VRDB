@@ -24,6 +24,65 @@ header .fa-github {
     font-size: 1.5rem;
   }
 
+  .right-header{
+    display: flex;
+    margin-left:auto;
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+  }
+
+  // Menú responsive
+  @media (max-width: 768px) {
+    // Ocultar el formulario completo por defecto
+    form {
+      display: none;
+    }
+
+    // Mostrar el botón de hamburguesa
+    .hamburger {
+      display: flex;
+
+    }
+
+    // Mostrar todo el formulario cuando se activa el menú
+    .menu-active form {
+      display: block;
+      position: absolute;
+      top: 60px; // Ajusta según tu header
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 1rem;
+      z-index: 10;
+    }
+
+    // Mostrar solo los filtros cuando el menú está activo
+    .menu-active .filters {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    // Ocultar los campos de búsqueda y filtros adicionales
+    .menu-active .search,
+    .menu-active .filters-right {
+      
+    }
+  }
+
 .cont-scroll {
     overflow-y: scroll;
     margin-top: 5rem;
@@ -55,6 +114,8 @@ header .fa-github {
     text-decoration: none;
     color: inherit !important;
     margin-bottom: 0;
+    z-index: 1000;
+    position: relative;
 
     h3 {
         margin: 0;
