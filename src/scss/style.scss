@@ -58,14 +58,13 @@ header .fa-github {
 
     // Mostrar todo el formulario cuando se activa el menú
     .menu-active form {
-      display: block;
-      position: absolute;
-      top: 60px; // Ajusta según tu header
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 1rem;
-      z-index: 10;
+        display: flex;
+        width: 100%;
+        background-color: #181c25;
+        padding: 1rem;
+        z-index: 10;
+        flex-flow: column;
+        border-radius: 5px;
     }
 
     // Mostrar solo los filtros cuando el menú está activo
@@ -79,6 +78,11 @@ header .fa-github {
     // Ocultar los campos de búsqueda y filtros adicionales
     .menu-active .search,
     .menu-active .filters-right {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 0.8rem;
+        margin-left: auto;
       
     }
   }
@@ -337,7 +341,7 @@ button {
     background-color: #3A4F7A; /* Azul oscuro complementario */
     color: #fff;
     border: none;
-    padding: 12px 20px;
+    padding: 0.2rem 20px;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
