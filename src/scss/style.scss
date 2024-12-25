@@ -24,6 +24,20 @@ header .fa-github {
     font-size: 1.5rem;
   }
 
+.dialog-header {
+    all: unset;
+}
+
+.info {
+    display: flex;
+}
+
+.info button {
+    margin-left: auto;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: 100;
+}
   .right-header{
     display: flex;
     margin-left:auto;
@@ -343,7 +357,6 @@ button {
     border: none;
     padding: 0.2rem 20px;
     font-size: 16px;
-    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
@@ -531,7 +544,7 @@ button {
     display: flex;
     gap: 10px;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 16px;
   }
   
   .search input {
@@ -539,11 +552,12 @@ button {
     padding: 0.3rem;
     font-size: 0.8rem;
     height: 1.8rem;
+    border-radius: 5px;
   }
   
   .search button {
-    padding: 0.3rem 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.95rem;
+    height: 1.81rem;
   }
   
   .filters-right {
