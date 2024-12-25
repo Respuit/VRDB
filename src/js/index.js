@@ -10,9 +10,17 @@ document.getElementById("hamburger").addEventListener("click", function() {
   
 
 const dataRenderFn = (dataPage) => {
+
     return `${dataPage
       .map(
         (game) => {
+            const icons = {
+                '1': 'fa-solid fa-face-laugh-beam',
+                '2': 'fa-solid fa-face-smile',
+                '3': 'fa-solid fa-face-meh',
+                '4': 'fa-solid fa-face-frown',
+                '5': 'fa-solid fa-face-angry'
+            };
           const imageHTML = game.image;
           const parser = new DOMParser();
           const doc = parser.parseFromString(imageHTML, 'text/html');
@@ -34,10 +42,10 @@ const dataRenderFn = (dataPage) => {
                             <td class="rating-text">WiVRn</td>
                         </tr>
                         <tr class="rating-list">
-                            <td><i class="rating rating-${averages.steamVR} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.monado} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.alvr} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.wivrn} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.steamVR} ${icons[averages.steamVR?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.monado} ${icons[averages.monado?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.alvr} ${icons[averages.alvr?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.wivrn} ${icons[averages.wivrn?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
                         </tr>
                         </tbody>
                     </table>
@@ -79,6 +87,13 @@ async function searchByName(query) {
 
 // Función para generar la estructura HTML para los resultados
 function generateGameCard(game) {
+    const icons = {
+        '1': 'fa-solid fa-face-laugh-beam',
+        '2': 'fa-solid fa-face-smile',
+        '3': 'fa-solid fa-face-meh',
+        '4': 'fa-solid fa-face-frown',
+        '5': 'fa-solid fa-face-angry'
+    };
     return `
     <a href="games/${game.id}.html" class="game-link">
         <article class="game-card">
@@ -89,13 +104,14 @@ function generateGameCard(game) {
             <table class="rating-table">
                 <tbody>
                 <tr class="software-list">
+                
                     <td class="rating-text">SteamVR</td>
                     <td class="rating-text">Monado</td>
                     <td class="rating-text">ALVR</td>
                     <td class="rating-text">WiVRn</td>
                 </tr>
                 <tr class="rating-list">
-                    <td><i class="rating rating-${game.averages.steamVR} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                    <td><i class="rating rating-${game.averages.steamVR} {icons[game.averages.steamVR.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
                     <td><i class="rating rating-${game.averages.monado} fa-solid fa-circle-question icon-dark icon-size"></i></td>
                     <td><i class="rating rating-${game.averages.alvr} fa-solid fa-circle-question icon-dark icon-size"></i></td>
                     <td><i class="rating rating-${game.averages.wivrn} fa-solid fa-circle-question icon-dark icon-size"></i></td>
