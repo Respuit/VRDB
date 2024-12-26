@@ -131,7 +131,6 @@ header .fa-github {
     transition: background-color 0.3s ease;
     text-decoration: none;
     color: inherit !important;
-    margin-bottom: 0;
     z-index: 1000;
     position: relative;
 
@@ -243,8 +242,12 @@ header .fa-github {
     font-size: 1.5rem;
 }
 
+.game-table-info {
+    width: 20rem;
+}
+
 .rating-table {
-    width: 80%; 
+    width: 100%; 
     border-collapse: collapse;
     text-align: center;
 
@@ -303,7 +306,6 @@ header .fa-github {
 }
 
 .report-button {
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -313,6 +315,8 @@ header .fa-github {
     align-items: center; /* Centra verticalmente la imagen, el título y las descripciones */
     justify-content: space-between; /* Empuja el título+imagen a la izquierda y las descripciones a la derecha */
     gap: 1rem; /* Espacio entre los elementos (opcional) */
+    margin-top: 3rem;
+    z-index: 100;
 }
 .game-header-left {
     display: flex; /* Agrupa la imagen y el título en un bloque */
@@ -321,10 +325,10 @@ header .fa-github {
   }
 
 body {
-    
+    overflow: scroll;
     margin: 0;
     padding: 0;
-    /*height: 100vh;
+    height: 100svh;
     /* overflow: hidden; Evitar scroll global */
     display: flex; /* Flex para manejar el contenido */
     flex-direction: column;
@@ -374,9 +378,12 @@ button {
         min-height: auto;
         margin-bottom: 10px;
         .pagination {
-            background-color: #fff;
+            margin-top: 0.3rem;
+            background-color: #3a4f7a;
             border-radius: 5px;
-            padding: 8px 12px;
+            padding: 2px;
+            font-size: 0.8rem;
+            z-index: 100;
             button {
                 margin-bottom: 0;
 
@@ -388,7 +395,7 @@ button {
                 button {
                     margin-right: 5px;
                     width: 55px;
-                    color: $accent-color;
+                    color: white;
 
                     &:hover {
                         border-color: $accent-color;
@@ -449,8 +456,8 @@ button {
     body {
         overflow: scroll;
         background-repeat: repeat;
-        height: auto;
-        min-height: 100vh;
+        height: 100svh;
+        min-height: 100svh;
     }
     .container {
         max-width: 100%;
@@ -531,6 +538,8 @@ button {
 .info-card {
   // Apply the default gradient styles
   background: rgba(32, 36, 47, 0.6);
+  z-index: 1000;
+  position: relative;
 }
 
 .filters {
@@ -594,9 +603,9 @@ button {
   
 
 @function multiple-box-shadow($n) {
-    $value: "#{random(100)}vw #{random(100)}vw #FFF";
+    $value: "#{random(300)}dvw #{random(300)}dvw #FFF";
     @for $i from 2 through $n {
-      $value: "#{$value}, #{random(100)}vw #{random(100)}vw #FFF";
+      $value: "#{$value}, #{random(300)}dvw #{random(300)}dvw #FFF";
     }
     @return unquote($value);
   }
@@ -611,6 +620,7 @@ button {
     background: radial-gradient(ellipse at bottom, #3e444b 0%, #090A0F 100%);
     overflow: hidden;
   }
+  
   
   #stars, #stars2, #stars3 {
     position: absolute;
@@ -680,7 +690,7 @@ button {
       transform: translateY(0);
     }
     to {
-      transform: translateY(-2000px);
+      transform: translateY(-1000px);
     }
   }
   
