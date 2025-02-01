@@ -9,6 +9,21 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header>
+      <div id="stars" class="star"></div>
+        <div id="stars2" class="star"></div>
+        <div id="stars3" class="star"></div>
+<h2 ><a href="/">VR GAMES</a>  </h2>  
+
+      <div class="right-header">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+<a href="https://github.com/Respuit/VRDB" class="fa-brands fa-github"></a>
+</div>
+</header>
 
                         
  <div class="game-header">   
@@ -16,6 +31,8 @@
         <img data-pagefind-meta="image[src], image_alt[alt]" class="game-image" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2635690/header.jpg?t=1722493290" alt="Descripción de Memoria VR">
         <h1>Memoria VR</h1>
     </div>
+
+    <div class="game-table-info">
     <div class="rating-container">
     
     
@@ -72,6 +89,25 @@
         </tr>
     </table>
 </div>
+<button data-pagefind-ignore class="report-button" onclick="redirectToGitHub()">ADD YOUR REPORT!</button>
+</div>
+
+    <div class="info">
+                  <button class="contrast fa-solid fa-circle-info" data-target="modal-example" onclick="toggleModal(event)">
+        </button>
+    </div>
+      <section id="modal">
+      </section>
+          <dialog id="modal-example">
+      <article>
+        <header class=dialog-header>
+          <button
+            aria-label="Close"
+            rel="prev"
+            data-target="modal-example"
+            onclick="toggleModal(event)"
+          ></button>
+        </header>
     <div class="rating-descriptions" data-pagefind-ignore>
         <div class="rating-desc-element">
             <i class="rating rating-0 fa-solid fa-circle-question icon-dark icon-size" title="Rating: Perfect"></i>
@@ -102,6 +138,10 @@
             <p> Crashes or won't start </p>            
         </div>
     </div>
+
+      </article>
+    </dialog>
+
     
 </div>
 
@@ -112,7 +152,7 @@
 
 
 
-<button data-pagefind-ignore class="report-button" onclick="redirectToGitHub()">ADD YOUR REPORT!</button>
+
 <script>
     function redirectToGitHub() {
 
@@ -129,6 +169,75 @@
 
       window.location.href = fullURL;
     }
+
+    // Config
+const isOpenClass = "modal-is-open";
+const openingClass = "modal-is-opening";
+const closingClass = "modal-is-closing";
+const scrollbarWidthCssVar = "--pico-scrollbar-width";
+const animationDuration = 400; // ms
+let visibleModal = null;
+
+// Toggle modal
+const toggleModal = (event) => {
+  event.preventDefault();
+  const modal = document.getElementById(event.currentTarget.dataset.target);
+  if (!modal) return;
+  modal && (modal.open ? closeModal(modal) : openModal(modal));
+};
+
+// Open modal
+const openModal = (modal) => {
+  const { documentElement: html } = document;
+  const scrollbarWidth = getScrollbarWidth();
+  if (scrollbarWidth) {
+    html.style.setProperty(scrollbarWidthCssVar, `${scrollbarWidth}px`);
+  }
+  html.classList.add(isOpenClass, openingClass);
+  setTimeout(() => {
+    visibleModal = modal;
+    html.classList.remove(openingClass);
+  }, animationDuration);
+  modal.showModal();
+};
+
+// Close modal
+const closeModal = (modal) => {
+  visibleModal = null;
+  const { documentElement: html } = document;
+  html.classList.add(closingClass);
+  setTimeout(() => {
+    html.classList.remove(closingClass, isOpenClass);
+    html.style.removeProperty(scrollbarWidthCssVar);
+    modal.close();
+  }, animationDuration);
+};
+
+// Close with a click outside
+document.addEventListener("click", (event) => {
+  if (visibleModal === null) return;
+  const modalContent = visibleModal.querySelector("article");
+  const isClickInside = modalContent.contains(event.target);
+  !isClickInside && closeModal(visibleModal);
+});
+
+// Close with Esc key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && visibleModal) {
+    closeModal(visibleModal);
+  }
+});
+
+// Get scrollbar width
+const getScrollbarWidth = () => {
+  const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+  return scrollbarWidth;
+};
+
+// Is scrollbar visible
+const isScrollbarVisible = () => {
+  return document.body.scrollHeight > screen.height;
+};
 </script>
 </body>
 </html>

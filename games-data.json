@@ -196,6 +196,123 @@
   },
 
   {
+    "id": "244210",
+    "title": "Assetto Corsa",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244210/header.jpg?t=1730473196",
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+          3.2
+        ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          5
+        
+    }
+  },
+
+  {
     "id": "251810",
     "title": "Leadwerks Game Engine",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251810/header.jpg?t=1725906777",
@@ -1189,6 +1306,21 @@
     "id": "350380",
     "title": "The Martian VR Experience",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/350380/header.jpg?t=1479239128",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "353380",
+    "title": "Steam Link",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/353380/header.jpg?t=1702342298",
     "averages": {
         "steamVR":  null ,
         
@@ -2719,6 +2851,21 @@
     "id": "420020",
     "title": "Eye of the Owl - Bosch VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/420020/header.jpg?t=1563483048",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "420760",
+    "title": "MechaLeague",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/420760/header.jpg?t=1725080267",
     "averages": {
         "steamVR":  null ,
         
@@ -29116,6 +29263,21 @@
   },
 
   {
+    "id": "715170",
+    "title": "Crush Lab",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/715170/header.jpg?t=1735453388",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "715350",
     "title": "DeadlandVR : Action Shooter FPS",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/715350/header.jpg?t=1554717653",
@@ -34654,6 +34816,21 @@
     "id": "794750",
     "title": "MineSweepVR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/794750/header.jpg?t=1522849699",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "794860",
+    "title": "eSail Sailing Simulator",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/794860/header.jpg?t=1725888685",
     "averages": {
         "steamVR":  null ,
         
@@ -44596,51 +44773,6 @@
   },
 
   {
-    "id": "998950",
-    "title": "Rhythm Nights",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/998950/header.jpg?t=1584036850",
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "999040",
-    "title": "K.O.M.A",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999040/header.jpg?t=1561139297",
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "999840",
-    "title": "RONE",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999840/header.jpg?t=1545384352",
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "1000360",
     "title": "Hellish Quart",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1000360/header.jpg?t=1732022215",
@@ -44779,6 +44911,66 @@
     "id": "1001550",
     "title": "In Orbit",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1001550/header.jpg?t=1550597592",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "998950",
+    "title": "Rhythm Nights",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/998950/header.jpg?t=1584036850",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "999040",
+    "title": "K.O.M.A",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999040/header.jpg?t=1561139297",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "999840",
+    "title": "RONE",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999840/header.jpg?t=1545384352",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "999880",
+    "title": "NASA&#39;s Exoplanet Excursions",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999880/header.jpg?t=1611790036",
     "averages": {
         "steamVR":  null ,
         
@@ -44989,21 +45181,6 @@
     "id": "1006770",
     "title": "the LAST LETTER",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1006770/header.jpg?t=1554979759",
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "999880",
-    "title": "NASA&#39;s Exoplanet Excursions",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999880/header.jpg?t=1611790036",
     "averages": {
         "steamVR":  null ,
         
@@ -52906,6 +53083,21 @@
   },
 
   {
+    "id": "1205040",
+    "title": "Granny: Chapter Two",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205040/header.jpg?t=1687544039",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "1205410",
     "title": "Dissection Simulator: Dogfish Edition",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205410/header.jpg?t=1577390411",
@@ -53329,6 +53521,21 @@
     "id": "1214980",
     "title": "The Line",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1214980/header.jpg?t=1731417449",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "1215000",
+    "title": "STRAYLIGHT",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1215000/header.jpg?t=1680958968",
     "averages": {
         "steamVR":  null ,
         
@@ -55534,6 +55741,21 @@
     "id": "1266070",
     "title": "Smashing Healthy VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1266070/header.jpg?t=1587951399",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "1266470",
+    "title": "Real VR Fishing",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1266470/header.jpg?t=1734580227",
     "averages": {
         "steamVR":  null ,
         
@@ -61339,6 +61561,21 @@
     "id": "1445700",
     "title": "The Edgar Mitchell Overview Effect VR Experience",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1445700/header.jpg?t=1660254699",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "1446250",
+    "title": "Virtual Girl - Sex Simulator VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1446250/header.jpg?t=1734675796",
     "averages": {
         "steamVR":  null ,
         
@@ -67606,6 +67843,21 @@
   },
 
   {
+    "id": "1649260",
+    "title": "VIVE Hub",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1649260/header.jpg?t=1733386284",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "1650430",
     "title": "Sci-Fantasy Defence",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1650430/header.jpg?t=1732104751",
@@ -68626,6 +68878,21 @@
   },
 
   {
+    "id": "1704450",
+    "title": "ImmersiX",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1704450/header.jpg?t=1735964410",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "1705030",
     "title": "Wadality",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1705030/header.jpg?t=1702664729",
@@ -68704,6 +68971,21 @@
     "id": "1707840",
     "title": "Marble Pop Paradise",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1707840/header.jpg?t=1646682691",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "1707990",
+    "title": "Skydance&#39;s BEHEMOTH",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1707990/header.jpg?t=1733433952",
     "averages": {
         "steamVR":  null ,
         
@@ -71419,6 +71701,21 @@
     "id": "1849900",
     "title": "Among Us VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1849900/header.jpg?t=1730826330",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "1850050",
+    "title": "Alien: Rogue Incursion",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850050/header.jpg?t=1734621044",
     "averages": {
         "steamVR":  null ,
         
@@ -75166,6 +75463,21 @@
   },
 
   {
+    "id": "2053370",
+    "title": "Chrono Weaver",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2053370/header.jpg?t=1736232640",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "2054100",
     "title": "Chess VR: Multiverse Journey",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2054100/header.jpg?t=1683789689",
@@ -75769,6 +76081,21 @@
     "id": "2084220",
     "title": "Invisible Man VR In Eleanor&#39;s room",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2084220/header.jpg?t=1677221506",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2084380",
+    "title": "VChat",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2084380/header.jpg?t=1735216086",
     "averages": {
         "steamVR":  null ,
         
@@ -79141,6 +79468,36 @@
   },
 
   {
+    "id": "2269970",
+    "title": "Accurate Adjacent Ballistics Simulator",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2269970/header.jpg?t=1736251580",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2270940",
+    "title": "Builder Simulator VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2270940/header.jpg?t=1736257434",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "2272070",
     "title": "Death Gunfire - Kill the Zombie",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2272070/header.jpg?t=1678095045",
@@ -81349,6 +81706,21 @@
     "id": "2399420",
     "title": "Le Mans Ultimate",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399420/header.jpg?t=1730477678",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2401230",
+    "title": "Clone Drone in the Hyperdome",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2401230/header.jpg?t=1734026587",
     "averages": {
         "steamVR":  null ,
         
@@ -84271,6 +84643,21 @@
   },
 
   {
+    "id": "2603490",
+    "title": "Ordnance Inc - The &#39;Safe&#39; Bomb Removal Company",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2603490/header.jpg?t=1735770145",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "2603560",
     "title": "Pixel Arcade",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2603560/header.jpg?t=1732819732",
@@ -85396,6 +85783,21 @@
   },
 
   {
+    "id": "2698940",
+    "title": "The Crew Motorfest",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2698940/header.jpg?t=1736259250",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "2699100",
     "title": "Shoot the Robots VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2699100/header.jpg?t=1710360727",
@@ -86311,6 +86713,21 @@
   },
 
   {
+    "id": "2777970",
+    "title": "Stranger Things VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2777970/header.jpg?t=1733421740",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "2778440",
     "title": "Trainer Eyes VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2778440/header.jpg?t=1722673630",
@@ -86374,6 +86791,21 @@
     "id": "2780740",
     "title": "Mutant Boxing League VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2780740/header.jpg?t=1729077997",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2782060",
+    "title": "Santas Christmas Escape VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2782060/header.jpg?t=1733379671",
     "averages": {
         "steamVR":  null ,
         
@@ -86764,6 +87196,21 @@
     "id": "2822270",
     "title": "VR # AVOID",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2822270/header.jpg?t=1713561785",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2822600",
+    "title": "Sense of Darkness",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2822600/header.jpg?t=1734839866",
     "averages": {
         "steamVR":  null ,
         
@@ -87661,6 +88108,21 @@
   },
 
   {
+    "id": "2925690",
+    "title": "Hentai room: Deep galactic penetration",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2925690/header.jpg?t=1734984529",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "2927650",
     "title": "GONZO VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2927650/header.jpg?t=1725067967",
@@ -87931,6 +88393,21 @@
   },
 
   {
+    "id": "2948310",
+    "title": "The House of Da Vinci VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2948310/header.jpg?t=1733731080",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "2950330",
     "title": "Journey to Foundation",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2950330/header.jpg?t=1717772424",
@@ -87979,6 +88456,21 @@
     "id": "2967460",
     "title": "RED TREES RAIL. CO.",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2967460/header.jpg?t=1719965168",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2968260",
+    "title": "EvilPunk",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2968260/header.jpg?t=1736437446",
     "averages": {
         "steamVR":  null ,
         
@@ -88171,9 +88663,39 @@
   },
 
   {
+    "id": "2994020",
+    "title": "Puck",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2994020/header.jpg?t=1736017243",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "2995970",
     "title": "Body of Mine",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2995970/header.jpg?t=1719180600",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2998430",
+    "title": "Cyber Freeuse Fantasy",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2998430/header.jpg?t=1734548620",
     "averages": {
         "steamVR":  null ,
         
@@ -88291,6 +88813,36 @@
   },
 
   {
+    "id": "3010140",
+    "title": "Hellfire Rampage VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010140/header.jpg?t=1736506815",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3016840",
+    "title": "I Am Cat",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3016840/header.jpg?t=1733597535",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "3017530",
     "title": "Cube Jumper VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3017530/header.jpg?t=1731952229",
@@ -88324,6 +88876,21 @@
     "id": "3030810",
     "title": "ARVIS Punch",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3030810/header.jpg?t=1720131255",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3031070",
+    "title": "Mother Bunker VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3031070/header.jpg?t=1735064571",
     "averages": {
         "steamVR":  null ,
         
@@ -88399,6 +88966,21 @@
     "id": "3046880",
     "title": "Amber of Jinn",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3046880/header.jpg?t=1732691226",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3055580",
+    "title": "Necroverse - Undying Shadows",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3055580/header.jpg?t=1734365213",
     "averages": {
         "steamVR":  null ,
         
@@ -88519,6 +89101,21 @@
     "id": "3077230",
     "title": "Open Blocks",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077230/header.jpg?t=1724837554",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3078580",
+    "title": "Tesseract - First Chapter",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3078580/header.jpg?t=1734407201",
     "averages": {
         "steamVR":  null ,
         
@@ -88861,6 +89458,21 @@
   },
 
   {
+    "id": "3157700",
+    "title": "Terror On The Bayou",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3157700/header.jpg?t=1733947781",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "3157790",
     "title": "ALL IN ONE ADVENTURE VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3157790/header.jpg?t=1725314759",
@@ -89131,6 +89743,21 @@
   },
 
   {
+    "id": "3236890",
+    "title": "TattooVR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3236890/header.jpg?t=1734629531",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "3240760",
     "title": "Lock Down",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240760/header.jpg?t=1732648243",
@@ -89179,6 +89806,36 @@
     "id": "3245570",
     "title": "Diatribes",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3245570/header.jpg?t=1732316295",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3248490",
+    "title": "BBB: Balls Bangs Blocks",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3248490/header.jpg?t=1733401314",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3250710",
+    "title": "Phantasia: The Sun Thief",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3250710/header.jpg?t=1734300322",
     "averages": {
         "steamVR":  null ,
         
@@ -89311,6 +89968,36 @@
   },
 
   {
+    "id": "3297360",
+    "title": "We&#39;re Here, Papa",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3297360/header.jpg?t=1735715360",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3297520",
+    "title": "VR Store Simulator",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3297520/header.jpg?t=1734953083",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "3298840",
     "title": "PET TOWN",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3298840/header.jpg?t=1732528013",
@@ -89341,9 +90028,54 @@
   },
 
   {
+    "id": "3310660",
+    "title": "mocopi VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3310660/header.jpg?t=1734343176",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3311840",
+    "title": "Karakuri Ninja VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3311840/header.jpg?t=1734822302",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
     "id": "3313130",
     "title": "The Cloud VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3313130/header.jpg?t=1732323879",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3314760",
+    "title": "VRenity",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3314760/header.jpg?t=1734032252",
     "averages": {
         "steamVR":  null ,
         
@@ -89401,108 +90133,197 @@
   },
 
   {
-    "id": "244210",
-    "title": "Assetto Corsa",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244210/header.jpg?t=1730473196",
+    "id": "3342080",
+    "title": "Arobynn: Sword of Adventure",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3342080/header.jpg?t=1734022839",
     "averages": {
-        "steamVR": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-          1
-        ,
+        "steamVR":  null ,
         
-        "monado": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-          3
-        ,
+        "monado":  null ,
         
-        "alvr": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-          
-          1
-        ,
+        "alvr":  null ,
         
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-          5
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3344790",
+    "title": "眼傀公司（EYEPUPPET COMPANY）",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3344790/header.jpg?t=1735489644",
+    "averages": {
+        "steamVR":  null ,
         
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3348970",
+    "title": "ARVIS Punch 2",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3348970/header.jpg?t=1733261059",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3351120",
+    "title": "Bucket Truck VR Simulator",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3351120/header.jpg?t=1735671979",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3353280",
+    "title": "Subvirtual",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3353280/header.jpg?t=1734379639",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3362260",
+    "title": "The Ninth Forset",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3362260/header.jpg?t=1733930385",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3365440",
+    "title": "Chromesthesia VR Music Visualizer",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3365440/header.jpg?t=1735016492",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3368100",
+    "title": "VERY BAD DREAMS",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3368100/header.jpg?t=1736593147",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3376440",
+    "title": "Warp Blaster VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3376440/header.jpg?t=1736254813",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3383880",
+    "title": "Legacy of the Lost:WitchHunter",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3383880/header.jpg?t=1735837682",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3384610",
+    "title": "Glider Simulator",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3384610/header.jpg?t=1735386006",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3396600",
+    "title": "Gun Reflex VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3396600/header.jpg?t=1736438585",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3404010",
+    "title": "Fear deeps",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3404010/header.jpg?t=1736170983",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
     }
   }
 

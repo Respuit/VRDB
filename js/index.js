@@ -4,10 +4,23 @@ let softwareValue = '';
 let searchValue = '';
 let ratingValue = '';
 
+document.getElementById("hamburger").addEventListener("click", function() {
+    document.querySelector("header").classList.toggle("menu-active");
+  });
+  
+
 const dataRenderFn = (dataPage) => {
+
     return `${dataPage
       .map(
         (game) => {
+            const icons = {
+                '1': 'fa-solid fa-face-laugh-beam',
+                '2': 'fa-solid fa-face-smile',
+                '3': 'fa-solid fa-face-meh',
+                '4': 'fa-solid fa-face-frown',
+                '5': 'fa-solid fa-face-angry'
+            };
           const imageHTML = game.image;
           const parser = new DOMParser();
           const doc = parser.parseFromString(imageHTML, 'text/html');
@@ -29,10 +42,10 @@ const dataRenderFn = (dataPage) => {
                             <td class="rating-text">WiVRn</td>
                         </tr>
                         <tr class="rating-list">
-                            <td><i class="rating rating-${averages.steamVR} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.monado} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.alvr} fa-solid fa-circle-question icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.wivrn} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.steamVR} ${icons[averages.steamVR?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.monado} ${icons[averages.monado?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.alvr} ${icons[averages.alvr?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${averages.wivrn} ${icons[averages.wivrn?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
                         </tr>
                         </tbody>
                     </table>
@@ -74,6 +87,13 @@ async function searchByName(query) {
 
 // Función para generar la estructura HTML para los resultados
 function generateGameCard(game) {
+    const icons = {
+        '1': 'fa-solid fa-face-laugh-beam',
+        '2': 'fa-solid fa-face-smile',
+        '3': 'fa-solid fa-face-meh',
+        '4': 'fa-solid fa-face-frown',
+        '5': 'fa-solid fa-face-angry'
+    };
     return `
     <a href="games/${game.id}.html" class="game-link">
         <article class="game-card">
@@ -84,13 +104,14 @@ function generateGameCard(game) {
             <table class="rating-table">
                 <tbody>
                 <tr class="software-list">
+                
                     <td class="rating-text">SteamVR</td>
                     <td class="rating-text">Monado</td>
                     <td class="rating-text">ALVR</td>
                     <td class="rating-text">WiVRn</td>
                 </tr>
                 <tr class="rating-list">
-                    <td><i class="rating rating-${game.averages.steamVR} fa-solid fa-circle-question icon-dark icon-size"></i></td>
+                    <td><i class="rating rating-${game.averages.steamVR} {icons[game.averages.steamVR.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
                     <td><i class="rating rating-${game.averages.monado} fa-solid fa-circle-question icon-dark icon-size"></i></td>
                     <td><i class="rating rating-${game.averages.alvr} fa-solid fa-circle-question icon-dark icon-size"></i></td>
                     <td><i class="rating rating-${game.averages.wivrn} fa-solid fa-circle-question icon-dark icon-size"></i></td>
@@ -232,3 +253,73 @@ document.addEventListener("DOMContentLoaded", async (event) => {
         });
     });
 });
+
+
+// Config
+const isOpenClass = "modal-is-open";
+const openingClass = "modal-is-opening";
+const closingClass = "modal-is-closing";
+const scrollbarWidthCssVar = "--pico-scrollbar-width";
+const animationDuration = 400; // ms
+let visibleModal = null;
+
+// Toggle modal
+const toggleModal = (event) => {
+  event.preventDefault();
+  const modal = document.getElementById(event.currentTarget.dataset.target);
+  if (!modal) return;
+  modal && (modal.open ? closeModal(modal) : openModal(modal));
+};
+
+// Open modal
+const openModal = (modal) => {
+  const { documentElement: html } = document;
+  const scrollbarWidth = getScrollbarWidth();
+  if (scrollbarWidth) {
+    html.style.setProperty(scrollbarWidthCssVar, `${scrollbarWidth}px`);
+  }
+  html.classList.add(isOpenClass, openingClass);
+  setTimeout(() => {
+    visibleModal = modal;
+    html.classList.remove(openingClass);
+  }, animationDuration);
+  modal.showModal();
+};
+
+// Close modal
+const closeModal = (modal) => {
+  visibleModal = null;
+  const { documentElement: html } = document;
+  html.classList.add(closingClass);
+  setTimeout(() => {
+    html.classList.remove(closingClass, isOpenClass);
+    html.style.removeProperty(scrollbarWidthCssVar);
+    modal.close();
+  }, animationDuration);
+};
+
+// Close with a click outside
+document.addEventListener("click", (event) => {
+  if (visibleModal === null) return;
+  const modalContent = visibleModal.querySelector("article");
+  const isClickInside = modalContent.contains(event.target);
+  !isClickInside && closeModal(visibleModal);
+});
+
+// Close with Esc key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && visibleModal) {
+    closeModal(visibleModal);
+  }
+});
+
+// Get scrollbar width
+const getScrollbarWidth = () => {
+  const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+  return scrollbarWidth;
+};
+
+// Is scrollbar visible
+const isScrollbarVisible = () => {
+  return document.body.scrollHeight > screen.height;
+};
