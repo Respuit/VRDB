@@ -111,10 +111,10 @@ jobs:
           sed -i '$ d' "$file"
           
           # Añadir el bloque completo al archivo
-          echo -e "$output" >> "$file"
+          printf '%s\n' "$output" >> "$file"
           
           # Añadir un separador (opcional)
-          echo -e "---" >> "$file"
+          printf '%s\n' "---" >> "$file"
           
           # Imprimir el archivo para confirmar los cambios
           cat "$file"
