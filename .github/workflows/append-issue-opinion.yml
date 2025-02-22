@@ -57,7 +57,8 @@ jobs:
           
               # Filtrar el contenido y asignarlo a una variable
               content_filtered=$(echo "$BODY" | sed -n "/$tag/,/^###/{ /^###/d; p }")
-
+              content_filtered=$(echo "$content_filtered" | sed 's/"/\\"/g')
+              content_filtered=$(echo "$content_filtered" | sed 's/`/\\`/g')
               
               # Eliminar saltos de línea al principio y al final
               content_filtered=$(echo "$content_filtered" | sed ':a; /^\s*$/d; N; s/^\n*//; s/\n*$//; ta')
