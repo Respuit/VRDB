@@ -39,7 +39,7 @@ jobs:
           echo "zero"
           echo zerono
           echo "${{ github.event.issue.user.login }}"
-          BODY="${{ github.event.issue.body }}"
+          BODY=$(printf "%s" "${{ github.event.issue.body }}")
           echo "zero"
           BODY=$(echo "$BODY" | sed 's/"/\\"/g')
           echo "zero1"
