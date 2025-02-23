@@ -57,7 +57,6 @@ jobs:
           function filter_tags() {
               local tag="$1"
               local key="$2"
-              echo content filtered "$BODY"
               # Filtrar el contenido y asignarlo a una variable
               content_filtered=$(echo "$BODY" | sed -n "/$tag/,/^###/{ /^###/d; p }")
               
