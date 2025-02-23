@@ -58,6 +58,7 @@ jobs:
               local key="$2"
           
               # Filtrar el contenido y asignarlo a una variable
+              echo "first"
               content_filtered=$(echo "$BODY" | sed -n "/$tag/,/^###/{ /^###/d; p }")
               content_filtered=$(echo "$content_filtered" | sed 's/"/\\"/g')
               content_filtered=$(echo "$content_filtered" | sed 's/`/\\`/g')
@@ -76,7 +77,7 @@ jobs:
                       content_filtered=0
                   fi
               fi
-          
+              echo "second"
               # Si es la clave 'text', aplicar sangría adicional a las líneas adicionales
               if [[ "$key" == "text" ]]; then
                   # Imprimir la clave con el operador `|`
