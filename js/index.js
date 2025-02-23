@@ -27,11 +27,14 @@ const dataRenderFn = (dataPage) => {
           const imgElem = doc.body.firstChild;
           const gameAverages = game.averages;
           const averages = JSON.parse(gameAverages.replace('\n', ''));
+          const tempElem = document.createElement('div');
+            tempElem.innerHTML = game.title;
+            const cleanTitle = tempElem.textContent || tempElem.innerText;
           return `<a href="games/${game.id}.html" class="game-link">
                 <article class="game-card">
-                <img class="game-img" src="${imgElem.href}" alt="Descripción de ${game.title}">
+                <img class="game-img" src="${imgElem.href}" alt="Descripción de ${cleanTitle}">
                 <div class="game-info">
-                    <h3>${game.title}</h3>
+                    <h3>${cleanTitle}</h3>
                     <div class="rating-container">
                     <table class="rating-table">
                         <tbody>
