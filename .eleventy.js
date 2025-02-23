@@ -8,6 +8,15 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/js/");
     eleventyConfig.addPassthroughCopy("./src/images");
     eleventyConfig.setDataDirectory("../_data");
+    const md = require("markdown-it")({
+        html: false,
+        breaks: true,
+        linkify: true,
+      });
+    
+      eleventyConfig.addNunjucksFilter("markdownify", (markdownString) =>
+        md.render(markdownString),
+      );
 
     // Si es necesario, puedes agregar un filtro para escapar contenido específico
     eleventyConfig.addFilter("escapeAndReplace", (content) => {
@@ -39,3 +48,4 @@ module.exports.config = {
     pathPrefix: "/VRDB/",
     breaks: true
 }
+

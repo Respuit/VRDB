@@ -187,7 +187,7 @@ permalink: "games/{{ page.fileSlug }}.html"
                 <a href= "https://github.com/{{ opinion.user }}"> {{ opinion.user }} </a>
             </div>
             
-            <p data-pagefind-ignore>{{ opinion.text | escapeAndReplace | safe}}</p>
+            <p data-pagefind-ignore>{{ opinion.text | markdownify | safe}}</p>
             <p>{{ opinion.runtime }}</p>
             <p>{{ opinion.software }}</p>
         </div>
