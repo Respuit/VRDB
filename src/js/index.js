@@ -189,7 +189,7 @@ function applyFilters() {
     //const games = document.querySelectorAll('.game-card');
 
     filteredGamesData = gamesData.filter(filters);
-    
+    filteredGamesData.sort((a, b) => (b.opinionsCount || 0) - (a.opinionsCount || 0));
 
     if (filteredGamesData.length > 0) {
         new PaginationSystem({
@@ -245,6 +245,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     await fetchGameData().then(function(result) {
         gamesData = result;
 
+        gamesData.sort((a, b) => (b.opinionsCount || 0) - (a.opinionsCount || 0));
+        
         new PaginationSystem({
             dataContainer: document.querySelector('.game-list'),
             dataRenderFn: dataRenderFn,

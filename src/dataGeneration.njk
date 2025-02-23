@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
     "id": "{{ games.fileSlug }}",
     "title": "{{ games.data.title }}",
     "image": "{{ games.data.image }}",
+    "opinionsCount": {{ games.data.opinions | length }},
     "averages": {
         "steamVR": {% if games.data.opinions and games.data.opinions | selectattr('steamVR', '!=', 0) | length > 0 %}
           {% set totalSteamVR = 0 %}
