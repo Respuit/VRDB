@@ -38,6 +38,7 @@ jobs:
       - run: |
           echo "${{ github.event.issue.user.login }}"
           BODY=$(printf "%s" "${{ github.event.issue.body }}")
+          echo afterbody
           USER_LOGIN="${{ github.event.issue.user.login }}"
           tags=("### Steamvr" "### Monado" "### ALVR" "### WiVRn" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
           keys=("steamVR" "monado" "alvr" "wivrn" "GPUVendor" "distro" "device" "text" "date")
