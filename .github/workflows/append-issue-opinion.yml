@@ -133,7 +133,8 @@ jobs:
           git add "$file"
           
           # Realizar un commit con un mensaje descriptivo
-          git commit -m "Update superhot-vr.md with filtered content from issue"
+          TITLE=$(sed -n 's/^title: "\(.*\)"$/\1/p' "$file" | head -1)
+          git commit -m "Update ${TITLE} with filtered content from issue"
           
           # Configurar el repositorio remoto para usar GITHUB_TOKEN
           repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
