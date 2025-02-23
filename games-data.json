@@ -28111,21 +28111,6 @@
   },
 
   {
-    "id": "843390",
-    "title": "Vertigo 2",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/843390/header.jpg?t=1732293919",
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "638900",
     "title": "Defenders of the Realm VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638900/header.jpg?t=1495503753",
@@ -33814,21 +33799,6 @@
     "id": "2260480",
     "title": "Random Acts of Madness",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2260480/header.jpg?t=1721661403",
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "244210",
-    "title": "Assetto Corsa",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244210/header.jpg?t=1730473196",
     "averages": {
         "steamVR":  null ,
         
@@ -90241,9 +90211,44 @@
   },
 
   {
-    "id": "892970",
-    "title": "Valheim (VHVR MOD)",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/header.jpg?t=1736170983",
+    "id": "843390",
+    "title": "Vertigo 2",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/843390/header.jpg?t=1732293919",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+  {
+    "id": "244210",
+    "title": "Assetto Corsa",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244210/header.jpg?t=1730473196",
     "averages": {
         "steamVR":  null ,
         
@@ -90252,6 +90257,41 @@
         "alvr":  null ,
         
         "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "892970",
+    "title": "Valheim (VHVR MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/header.jpg?t=1736170983",
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+            
+              
+              
+            
+          
+          2
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          2
+        
     }
   }
 
