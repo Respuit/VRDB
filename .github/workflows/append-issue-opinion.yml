@@ -88,6 +88,7 @@ jobs:
                   echo "    - $key: $content_filtered"
               elif [[ "$key" != "text" ]]; then
                   echo "      $key: $content_filtered"
+                  echo content filtered "$content_filtered"
               fi
           }
           
