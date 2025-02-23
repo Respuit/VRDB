@@ -37,7 +37,8 @@ jobs:
           input: $BODY
       - run: |
           echo "${{ github.event.issue.user.login }}"
-          BODY=$(echo "${{ github.event.issue.body }}" | sed 's/"/\\"/g')
+          BODY=$(echo '${{ github.event.issue.body }}' | sed 's/"/\\"/g')
+          echo content filteres "$BODY"          
           USER_LOGIN="${{ github.event.issue.user.login }}"
           tags=("### Steamvr" "### Monado" "### ALVR" "### WiVRn" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
           keys=("steamVR" "monado" "alvr" "wivrn" "GPUVendor" "distro" "device" "text" "date")
@@ -79,7 +80,6 @@ jobs:
               
                   # Agregar el contenido sangrado
                   echo "$content_filtered" | sed 's/^/          /'
-                  echo content filteres "$content_filtered"
                   
               fi
               
