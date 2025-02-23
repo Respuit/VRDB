@@ -37,10 +37,7 @@ jobs:
           input: $BODY
       - run: |
           echo "${{ github.event.issue.user.login }}"
-          BODY=$(jq -R -s '.' <<EOF
-          ${{ github.event.issue.body }}
-          EOF
-          )
+          BODY=$(echo "${{ github.event.issue.body }}" | awk '{print}')
           USER_LOGIN="${{ github.event.issue.user.login }}"
           tags=("### Steamvr" "### Monado" "### ALVR" "### WiVRn" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
           keys=("steamVR" "monado" "alvr" "wivrn" "GPUVendor" "distro" "device" "text" "date")
