@@ -100,7 +100,7 @@ jobs:
           # Construir las líneas formateadas para cada etiqueta
           for i in "${!tags[@]}"; do
               line=$(filter_tags "${tags[$i]}" "${keys[$i]}")
-              output+=$'\n'"$line"
+              output="${output}"$'\n'"${line}"
           done
 
           output+=$'\n'"      user: $USER_LOGIN"
