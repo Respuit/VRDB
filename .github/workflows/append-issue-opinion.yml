@@ -36,13 +36,8 @@ jobs:
           BODY: ${{ github.event.issue.body }}
           input: $BODY
       - run: |
-          echo "zero"
-          echo zerono
           echo "${{ github.event.issue.user.login }}"
-          BODY=$(printf "%s" "${{ github.event.issue.body }}")
-          echo "zero"
-          BODY=$(echo "$BODY" | sed 's/"/\\"/g')
-          echo "zero1"
+          BODY="${{ github.event.issue.body }}"
           USER_LOGIN="${{ github.event.issue.user.login }}"
           tags=("### Steamvr" "### Monado" "### ALVR" "### WiVRn" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
           keys=("steamVR" "monado" "alvr" "wivrn" "GPUVendor" "distro" "device" "text" "date")
@@ -61,10 +56,7 @@ jobs:
               local key="$2"
           
               # Filtrar el contenido y asignarlo a una variable
-              echo "first"
               content_filtered=$(echo "$BODY" | sed -n "/$tag/,/^###/{ /^###/d; p }")
-              content_filtered=$(echo "$content_filtered" | sed 's/"/\\"/g')
-              content_filtered=$(echo "$content_filtered" | sed 's/`/\\`/g')
               
               # Eliminar saltos de línea al principio y al final
               content_filtered=$(echo "$content_filtered" | sed ':a; /^\s*$/d; N; s/^\n*//; s/\n*$//; ta')
@@ -80,7 +72,7 @@ jobs:
                       content_filtered=0
                   fi
               fi
-              echo "second"
+          
               # Si es la clave 'text', aplicar sangría adicional a las líneas adicionales
               if [[ "$key" == "text" ]]; then
                   # Imprimir la clave con el operador `|`
@@ -105,7 +97,7 @@ jobs:
           # Construir las líneas formateadas para cada etiqueta
           for i in "${!tags[@]}"; do
               line=$(filter_tags "${tags[$i]}" "${keys[$i]}")
-              output="${output}"$'\n'"${line}"
+              output+=$'\n'"$line"
           done
 
           output+=$'\n'"      user: $USER_LOGIN"
@@ -117,10 +109,10 @@ jobs:
           sed -i '$ d' "$file"
           
           # Añadir el bloque completo al archivo
-          printf '%s\n' "$output" >> "$file"
+          echo -e "$output" >> "$file"
           
           # Añadir un separador (opcional)
-          printf '%s\n' "---" >> "$file"
+          echo -e "---" >> "$file"
           
           # Imprimir el archivo para confirmar los cambios
           cat "$file"
