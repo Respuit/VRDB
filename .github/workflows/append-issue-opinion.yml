@@ -54,10 +54,10 @@ jobs:
           function filter_tags() {
               local tag="$1"
               local key="$2"
-          
+              echo content filtered "$BODY"
               # Filtrar el contenido y asignarlo a una variable
               content_filtered=$(echo "$BODY" | sed -n "/$tag/,/^###/{ /^###/d; p }")
-              echo content filtered "$content_filtered"
+              
               # Eliminar saltos de línea al principio y al final
               content_filtered=$(echo "$content_filtered" | sed ':a; /^\s*$/d; N; s/^\n*//; s/\n*$//; ta')
               
