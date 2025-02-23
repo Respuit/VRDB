@@ -36,6 +36,7 @@ jobs:
           BODY: ${{ github.event.issue.body }}
           input: $BODY
       - run: |
+          set -f
           echo "${{ github.event.issue.user.login }}"
           BODY="${{ github.event.issue.body }}"
           BODY=$(echo "$BODY" | sed 's/"/\\"/g')
