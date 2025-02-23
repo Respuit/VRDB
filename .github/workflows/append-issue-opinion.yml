@@ -85,9 +85,9 @@ jobs:
           
               # Si es la primera línea (guion), agregarla al inicio
               if [[ "$key" == "${keys[0]}" ]]; then
-                  echo "    - $key: \"$content_filtered\""
+                  echo "    - $key: $content_filtered"
               elif [[ "$key" != "text" ]]; then
-                  echo "      $key: \"$content_filtered\"" 
+                  echo "      $key: $content_filtered"
               fi
           }
           
