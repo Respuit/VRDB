@@ -144,4 +144,5 @@ jobs:
 
         shell: bash
         env:
+          BODY: ${{ github.event.issue.body }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
