@@ -39,7 +39,7 @@ jobs:
           echo "${{ github.event.issue.user.login }}"
           echo content filteres "${BODY}"         
           USER_LOGIN="${{ github.event.issue.user.login }}"
-          tags=("### Steamvr" "### Monado" "### ALVR" "### WiVRn" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
+          tags=("### SteamVR" "### Monado" "### ALVR" "### WiVRn" "### GPU vendor" "### Distribution" "### Headset" "### Description" "### Date")
           keys=("steamVR" "monado" "alvr" "wivrn" "GPUVendor" "distro" "device" "text" "date")
           
           declare -A value_map=(
