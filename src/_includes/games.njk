@@ -16,7 +16,7 @@ permalink: "games/{{ page.fileSlug }}.html"
       <div id="stars" class="star"></div>
         <div id="stars2" class="star"></div>
         <div id="stars3" class="star"></div>
-<h2 ><a href="{{ site.pathPrefix }}/VRDB/">VR GAMES</a>  </h2>  
+<h2 ><a href="{{ site.pathPrefix }}/">VR GAMES</a>  </h2>  
 
       <div class="right-header">
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -44,29 +44,59 @@ permalink: "games/{{ page.fileSlug }}.html"
     <div class="game-table-info">
     <div class="rating-container">
     {% set steamVR_total = 0 %}
-    {% set monado_total = 0 %}
-    {% set alvr_total = 0 %}
-    {% set wivrn_total = 0 %}
-    {% set opinions_count = opinions | length %}
+{% set steamVR_count = 0 %}
+{% set monado_total = 0 %}
+{% set monado_count = 0 %}
+{% set alvr_total = 0 %}
+{% set alvr_count = 0 %}
+{% set wivrn_total = 0 %}
+{% set wivrn_count = 0 %}
 
-    {% for opinion in opinions %}
+{% for opinion in opinions %}
+    {% if opinion.steamVR != 0 %}
         {% set steamVR_total = steamVR_total + opinion.steamVR %}
-        {% set monado_total = monado_total + opinion.monado %}
-        {% set alvr_total = alvr_total + opinion.alvr %}
-        {% set wivrn_total = wivrn_total + opinion.wivrn %}
-    {% endfor %}
-
-    {% if opinions_count > 0 %}
-        {% set steamVR_avg = steamVR_total / opinions_count %}
-        {% set monado_avg = monado_total / opinions_count %}
-        {% set alvr_avg = alvr_total / opinions_count %}
-        {% set wivrn_avg = wivrn_total / opinions_count %}
-    {% else %}
-        {% set steamVR_avg = 0 %}
-        {% set monado_avg = 0 %}
-        {% set alvr_avg = 0 %}
-        {% set wivrn_avg = 0 %}
+        {% set steamVR_count = steamVR_count + 1 %}
     {% endif %}
+    
+    {% if opinion.monado != 0 %}
+        {% set monado_total = monado_total + opinion.monado %}
+        {% set monado_count = monado_count + 1 %}
+    {% endif %}
+
+    {% if opinion.alvr != 0 %}
+        {% set alvr_total = alvr_total + opinion.alvr %}
+        {% set alvr_count = alvr_count + 1 %}
+    {% endif %}
+
+    {% if opinion.wivrn != 0 %}
+        {% set wivrn_total = wivrn_total + opinion.wivrn %}
+        {% set wivrn_count = wivrn_count + 1 %}
+    {% endif %}
+{% endfor %}
+
+{% if steamVR_count > 0 %}
+    {% set steamVR_avg = steamVR_total / steamVR_count %}
+{% else %}
+    {% set steamVR_avg = 0 %}
+{% endif %}
+
+{% if monado_count > 0 %}
+    {% set monado_avg = monado_total / monado_count %}
+{% else %}
+    {% set monado_avg = 0 %}
+{% endif %}
+
+{% if alvr_count > 0 %}
+    {% set alvr_avg = alvr_total / alvr_count %}
+{% else %}
+    {% set alvr_avg = 0 %}
+{% endif %}
+
+{% if wivrn_count > 0 %}
+    {% set wivrn_avg = wivrn_total / wivrn_count %}
+{% else %}
+    {% set wivrn_avg = 0 %}
+{% endif %}
 
     <table class="rating-table">
         <tr class="software-list">
@@ -112,6 +142,7 @@ permalink: "games/{{ page.fileSlug }}.html"
             </td>
 
             <td>
+                
                 {% set wivrn_avg_rounded = wivrn_avg | round %}
                 {% if wivrn_avg_rounded %}
                     <i class="rating rating-{{ wivrn_avg_rounded }} {{ icons[wivrn_avg_rounded|string] }} icon-dark icon-size" title="Media: {{ wivrn_avg_rounded }}"></i>
