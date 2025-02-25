@@ -50,4 +50,16 @@ opinions:
           `XRT_HAVE_SYSTEM_CJSON = true`
       date: 2025-02-24
       user: sbot50
+
+    - steamVR: 0
+      monado: 0
+      alvr: 1
+      wivrn: 2
+      GPUVendor: AMD
+      distro: CachyOS
+      device: Quest 3
+      text: |
+          works great with the Vivecraft branch on OpenComposite, otherwise there are some input-related issues
+      date: 2025-02-24
+      user: Kiy0shime
 ---
