@@ -35,7 +35,15 @@
     <div class="game-table-info">
     <div class="rating-container">
     
-    
+
+
+
+
+
+
+
+
+
     
     
     
@@ -45,9 +53,52 @@
     
         
         
+    
+
+    
         
         
     
+    
+    
+        
+        
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
 
     <table class="rating-table">
         <tr class="software-list">
@@ -62,28 +113,29 @@
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-2 fa-solid fa-face-smile icon-dark icon-size" title="Media: 2"></i>
                 
             </td>
 
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-3 fa-solid fa-face-meh icon-dark icon-size" title="Media: 3"></i>
                 
             </td>
 
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Media: 1"></i>
                 
             </td>
 
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                
+                    <i class="rating rating-2 fa-solid fa-face-smile icon-dark icon-size" title="Media: 2"></i>
                 
             </td>
         </tr>
@@ -146,6 +198,201 @@
 </div>
 
 <div class="container games-container" data-pagefind-ignore>
+
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/Deytron.png" alt="Descripción de Deytron">
+                <a href= "https://github.com/Deytron"> Deytron </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>Works fine IF you use the following OpenComposite git branch : <a href="https://gitlab.com/OrionMoonclaw/OpenOVR/-/tree/priorities">https://gitlab.com/OrionMoonclaw/OpenOVR/-/tree/priorities</a> t ofix input getting stuck (use Envision to easily switch branch)<br>
+Menus are not scrollable but inventory works<br>
+Xrizer currently has issues with hands</p>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-2 fa-solid fa-face-smile icon-dark icon-size" title="Rating: Requires manual configuration"></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Meta Quest 2</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> Fedora 41</p>
+                <p><strong>Date:</strong> 24 February 2025</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/sbot50.png" alt="Descripción de sbot50">
+                <a href= "https://github.com/sbot50"> sbot50 </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>SteamVR:<br>
+Works perfectly, but make sure to add <code>steam-run</code> as the wrapped command under custom commands if you use Prismlauncher,<br>
+if you use any other launcher, try to find that option in settings if it exists.<br>
+Monado:</p>
+<ol>
+<li>Make sure to put whatever layout you want in: .minecraft/openvr/input/</li>
+<li>Make every file accept the action_manifest read-only (else vivecraft will overwrite it)<br>
+Then, there are currently some issues with touch vs actually pushing buttons, so try to avoid mapping anything to touch.<br>
+Also, I couldn't ever get the radial menu to work under Monado, so make sure to map anything important in there to a button.<br>
+If building Monado from source, make sure these build parameters are active:<br>
+<code>XRT_FEATURE_SERVICE = true</code><br>
+<code>XRT_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH = true</code><br>
+<code>XRT_HAVE_STEAM = true</code><br>
+<code>CMAKE_EXPORT_COMPILE_COMMANDS = true</code><br>
+<code>XRT_HAVE_SYSTEM_CJSON = true</code></li>
+</ol>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                        
+                            <i class="rating rating-2 fa-solid fa-face-smile icon-dark icon-size" title="Rating: Requires manual configuration"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-3 fa-solid fa-face-meh icon-dark icon-size" title="Rating: Playable with graphical/controller issues"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Valve Index</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> NixOS</p>
+                <p><strong>Date:</strong> 24 February 2025</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/Kiy0shime.png" alt="Descripción de Kiy0shime">
+                <a href= "https://github.com/Kiy0shime"> Kiy0shime </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>works great with the Vivecraft branch on OpenComposite, otherwise there are some input-related issues</p>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-2 fa-solid fa-face-smile icon-dark icon-size" title="Rating: Requires manual configuration"></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Quest 3</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> CachyOS</p>
+                <p><strong>Date:</strong> 24 February 2025</p>
+            </div>
+        </div>
+    </article>
 
 </div>
 

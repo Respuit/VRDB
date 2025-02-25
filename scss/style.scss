@@ -5,6 +5,7 @@ header {
     width: 100%;
     position: fixed;
     padding-bottom: 5rem;
+    z-index: 900;
     
 }
 
@@ -131,7 +132,7 @@ header .fa-github {
     transition: background-color 0.3s ease;
     text-decoration: none;
     color: inherit !important;
-    z-index: 1000;
+    z-index: 500;
     position: relative;
 
     h3 {
@@ -538,7 +539,7 @@ button {
 .info-card {
   // Apply the default gradient styles
   background: rgba(32, 36, 47, 0.6);
-  z-index: 1000;
+  z-index: 500;
   position: relative;
 }
 

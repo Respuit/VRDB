@@ -45,10 +45,10 @@ const dataRenderFn = (dataPage) => {
                             <td class="rating-text">WiVRn</td>
                         </tr>
                         <tr class="rating-list">
-                            <td><i class="rating rating-${averages.steamVR} ${icons[averages.steamVR?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.monado} ${icons[averages.monado?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.alvr} ${icons[averages.alvr?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
-                            <td><i class="rating rating-${averages.wivrn} ${icons[averages.wivrn?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${Math.round(averages.steamVR)} ${icons[Math.round(averages.steamVR)?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${Math.round(averages.monado)} ${icons[Math.round(averages.monado)?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${Math.round(averages.alvr)} ${icons[Math.round(averages.alvr)?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${Math.round(averages.wivrn)} ${icons[Math.round(averages.wivrn)?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
                         </tr>
                         </tbody>
                     </table>
