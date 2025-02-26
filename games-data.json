@@ -1329,22 +1329,6 @@
   },
 
   {
-    "id": "552440",
-    "title": "The Talos Principle VR",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552440/header.jpg?t=1710246995",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "569940",
     "title": "Bocce Beach",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/569940/header.jpg?t=1498683422",
@@ -45985,22 +45969,6 @@
   },
 
   {
-    "id": "2320910",
-    "title": "AMID EVIL VR",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320910/header.jpg?t=1704405947",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "542520",
     "title": "Lost in the Rift - Reborn",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/542520/header.jpg?t=1485023173",
@@ -53092,22 +53060,6 @@
     "id": "1015650",
     "title": "The Virtual Reality Museum of Immersive Experiences",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1015650/header.jpg?t=1602810880",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "2524980",
-    "title": "Under Pressure",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2524980/header.jpg?t=1699458453",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -65668,22 +65620,6 @@
     "id": "1952470",
     "title": "Blaston Spectator",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1952470/header.jpg?t=1677674430",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "2130590",
-    "title": "PUNCH FIT",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2130590/header.jpg?t=1713244995",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -91473,22 +91409,6 @@
   },
 
   {
-    "id": "1753400",
-    "title": "Visite virtuelle de l&#39;Assemblée nationale",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1753400/header.jpg?t=1663340127",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "1215000",
     "title": "STRAYLIGHT",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1215000/header.jpg?t=1680958968",
@@ -96149,22 +96069,6 @@
   },
 
   {
-    "id": "NS1",
-    "title": "DCS World Standalone",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223750/header.jpg?t=1721725925",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "1116540",
     "title": "DAVIGO: VR vs. PC",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1116540/header.jpg?t=1732410686",
@@ -98015,6 +97919,390 @@
           
           1
         
+    }
+  },
+
+  {
+    "id": "1753400",
+    "title": "Visite virtuelle de l&#39;Assemblée nationale",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1753400/header.jpg?t=1663340127",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+              
+              
+            
+          
+          3
+        ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2130590",
+    "title": "PUNCH FIT",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2130590/header.jpg?t=1713244995",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2320910",
+    "title": "AMID EVIL VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320910/header.jpg?t=1704405947",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+              
+              
+            
+          
+          2
+        ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+            
+              
+              
+            
+          
+          2
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          5
+        
+    }
+  },
+
+  {
+    "id": "2524980",
+    "title": "Under Pressure",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2524980/header.jpg?t=1699458453",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "552440",
+    "title": "The Talos Principle VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552440/header.jpg?t=1710246995",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "753640",
+    "title": "Outer Wilds (VR MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "2788740",
+    "title": "Phantom Bound",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2788740/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "NS3",
+    "title": "OpenMW VR",
+    "image": "https://openmw.org/wp-content/uploads/2022/04/screenshot882.png",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "620",
+    "title": "Portal 2 (portal2vr MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "284160",
+    "title": "BeamNG.drive",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/284160/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3058630",
+    "title": "Assetto Corsa EVO",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3058630/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "233610",
+    "title": "Distance",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233610/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "227300",
+    "title": "Euro Truck Simulator 2",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "632360",
+    "title": "Risk of Rain 2 (RoR2VRMod MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632360/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "1966720",
+    "title": "Lethal Company (LethalCompanyVR MOD) ",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "590830",
+    "title": "s&amp;box",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590830/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "251570",
+    "title": "7 Days to Die (7DVR MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "3002040",
+    "title": "Dofamine VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3002040/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "NS1",
+    "title": "DCS World Standalone",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223750/header.jpg?t=1721725925",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
     }
   }
 
