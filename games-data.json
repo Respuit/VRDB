@@ -4033,22 +4033,6 @@
   },
 
   {
-    "id": "588030",
-    "title": "Derail Valley",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588030/header.jpg?t=1726258487",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "709370",
     "title": "BadRobots VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/709370/header.jpg?t=1505748324",
@@ -14308,22 +14292,6 @@
     "id": "1864490",
     "title": "3D Solar System Simulator",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1864490/header.jpg?t=1663761446",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "810500",
-    "title": "PowerBeatsVR - VR Fitness",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/810500/header.jpg?t=1706863827",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -43745,22 +43713,6 @@
   },
 
   {
-    "id": "1125240",
-    "title": "Ancient Dungeon",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1125240/header.jpg?t=1716889951",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "528790",
     "title": "Francois BOUILLE",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/528790/header.jpg?t=1475317188",
@@ -48148,22 +48100,6 @@
     "id": "1560510",
     "title": "HardCop 2",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1560510/header.jpg?t=1615501937",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "555160",
-    "title": "Pavlov",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555160/header.jpg?t=1732123959",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -76513,22 +76449,6 @@
   },
 
   {
-    "id": "636450",
-    "title": "Rez Infinite",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/636450/header.jpg?t=1726521416",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "1373310",
     "title": "OUBEY VR - Samurai",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1373310/header.jpg?t=1596704574",
@@ -96141,42 +96061,6 @@
   },
 
   {
-    "id": "473770",
-    "title": "BallisticNG",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/473770/header.jpg?t=1724975798",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "661130",
     "title": "ChilloutVR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/661130/header.jpg?t=1643304966",
@@ -96225,42 +96109,6 @@
           
           1
         
-    }
-  },
-
-  {
-    "id": "963930",
-    "title": "Contractors",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/963930/header.jpg?t=1732285979",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
     }
   },
 
@@ -96657,168 +96505,6 @@
   },
 
   {
-    "id": "438100",
-    "title": "VRChat",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1729272027",
-    "opinionsCount": 9,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-          2.5
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-          1.2857142857142858
-        ,
-        
-        "alvr": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-          2
-        ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-          1
-        
-    }
-  },
-
-  {
     "id": "448280",
     "title": "Job Simulator",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/448280/header.jpg?t=1710217876",
@@ -97143,32 +96829,6 @@
   },
 
   {
-    "id": "885000",
-    "title": "Synth Riders",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/885000/header.jpg?t=1732038833",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-          1
-        
-    }
-  },
-
-  {
     "id": "890550",
     "title": "RUMBLE",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890550/header.jpg?t=1726741428",
@@ -97425,46 +97085,6 @@
   },
 
   {
-    "id": "1079800",
-    "title": "Pistol Whip",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1079800/header.jpg?t=1729189081",
-    "opinionsCount": 2,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-          
-          1
-        
-    }
-  },
-
-  {
     "id": "275850",
     "title": "No Man&#39;s Sky",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/header.jpg?t=1721725925",
@@ -97589,140 +97209,6 @@
             
           
           1
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-            
-          
-          2.5
-        
-    }
-  },
-
-  {
-    "id": "450540",
-    "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
-    "opinionsCount": 4,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-          2
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-          2
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-          2
-        
-    }
-  },
-
-  {
-    "id": "546560",
-    "title": "Half-Life: Alyx",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/546560/header.jpg?t=1673391297",
-    "opinionsCount": 3,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-            
-          
-          5
         ,
         
         "alvr":  null ,
@@ -98073,22 +97559,6 @@
   },
 
   {
-    "id": "753640",
-    "title": "Outer Wilds (VR MOD)",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/header.jpg?t=1721725925",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "2788740",
     "title": "Phantom Bound",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2788740/header.jpg?t=1721725925",
@@ -98303,6 +97773,730 @@
         "alvr":  null ,
         
         "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "1079800",
+    "title": "Pistol Whip",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1079800/header.jpg?t=1729189081",
+    "opinionsCount": 3,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+  {
+    "id": "1125240",
+    "title": "Ancient Dungeon",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1125240/header.jpg?t=1716889951",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+  {
+    "id": "438100",
+    "title": "VRChat",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1729272027",
+    "opinionsCount": 10,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          2.5
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          1.2857142857142858
+        ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          1.6666666666666667
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+  {
+    "id": "450540",
+    "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
+    "opinionsCount": 5,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          2
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          2
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          1.6666666666666667
+        
+    }
+  },
+
+  {
+    "id": "473770",
+    "title": "BallisticNG",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/473770/header.jpg?t=1724975798",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+          4
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+          4
+        
+    }
+  },
+
+  {
+    "id": "546560",
+    "title": "Half-Life: Alyx",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/546560/header.jpg?t=1673391297",
+    "opinionsCount": 4,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          5
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          3
+        
+    }
+  },
+
+  {
+    "id": "555160",
+    "title": "Pavlov",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555160/header.jpg?t=1732123959",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          5
+        
+    }
+  },
+
+  {
+    "id": "588030",
+    "title": "Derail Valley",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588030/header.jpg?t=1726258487",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          4
+        
+    }
+  },
+
+  {
+    "id": "636450",
+    "title": "Rez Infinite",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/636450/header.jpg?t=1726521416",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          4
+        
+    }
+  },
+
+  {
+    "id": "753640",
+    "title": "Outer Wilds (VR MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/header.jpg?t=1721725925",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+              
+              
+            
+          
+          2
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+          5
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+  {
+    "id": "810500",
+    "title": "PowerBeatsVR - VR Fitness",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/810500/header.jpg?t=1706863827",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+            
+              
+              
+            
+          
+          4
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          4
+        
+    }
+  },
+
+  {
+    "id": "885000",
+    "title": "Synth Riders",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/885000/header.jpg?t=1732038833",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+  {
+    "id": "963930",
+    "title": "Contractors",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/963930/header.jpg?t=1732285979",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+          3
+        
     }
   }
 
