@@ -12,14 +12,13 @@ permalink: "games/{{ page.fileSlug }}.html"
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <div id="stars" class="star"></div>
+    <div id="stars2" class="star"></div>
+    <div id="stars3" class="star"></div>
     <header>
-      <div id="stars" class="star"></div>
-        <div id="stars2" class="star"></div>
-        <div id="stars3" class="star"></div>
 <h2 ><a href="{{ site.pathPrefix }}/">VR GAMES</a>  </h2>  
 
       <div class="right-header">
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
@@ -34,7 +33,8 @@ permalink: "games/{{ page.fileSlug }}.html"
                         '3': 'fa-solid fa-face-meh',
                         '4': 'fa-solid fa-face-frown',
                         '5': 'fa-solid fa-face-angry'
-                    } %}   
+                    } %}
+<div class="cont-scroll">   
  <div class="game-header">   
     <div class="game-header-left">
         <img data-pagefind-meta="image[src], image_alt[alt]" class="game-image" src="{{ image }}" alt="Descripción de {{ title }}">
@@ -279,6 +279,7 @@ permalink: "games/{{ page.fileSlug }}.html"
         </div>
     </article>
 {% endfor %}
+</div>
 </div>
 
 
