@@ -5,7 +5,7 @@ header {
     width: 100%;
     position: fixed;
     padding-bottom: 5rem;
-    z-index: 900;
+    z-index: 500;
     
 }
 
@@ -57,13 +57,19 @@ header .fa-github {
       background-color: white;
     }
   }
+.hamburger-menu {
+    display: none;
+}
+
 
   // Menú responsive
   @media (max-width: 768px) {
     // Ocultar el formulario completo por defecto
-    form {
-      display: none;
-    }
+
+
+    header form{
+        display: none;
+      }
 
     // Mostrar el botón de hamburguesa
     .hamburger {
@@ -72,15 +78,49 @@ header .fa-github {
     }
 
     // Mostrar todo el formulario cuando se activa el menú
-    .menu-active form {
+    .hamburger-menu {
+        position: fixed;
+        margin-top: 10svh;
+        top: -100%; /* Inicialmente fuera de la vista (fuera de la parte superior) */
+        left: 0;
+        right: 0;
+        background: #1b1e28;
+        border-radius: 8px;
+        height: 35svh; /* Ajusta la altura a tu preferencia */
+        z-index: 1000;
         display: flex;
-        width: 100%;
-        background-color: #181c25;
-        padding: 1rem;
-        z-index: 10;
-        flex-flow: column;
-        border-radius: 5px;
-    }
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: top 0.3s ease; /* Transición suave para el deslizamiento */
+        
+        /* Cuando la clase 'menu-active' se agrega, el menú se desliza hacia abajo */
+        &.menu-active {
+          top: 0; /* Desliza el menú a la parte superior de la pantalla */
+        }
+      
+        .filters-hmenu {
+          padding: 20px; /* Asegúrate de que tu contenido tenga algo de espacio */
+          .search {
+            margin-bottom: 10px;
+          }
+
+          .search{
+            button {
+                height: 3rem;
+              }
+
+            input {
+                height: 3rem;
+            }
+          }
+      
+          .filters-right-hmenu {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
 
     // Mostrar solo los filtros cuando el menú está activo
     .menu-active .filters {
@@ -624,12 +664,12 @@ button {
   
   
   #stars, #stars2, #stars3 {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; // Asegura que se rendericen sobre el fondo
+    z-index: -999; // Asegura que se rendericen sobre el fondo
   }
   
   #stars {
@@ -641,7 +681,7 @@ button {
   
     &:after {
       content: " ";
-      position: absolute;
+      position: relative;
       top: 2000px;
       width: 1px;
       height: 1px;
@@ -659,7 +699,7 @@ button {
   
     &:after {
       content: " ";
-      position: absolute;
+      position: relative;
       top: 2000px;
       width: 2px;
       height: 2px;
@@ -677,7 +717,7 @@ button {
   
     &:after {
       content: " ";
-      position: absolute;
+      position: relative;
       top: 2000px;
       width: 3px;
       height: 3px;
@@ -694,5 +734,4 @@ button {
       transform: translateY(-1000px);
     }
   }
-  
   

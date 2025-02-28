@@ -13,36 +13,36 @@
 <body>
 
 <header>
-      <div id="stars"></div>
-<div id="stars2"></div>
-<div id="stars3"></div>
-<h2>{{ title }}</h2>  
-<form onsubmit="return false;"> 
-        <div class="filters">
-          <div class="search" >
-            <input type="search" id="searchInput" placeholder="Search games..." autocomplete=off />
-            <button id="searchButton">Search</button>
-          </div>
-          <div class="filters-right">
-            <select id="software-filter">
-              <option value="" selected>All</option>
-              <option value="SteamVR">SteamVR</option>
-              <option value="Monado">Monado</option>
-              <option value="ALVR">ALVR</option>
-              <option value="wivrn">WiVRn</option>
-            </select>
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <h2>{{ title }}</h2>  
+  <form onsubmit="return false;"> 
+          <div class="filters">
+            <div class="search" >
+              <input type="search" id="searchInput" placeholder="Search games..." autocomplete=off />
+              <button id="searchButton">Search</button>
+            </div>
+            <div class="filters-right">
+              <select id="software-filter">
+                <option value="" selected>All</option>
+                <option value="SteamVR">SteamVR</option>
+                <option value="Monado">Monado</option>
+                <option value="ALVR">ALVR</option>
+                <option value="wivrn">WiVRn</option>
+              </select>
 
-            <select id="rating-filter" disabled>
-              <option value="" selected>Any</option>
-              <option value="1">Perfect</option>
-              <option value="2">Requires manual configuration or better</option>
-              <option value="3">Playable with graphical/controller issues or better</option>
-              <option value="4">Unplayable because of graphical/controller issues or better</option>
-              <option value="5">Crashes or won't start or better</option>
-            </select>
+              <select id="rating-filter" disabled>
+                <option value="" selected>Any</option>
+                <option value="1">Perfect</option>
+                <option value="2">Requires manual configuration or better</option>
+                <option value="3">Playable with graphical/controller issues or better</option>
+                <option value="4">Unplayable because of graphical/controller issues or better</option>
+                <option value="5">Crashes or won't start or better</option>
+              </select>
+            </div>
           </div>
-        </div>
-      </form>
+    </form>
       <div class="right-header">
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
     <span class="bar"></span>
@@ -52,7 +52,35 @@
 <a href="https://github.com/Respuit/VRDB" class="fa-brands fa-github"></a>
 </div>
 </header>
-  
+  <div id="hamburger-menu" class="hamburger-menu">
+    <form onsubmit="return false;"> 
+      <div class="filters-hmenu">
+        <div class="search">
+          <input type="search" id="searchInput-hmenu" placeholder="Search games..." autocomplete="off" />
+          <button id="searchButton-hmenu">Search</button>
+        </div>
+        <div class="filters-right-hmenu">
+          <select id="software-filter-hmenu">
+            <option value="" selected>All</option>
+            <option value="SteamVR">SteamVR</option>
+            <option value="Monado">Monado</option>
+            <option value="ALVR">ALVR</option>
+            <option value="wivrn">WiVRn</option>
+          </select>
+
+          <select id="rating-filter-hmenu" disabled>
+            <option value="" selected>Any</option>
+            <option value="1">Perfect</option>
+            <option value="2">Requires manual configuration or better</option>
+            <option value="3">Playable with graphical/controller issues or better</option>
+            <option value="4">Unplayable because of graphical/controller issues or better</option>
+            <option value="5">Crashes or won't start or better</option>
+          </select>
+        </div>
+      </div>
+    </form>
+ 
+  </div>
   <div class="cont-scroll">
     <div class="container"> 
       
