@@ -15841,22 +15841,6 @@
   },
 
   {
-    "id": "1533390",
-    "title": "Gorilla Tag",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533390/header.jpg?t=1715638911",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "2210760",
     "title": "VR Jurassic Adventure HD",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2210760/header.jpg?t=1678692531",
@@ -95351,32 +95335,6 @@
   },
 
   {
-    "id": "1012790",
-    "title": "Into the Radius VR",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1012790/header.jpg?t=1730487332",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-          1
-        
-    }
-  },
-
-  {
     "id": "1020340",
     "title": "AUDICA: Rhythm Shooter",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1020340/header.jpg?t=1608747792",
@@ -95424,32 +95382,6 @@
             
           
           2
-        
-    }
-  },
-
-  {
-    "id": "1764400",
-    "title": "Tea For God",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1764400/header.jpg?t=1704285584",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-          4
         
     }
   },
@@ -95933,58 +95865,6 @@
         ,
         
         "wivrn":  null 
-    }
-  },
-
-  {
-    "id": "629730",
-    "title": "Blade and Sorcery",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629730/header.jpg?t=1724242459",
-    "opinionsCount": 2,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado":  null ,
-        
-        "alvr": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-          
-          3
-        
     }
   },
 
@@ -96798,37 +96678,6 @@
   },
 
   {
-    "id": "858260",
-    "title": "Until You Fall",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/858260/header.jpg?t=1724690100",
-    "opinionsCount": 2,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-              
-              
-            
-          
-          5
-        
-    }
-  },
-
-  {
     "id": "890550",
     "title": "RUMBLE",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890550/header.jpg?t=1726741428",
@@ -97085,95 +96934,6 @@
   },
 
   {
-    "id": "275850",
-    "title": "No Man&#39;s Sky",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/header.jpg?t=1721725925",
-    "opinionsCount": 4,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-          2.5
-        ,
-        
-        "alvr": 
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-          1
-        ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-          1.5
-        
-    }
-  },
-
-  {
     "id": "450390",
     "title": "The Lab",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450390/header.jpg?t=1677266902",
@@ -97343,67 +97103,6 @@
             
           
           3
-        
-    }
-  },
-
-  {
-    "id": "823500",
-    "title": "BONEWORKS",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/823500/header.jpg?t=1581381377",
-    "opinionsCount": 3,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-          
-            
-          
-          3
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-          2.5
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-          1
         
     }
   },
@@ -98040,88 +97739,6 @@
   },
 
   {
-    "id": "450540",
-    "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
-    "opinionsCount": 5,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-          2
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-          2
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-            
-          
-            
-              
-              
-            
-          
-          1.6666666666666667
-        
-    }
-  },
-
-  {
     "id": "473770",
     "title": "BallisticNG",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/473770/header.jpg?t=1724975798",
@@ -98496,6 +98113,484 @@
             
           
           3
+        
+    }
+  },
+
+  {
+    "id": "1012790",
+    "title": "Into the Radius VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1012790/header.jpg?t=1730487332",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+          3
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        
+    }
+  },
+
+  {
+    "id": "1533390",
+    "title": "Gorilla Tag",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533390/header.jpg?t=1715638911",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+  {
+    "id": "1764400",
+    "title": "Tea For God",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1764400/header.jpg?t=1704285584",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+          4.5
+        
+    }
+  },
+
+  {
+    "id": "275850",
+    "title": "No Man&#39;s Sky",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/header.jpg?t=1721725925",
+    "opinionsCount": 5,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          2.5
+        ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          2
+        
+    }
+  },
+
+  {
+    "id": "450540",
+    "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
+    "opinionsCount": 6,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+          2
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+          2
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+          1.5
+        
+    }
+  },
+
+  {
+    "id": "629730",
+    "title": "Blade and Sorcery",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629730/header.jpg?t=1724242459",
+    "opinionsCount": 4,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+          3.3333333333333335
+        
+    }
+  },
+
+  {
+    "id": "823500",
+    "title": "BONEWORKS",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/823500/header.jpg?t=1581381377",
+    "opinionsCount": 4,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          3
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          2.5
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          2.5
+        
+    }
+  },
+
+  {
+    "id": "858260",
+    "title": "Until You Fall",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/858260/header.jpg?t=1724690100",
+    "opinionsCount": 3,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+          5
         
     }
   }

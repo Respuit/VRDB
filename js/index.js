@@ -5,8 +5,56 @@ let searchValue = '';
 let ratingValue = '';
 
 document.getElementById("hamburger").addEventListener("click", function() {
-    document.querySelector("header").classList.toggle("menu-active");
+    document.getElementById("hamburger-menu").classList.toggle("menu-active");
   });
+
+  document.getElementById('searchButton').addEventListener('click', () => {
+    applyFilters('searchInput', 'rating-filter', 'software-filter');
+});
+document.getElementById('software-filter').addEventListener('click', () => {
+    applyFilters('searchInput', 'rating-filter', 'software-filter');
+});
+document.getElementById('rating-filter').addEventListener('click', () => {
+    applyFilters('searchInput', 'rating-filter', 'software-filter');
+});
+
+document.getElementById('searchButton-hmenu').addEventListener('click', () => {
+    applyFilters('searchInput-hmenu', 'software-filter-hmenu', 'rating-filter-hmenu');
+});
+
+document.getElementById('software-filter-hmenu').addEventListener('change', function () {
+    const selectedValue = this.value;
+    softwareValue = selectedValue.toLowerCase();
+    console.log("Valor seleccionado para software:", softwareValue);
+
+
+    if (softwareValue === 'all') {
+        document.getElementById('rating-filter-hmenu').value = ''; 
+        ratingValue = ''; 
+        document.getElementById('rating-filter-hmenu').disabled = true; 
+    } else {
+        document.getElementById('rating-filter-hmenu').disabled = false; 
+    }
+
+    applyFilters('searchInput-hmenu', 'rating-filter-hmenu', 'software-filter-hmenu');
+});
+
+
+document.getElementById('rating-filter-hmenu').addEventListener('change', function () {
+    const selectedValue = this.value;
+    ratingValue = selectedValue !== "" ? parseFloat(selectedValue) : '';  
+
+    
+    if (ratingValue === '') {
+        document.getElementById('software-filter-hmenu').value = '';
+        softwareValue = ''; 
+    }
+
+    applyFilters('searchInput-hmenu', 'rating-filter-hmenu', 'software-filter-hmenu');
+});
+
+
+
   
 
 const dataRenderFn = (dataPage) => {
@@ -61,10 +109,10 @@ const dataRenderFn = (dataPage) => {
   };
 
 
-// Función para obtener los datos del archivo JSON
+
 async function fetchGameData() {
     try {
-    const response = await fetch('games-data.json'); // Cambia a tu ruta real
+    const response = await fetch('games-data.json'); 
     if (!response.ok) {
         throw new Error("Error al cargar el JSON");
     }
@@ -75,20 +123,18 @@ async function fetchGameData() {
     }
 }
 
-// Función para buscar por nombre de manera flexible
+
 async function searchByName(query) {
-    //const gamesData = await fetchGameData();
 
-    // Normalizar el query y buscar coincidencias parciales en el nombre
-    const regex = new RegExp(query, 'i'); // 'i' para que sea insensible a mayúsculas/minúsculas
+    const regex = new RegExp(query, 'i'); 
 
-    // Filtrar los juegos que contengan el query dentro del nombre
+    
     filteredGamesData = gamesData.filter(game => regex.test(game.title));
 
     return filteredGamesData;
 }
 
-// Función para generar la estructura HTML para los resultados
+
 function generateGameCard(game) {
     const icons = {
         '1': 'fa-solid fa-face-laugh-beam',
@@ -176,17 +222,21 @@ function movePage(event) {
     resultsContainer.innerHTML = "";
     chunkData.forEach(game => {
         const gameCardHTML = generateGameCard(game);
-        resultsContainer.innerHTML += gameCardHTML;  // Agregar la tarjeta del juego
+        resultsContainer.innerHTML += gameCardHTML;  
     });
 }
 
-function applyFilters() {
-    const ratingFilter = document.getElementById('rating-filter');
-    softwareValue = document.getElementById('software-filter').value.toLowerCase();
+
+
+
+function applyFilters(searchInput, rating, software) {
+    const ratingFilter = document.getElementById(rating);
+    console.log(document.getElementById(software).value.toLowerCase())
+    softwareValue = document.getElementById(software).value.toLowerCase();
     ratingValue = parseFloat(ratingFilter.value);
-    searchValue = document.getElementById('searchInput').value.toLowerCase(); 
+    searchValue = document.getElementById(searchInput).value.toLowerCase(); 
   
-    //const games = document.querySelectorAll('.game-card');
+    
 
     filteredGamesData = gamesData.filter(filters);
     filteredGamesData.sort((a, b) => (b.opinionsCount || 0) - (a.opinionsCount || 0));
@@ -209,37 +259,12 @@ function applyFilters() {
     ratingFilter.disabled = softwareValue === '';
 }
 
-// En desuso
-async function search() {
-    const searchInput = document.getElementById('searchInput').value.trim();
-    const resultsContainer = document.getElementById('game-list');
-
-    if (searchInput === "") {
-    resultsContainer.textContent = "Please, search a game title.";
-    return;
-    }
-
-    const games = await searchByName(searchInput);
-
-    // Limpiar resultados previos
-    resultsContainer.innerHTML = "";
-
-    // Mostrar resultados
-    if (games.length > 0) {
-    games.forEach(game => {
-        const gameCardHTML = generateGameCard(game);
-        resultsContainer.innerHTML += gameCardHTML;  // Agregar la tarjeta del juego
-    });
-    } else {
-    resultsContainer.textContent = `No se encontró ningún juego que coincida con: ${searchInput}`;
-    }
-}
 
 document.addEventListener("DOMContentLoaded", async (event) => {
     document.getElementById('software-filter').addEventListener('change', applyFilters);
     document.getElementById('rating-filter').addEventListener('change', applyFilters);
 
-    // Manejar el evento de búsqueda
+    
     document.getElementById('searchButton').addEventListener('click', applyFilters);
 
     await fetchGameData().then(function(result) {
