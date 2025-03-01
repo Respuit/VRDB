@@ -95869,42 +95869,6 @@
   },
 
   {
-    "id": "1116540",
-    "title": "DAVIGO: VR vs. PC",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1116540/header.jpg?t=1732410686",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-            
-              
-              
-            
-          
-          1
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-  {
     "id": "3194310",
     "title": "Pixel Dungeon VR: Prologue",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3194310/header.jpg?t=1733124593",
@@ -98591,6 +98555,73 @@
             
           
           5
+        
+    }
+  },
+
+  {
+    "id": "1116540",
+    "title": "DAVIGO: VR vs. PC",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1116540/header.jpg?t=1732410686",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+            
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "alvr": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+            
+          
+            
+              
+              
+            
+          
+          1
         
     }
   }
