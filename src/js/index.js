@@ -19,7 +19,7 @@ document.getElementById('rating-filter').addEventListener('click', () => {
 });
 
 document.getElementById('searchButton-hmenu').addEventListener('click', () => {
-    applyFilters('searchInput-hmenu', 'software-filter-hmenu', 'rating-filter-hmenu');
+    applyFilters('searchInput-hmenu', 'rating-filter-hmenu','software-filter-hmenu');
 });
 
 document.getElementById('software-filter-hmenu').addEventListener('change', function () {
@@ -261,6 +261,7 @@ function applyFilters(searchInput, rating, software) {
 
 
 document.addEventListener("DOMContentLoaded", async (event) => {
+    document.getElementById('software-filter-hmenu').disabled = false;
     document.getElementById('software-filter').addEventListener('change', applyFilters);
     document.getElementById('rating-filter').addEventListener('change', applyFilters);
 
