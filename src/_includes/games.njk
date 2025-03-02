@@ -52,7 +52,8 @@ permalink: "games/{{ page.fileSlug }}.html"
 {% set wivrn_total = 0 %}
 {% set wivrn_count = 0 %}
 
-{% for opinion in opinions %}
+{% set sortedOpinions = opinions | sort(attribute='date') | reverse %}
+{% for opinion in sortedOpinions %}
     {% if opinion.steamVR != 0 %}
         {% set steamVR_total = steamVR_total + opinion.steamVR %}
         {% set steamVR_count = steamVR_count + 1 %}
@@ -210,7 +211,7 @@ permalink: "games/{{ page.fileSlug }}.html"
 </div>
 
 <div class="container games-container" data-pagefind-ignore>
-{% for opinion in opinions %}
+{% for opinion in sortedOpinions %}
     <article class="game-card opinion-card">
         <div class="game-info">
             <div class="user-content"> 
@@ -225,7 +226,7 @@ permalink: "games/{{ page.fileSlug }}.html"
 
         <div class="rating-container" data-pagefind-weight="7">
             <table class="rating-table">
-                <tr>
+                <tr>{% set sortedOpinions = opinions | sort(attribute='date') | reverse %}
                     <td class="rating-text">SteamVR</td>
                     <td class="rating-text">Monado</td>
                     <td class="rating-text">ALVR</td>
