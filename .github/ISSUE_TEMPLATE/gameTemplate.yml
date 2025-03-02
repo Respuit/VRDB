@@ -7,6 +7,9 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this report! IMPORTANT The report might take a few days to appear on page!
+  - type: markdown
+    attributes:
+      label: NAME      
   - type: dropdown
     id: steamvr
     attributes:
