@@ -5,6 +5,8 @@ eleventyExcludeFromCollections: true
 ---
 [
 {% for games in collections.gamesList %}
+
+          {% set sortedOpinions = games.data.opinions | sort(attribute='date') | reverse %}
   {
     "id": "{{ games.fileSlug }}",
     "title": "{{ games.data.title }}",
@@ -14,10 +16,12 @@ eleventyExcludeFromCollections: true
         "steamVR": {% if games.data.opinions and games.data.opinions | selectattr('steamVR', '!=', 0) | length > 0 %}
           {% set totalSteamVR = 0 %}
           {% set countSteamVR = 0 %}
-          {% for opinion in games.data.opinions %}
-            {% if opinion.steamVR != 0 %}
+          {% set uniqueOpinion = [] %}
+          {% for opinion in sortedOpinions %}
+            {% if opinion.steamVR != 0 and opinion.user not in uniqueOpinion %}
               {% set totalSteamVR = totalSteamVR + opinion.steamVR %}
               {% set countSteamVR = countSteamVR + 1 %}
+              {% set uniqueOpinion = (uniqueOpinion.push(opinion.user), uniqueOpinion) %}
             {% endif %}
           {% endfor %}
           {{ totalSteamVR / countSteamVR | round(2) }}
@@ -26,10 +30,12 @@ eleventyExcludeFromCollections: true
         "monado": {% if games.data.opinions and games.data.opinions | selectattr('monado', '!=', 0) | length > 0 %}
           {% set totalMonado = 0 %}
           {% set countMonado = 0 %}
+          {% set uniqueOpinion = [] %}
           {% for opinion in games.data.opinions %}
-            {% if opinion.monado != 0 %}
+            {% if opinion.monado != 0 and opinion.user not in uniqueOpinion %}
               {% set totalMonado = totalMonado + opinion.monado %}
               {% set countMonado = countMonado + 1 %}
+              {% set uniqueOpinion = (uniqueOpinion.push(opinion.user), uniqueOpinion) %}
             {% endif %}
           {% endfor %}
           {{ totalMonado / countMonado | round(2) }}
@@ -38,10 +44,12 @@ eleventyExcludeFromCollections: true
         "alvr": {% if games.data.opinions and games.data.opinions | selectattr('alvr', '!=', 0) | length > 0 %}
           {% set totalAlvr = 0 %}
           {% set countAlvr = 0 %}
+          {% set uniqueOpinion = [] %}
           {% for opinion in games.data.opinions %}
-            {% if opinion.alvr != 0 %}
+            {% if opinion.alvr != 0 and opinion.user not in uniqueOpinion %}
               {% set totalAlvr = totalAlvr + opinion.alvr %}
               {% set countAlvr = countAlvr + 1 %}
+              {% set uniqueOpinion = (uniqueOpinion.push(opinion.user), uniqueOpinion) %}
             {% endif %}
           {% endfor %}
           {{ totalAlvr / countAlvr | round(2) }}
@@ -50,10 +58,12 @@ eleventyExcludeFromCollections: true
         "wivrn": {% if games.data.opinions and games.data.opinions | selectattr('wivrn', '!=', 0) | length > 0 %}
           {% set totalWivrn = 0 %}
           {% set countWivrn = 0 %}
+          {% set uniqueOpinion = [] %}
           {% for opinion in games.data.opinions %}
-            {% if opinion.wivrn != 0 %}
+            {% if opinion.wivrn != 0 and opinion.user not in uniqueOpinion %}
               {% set totalWivrn = totalWivrn + opinion.wivrn %}
               {% set countWivrn = countWivrn + 1 %}
+              {% set uniqueOpinion = (uniqueOpinion.push(opinion.user), uniqueOpinion) %}
             {% endif %}
           {% endfor %}
           {{ totalWivrn / countWivrn | round(2) }}

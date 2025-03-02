@@ -52,26 +52,35 @@ permalink: "games/{{ page.fileSlug }}.html"
 {% set wivrn_total = 0 %}
 {% set wivrn_count = 0 %}
 
+{% set uniqueOpinionSteamVR = [] %}
+{% set uniqueOpinionMonado = [] %}
+{% set uniqueOpinionALVR = [] %}
+{% set uniqueOpinionWiVRn = [] %}
 {% set sortedOpinions = opinions | sort(attribute='date') | reverse %}
+
 {% for opinion in sortedOpinions %}
-    {% if opinion.steamVR != 0 %}
+    {% if opinion.steamVR != 0 and opinion.user not in uniqueOpinionSteamVR %}
         {% set steamVR_total = steamVR_total + opinion.steamVR %}
         {% set steamVR_count = steamVR_count + 1 %}
+        {% set uniqueOpinionSteamVR = (uniqueOpinionSteamVR.push(opinion.user), uniqueOpinionSteamVR) %}
     {% endif %}
     
-    {% if opinion.monado != 0 %}
+    {% if opinion.monado != 0 and opinion.user not in uniqueOpinionMonado %}
         {% set monado_total = monado_total + opinion.monado %}
         {% set monado_count = monado_count + 1 %}
+        {% set uniqueOpinionMonado = (uniqueOpinionMonado.push(opinion.user), uniqueOpinionMonado) %}
     {% endif %}
 
-    {% if opinion.alvr != 0 %}
+    {% if opinion.alvr != 0 and opinion.user not in uniqueOpinionALVR %}
         {% set alvr_total = alvr_total + opinion.alvr %}
         {% set alvr_count = alvr_count + 1 %}
+        {% set uniqueOpinionALVR = (uniqueOpinionALVR.push(opinion.user), uniqueOpinionALVR) %}
     {% endif %}
 
-    {% if opinion.wivrn != 0 %}
+    {% if opinion.wivrn != 0 and opinion.user not in uniqueOpinionWiVRn %}
         {% set wivrn_total = wivrn_total + opinion.wivrn %}
         {% set wivrn_count = wivrn_count + 1 %}
+        {% set uniqueOpinionWiVRn = (uniqueOpinionWiVRn.push(opinion.user), uniqueOpinionWiVRn) %}
     {% endif %}
 {% endfor %}
 
