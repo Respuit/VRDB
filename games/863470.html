@@ -175,10 +175,11 @@
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "863470";
+      const name = "Cairo&#39;s Tale: The Big Egg";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

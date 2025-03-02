@@ -175,10 +175,11 @@
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "3105020";
+      const name = "Touch Grass VR Simulator";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

@@ -175,10 +175,11 @@
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "2806890";
+      const name = "STAY ALIVE MY SON (VR): A True Story About A Father&#39;s Relentless Search For His Son";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

@@ -175,10 +175,11 @@
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "671310";
+      const name = "Pararea--Social VR for Everyone (Beta)";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

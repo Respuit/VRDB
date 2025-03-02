@@ -66,6 +66,20 @@
         
     
 
+    
+        
+        
+    
+    
+    
+        
+        
+    
+
+    
+
+    
+
 
 
     
@@ -96,14 +110,14 @@
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Media: 1"></i>
                 
             </td>
 
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Media: 1"></i>
                 
             </td>
 
@@ -311,6 +325,75 @@ Performance is fine, recentering is needed with keyboard shortcut Ctrl + Space</
         </div>
     </article>
 
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/Mon-Ouie.png" alt="Descripción de Mon-Ouie">
+                <a href= "https://github.com/Mon-Ouie"> Mon-Ouie </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>Works perfectly, including multiplayer and modded content.<br>
+System Information:</p>
+<ul>
+<li>Linux arch-laptop 6.13.4-arch1-1 #1 SMP PREEMPT_DYNAMIC Sat, 22 Feb 2025 00:37:05 +0000 x86_64 GNU/Linux</li>
+<li>GPU: AMD RX 7900 GRE (driver: Mesa 24.3.4)</li>
+<li>CPU: AMD Ryzen 5900X</li>
+<li>Proton 9.0-4</li>
+<li>OpenComposite 1.0.1459 / Monado (commit: 4f3c9bb)</li>
+<li>SteamVR 2.9.6</li>
+</ul>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                        
+                            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Valve Index</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> Arch Linux</p>
+                <p><strong>Date:</strong> 1 March 2025</p>
+            </div>
+        </div>
+    </article>
+
 </div>
 
 
@@ -326,10 +409,11 @@ Performance is fine, recentering is needed with keyboard shortcut Ctrl + Space</
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "244210";
+      const name = "Assetto Corsa";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

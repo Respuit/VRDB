@@ -687,10 +687,11 @@ Tested both with an Index using SteamVR and Monado, and a Quest 2 with WiVRn.</p
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "620980";
+      const name = "Beat Saber";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

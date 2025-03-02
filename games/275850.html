@@ -543,10 +543,11 @@ WiVRn mostly works but when entering a ship, cannot grab the throttle with the l
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "275850";
+      const name = "No Man&#39;s Sky";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

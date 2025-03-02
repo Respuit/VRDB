@@ -44,6 +44,17 @@
 
 
 
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+
 
 
     
@@ -96,7 +107,7 @@
                 
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-5 fa-solid fa-face-angry icon-dark icon-size" title="Media: 5"></i>
                 
             </td>
         </tr>
@@ -160,6 +171,69 @@
 
 <div class="container games-container" data-pagefind-ignore>
 
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/DanielKinsman.png" alt="Descripción de DanielKinsman">
+                <a href= "https://github.com/DanielKinsman"> DanielKinsman </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>Open composite log:</p>
+<pre><code>[2025-03-02 17:10:11.073] SetActionManifestPath:488	- Parsing action sets...
+[2025-03-02 17:10:11.073] oovr_abort_raw_va:206	- Abort!
+[2025-03-02 17:10:11.073] strcpy_s:29	- Expression is false unexpectedly: strlen(src) &lt; dest_size
+</code></pre>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-5 fa-solid fa-face-angry icon-dark icon-size" title="Rating: Crashes or won&#39;t start"></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Pico 4</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> arch</p>
+                <p><strong>Date:</strong> 2 March 2025</p>
+            </div>
+        </div>
+    </article>
+
 </div>
 
 
@@ -175,10 +249,11 @@
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "1337530";
+      const name = "Maskmaker";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

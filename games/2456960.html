@@ -61,6 +61,20 @@
         
     
 
+    
+    
+    
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
 
 
     
@@ -105,7 +119,7 @@
             <td>
                 
                 
-                    <i class="rating rating-5 fa-solid fa-face-angry icon-dark icon-size" title="Media: 5"></i>
+                    <i class="rating rating-3 fa-solid fa-face-meh icon-dark icon-size" title="Media: 3"></i>
                 
             </td>
 
@@ -113,7 +127,7 @@
                 
                 
                 
-                    <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Media: 1"></i>
+                    <i class="rating rating-3 fa-solid fa-face-meh icon-dark icon-size" title="Media: 3"></i>
                 
             </td>
         </tr>
@@ -238,6 +252,66 @@ It doesn't work at all under ALVR</p>
         </div>
     </article>
 
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/makulski.png" alt="Descripción de makulski">
+                <a href= "https://github.com/makulski"> makulski </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>The game works perfect via ALVR, on my setup (4080, KDE Plasma, latest drivers 570.124.04. It would be also perfect on Wivrn, but I can't get controllers to works. I think it worked on some previous version of Wivrn.<br>
+So for me - stick with ALVR this time.</p>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-4 fa-solid fa-face-frown icon-dark icon-size" title="Rating: Unplayable because of graphical/controller issues"></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Quest 3</p>
+                <p><strong>GPU:</strong> Nvidia</p>
+                <p><strong>Distro:</strong> EndeavourOS</p>
+                <p><strong>Date:</strong> 1 March 2025</p>
+            </div>
+        </div>
+    </article>
+
 </div>
 
 
@@ -253,10 +327,11 @@ It doesn't work at all under ALVR</p>
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "2456960";
+      const name = "The 7th Guest VR";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

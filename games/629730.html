@@ -91,6 +91,17 @@
         
     
 
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+
 
 
     
@@ -449,6 +460,65 @@ Other than that, very good experience.</li>
         </div>
     </article>
 
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/slice-the-idiot.png" alt="Descripción de slice-the-idiot">
+                <a href= "https://github.com/slice-the-idiot"> slice-the-idiot </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>cannot use spells, telekinesis use is also jank, with the left hand trigger not working correctly</p>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-3 fa-solid fa-face-meh icon-dark icon-size" title="Rating: Playable with graphical/controller issues"></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Quest 2</p>
+                <p><strong>GPU:</strong> Nvidia</p>
+                <p><strong>Distro:</strong> Arch</p>
+                <p><strong>Date:</strong> 1 March 2025</p>
+            </div>
+        </div>
+    </article>
+
 </div>
 
 
@@ -464,10 +534,11 @@ Other than that, very good experience.</li>
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "629730";
+      const name = "Blade and Sorcery";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,

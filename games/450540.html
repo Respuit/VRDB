@@ -604,10 +604,11 @@ on xrizer, the game is playable, but controllers are offset</p>
       const projects = "";
       const template = "gameTemplate.yml";
       const title = "450540";
+      const name = "Hot Dogs, Horseshoes &amp; Hand Grenades";
 
       const currentDate = new Date().toISOString().split('T')[0];
 
-      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}`;
+      const fullURL = `${baseURL}?assignees=${assignees}&labels=${encodeURIComponent(labels)}&projects=${projects}&template=${template}&title=${encodeURIComponent(title)}&date=${currentDate}&NAME=${name}`;
 
       window.open(
         fullURL,
