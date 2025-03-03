@@ -1,5 +1,6 @@
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 module.exports = function (eleventyConfig) {
-
+    eleventyConfig.addPlugin(faviconsPlugin, {});
     eleventyConfig.addPassthroughCopy("./src/css/");
     eleventyConfig.addWatchTarget("./src/css/");
     eleventyConfig.addPassthroughCopy("./src/scss/");

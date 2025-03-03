@@ -12,11 +12,14 @@
   "description": "",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "build-css": "^0.2.0",
+    "build-css": "^0.0.1",
     "compass": "^0.1.1",
     "eleventy": "^1.0.7",
     "pagination-system": "^2.0.2",
     "sass": "^1.81.0",
     "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "eleventy-plugin-gen-favicons": "^1.1.3"
   }
 }
