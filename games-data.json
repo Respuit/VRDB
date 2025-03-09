@@ -44913,24 +44913,6 @@
 
           
   {
-    "id": "348250",
-    "title": "Google Earth VR",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/348250/header.jpg?t=1508799201",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-
-          
-  {
     "id": "1136210",
     "title": "Ghost Productions: Wraith VR Total Knee Replacement Surgery Simulation",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1136210/header.jpg?t=1569944691",
@@ -107067,76 +107049,6 @@
 
           
   {
-    "id": "1592190",
-    "title": "BONELAB",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1592190/header.jpg?t=1672959398",
-    "opinionsCount": 3,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          4
-        
-    }
-  },
-
-
-          
-  {
     "id": "1701560",
     "title": "RUINSMAGUS",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1701560/header.jpg?t=1725600492",
@@ -108067,76 +107979,6 @@
               
             
           
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        
-    }
-  },
-
-
-          
-  {
-    "id": "667970",
-    "title": "VTOL VR",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/667970/header.jpg?t=1732654698",
-    "opinionsCount": 3,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          1
-        ,
-        
-        "monado":  null ,
-        
-        "alvr": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          1
-        ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
             
           
             
@@ -109203,56 +109045,6 @@
 
           
   {
-    "id": "885000",
-    "title": "Synth Riders",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/885000/header.jpg?t=1732038833",
-    "opinionsCount": 2,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        
-    }
-  },
-
-
-          
-  {
     "id": "963930",
     "title": "Contractors",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/963930/header.jpg?t=1732285979",
@@ -109372,106 +109164,6 @@
             
           
           4.5
-        
-    }
-  },
-
-
-          
-  {
-    "id": "450540",
-    "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
-    "opinionsCount": 6,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          2
-        ,
-        
-        "monado": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-          2
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          1.6666666666666667
         
     }
   },
@@ -111065,64 +110757,6 @@
 
           
   {
-    "id": "1012790",
-    "title": "Into the Radius VR",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1012790/header.jpg?t=1730487332",
-    "opinionsCount": 3,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-          2
-        ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        
-    }
-  },
-
-
-          
-  {
     "id": "1294450",
     "title": "Little Witch Academia: VR Broom Racing",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1294450/header.jpg?t=1642633529",
@@ -111693,6 +111327,466 @@
         "alvr":  null ,
         
         "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "1012790",
+    "title": "Into the Radius VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1012790/header.jpg?t=1730487332",
+    "opinionsCount": 4,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          2
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        
+    }
+  },
+
+
+          
+  {
+    "id": "1592190",
+    "title": "BONELAB",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1592190/header.jpg?t=1672959398",
+    "opinionsCount": 4,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+          4
+        
+    }
+  },
+
+
+          
+  {
+    "id": "348250",
+    "title": "Google Earth VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/348250/header.jpg?t=1508799201",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        
+    }
+  },
+
+
+          
+  {
+    "id": "450540",
+    "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
+    "opinionsCount": 7,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          2
+        ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          2
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1.75
+        
+    }
+  },
+
+
+          
+  {
+    "id": "667970",
+    "title": "VTOL VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/667970/header.jpg?t=1732654698",
+    "opinionsCount": 4,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        
+    }
+  },
+
+
+          
+  {
+    "id": "885000",
+    "title": "Synth Riders",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/885000/header.jpg?t=1732038833",
+    "opinionsCount": 3,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        
     }
   }
 
