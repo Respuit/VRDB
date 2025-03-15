@@ -18849,24 +18849,6 @@
 
           
   {
-    "id": "744600",
-    "title": "Balloonatics",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/744600/header.jpg?t=1724346914",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-
-          
-  {
     "id": "1868220",
     "title": "AstoriaVR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868220/header.jpg?t=1653046163",
@@ -39264,24 +39246,6 @@
     "id": "1428530",
     "title": "BLR80",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1428530/header.jpg?t=1677033750",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-
-          
-  {
-    "id": "1481600",
-    "title": "Fake Racing",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1481600/header.jpg?t=1661923327",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -81417,24 +81381,6 @@
 
           
   {
-    "id": "895870",
-    "title": "Project Wingman",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/895870/header.jpg?t=1625008344",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-
-          
-  {
     "id": "1205040",
     "title": "Granny: Chapter Two",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205040/header.jpg?t=1687544039",
@@ -106899,36 +106845,6 @@
 
           
   {
-    "id": "2375160",
-    "title": "I Am Sakuya VR: Touhou FPS Game",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2375160/header.jpg?t=1684281089",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-          2
-        
-    }
-  },
-
-
-          
-  {
     "id": "341800",
     "title": "Keep Talking and Nobody Explodes",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/header.jpg?t=1699020889",
@@ -107494,66 +107410,6 @@
             
           
           4
-        
-    }
-  },
-
-
-          
-  {
-    "id": "2401230",
-    "title": "Clone Drone in the Hyperdome",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2401230/header.jpg?t=1734026587",
-    "opinionsCount": 2,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          1
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
         
     }
   },
@@ -108943,36 +108799,6 @@
 
           
   {
-    "id": "588030",
-    "title": "Derail Valley",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588030/header.jpg?t=1726258487",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-          4
-        
-    }
-  },
-
-
-          
-  {
     "id": "636450",
     "title": "Rez Infinite",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/636450/header.jpg?t=1726521416",
@@ -109315,70 +109141,6 @@
         "alvr":  null ,
         
         "wivrn":  null 
-    }
-  },
-
-
-          
-  {
-    "id": "1066890",
-    "title": "Automobilista 2",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1066890/header.jpg?t=1732932354",
-    "opinionsCount": 2,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado":  null ,
-        
-        "alvr": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          5
-        
     }
   },
 
@@ -111207,56 +110969,6 @@
 
           
   {
-    "id": "555160",
-    "title": "Pavlov",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555160/header.jpg?t=1732123959",
-    "opinionsCount": 2,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-          5
-        
-    }
-  },
-
-
-          
-  {
     "id": "578620",
     "title": "GORN",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578620/header.jpg?t=1728690184",
@@ -111787,6 +111499,440 @@
           
           1
         
+    }
+  },
+
+
+          
+  {
+    "id": "1066890",
+    "title": "Automobilista 2",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1066890/header.jpg?t=1732932354",
+    "opinionsCount": 3,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+          3.5
+        
+    }
+  },
+
+
+          
+  {
+    "id": "1481600",
+    "title": "Fake Racing",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1481600/header.jpg?t=1661923327",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "2375160",
+    "title": "I Am Sakuya VR: Touhou FPS Game",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2375160/header.jpg?t=1684281089",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          4
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          2
+        
+    }
+  },
+
+
+          
+  {
+    "id": "2401230",
+    "title": "Clone Drone in the Hyperdome",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2401230/header.jpg?t=1734026587",
+    "opinionsCount": 4,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          3
+        
+    }
+  },
+
+
+          
+  {
+    "id": "555160",
+    "title": "Pavlov",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555160/header.jpg?t=1732123959",
+    "opinionsCount": 3,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+          4.333333333333333
+        
+    }
+  },
+
+
+          
+  {
+    "id": "588030",
+    "title": "Derail Valley",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588030/header.jpg?t=1726258487",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+          3
+        
+    }
+  },
+
+
+          
+  {
+    "id": "744600",
+    "title": "Balloonatics",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/744600/header.jpg?t=1724346914",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "895870",
+    "title": "Project Wingman",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/895870/header.jpg?t=1625008344",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
     }
   }
 
