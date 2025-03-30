@@ -48477,24 +48477,6 @@
 
           
   {
-    "id": "230290",
-    "title": "Universe Sandbox",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230290/header.jpg?t=1724091487",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-
-          
-  {
     "id": "427240",
     "title": "Cosmic Trip",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427240/header.jpg?t=1725382268",
@@ -65436,24 +65418,6 @@
     "id": "1198440",
     "title": "The Burning Descent",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1198440/header.jpg?t=1596643526",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-
-          
-  {
-    "id": "2709120",
-    "title": "Clamb",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2709120/header.jpg?t=1731016072",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -103119,24 +103083,6 @@
 
           
   {
-    "id": "1707990",
-    "title": "Skydance&#39;s BEHEMOTH",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1707990/header.jpg?t=1733433952",
-    "opinionsCount": 0,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado":  null ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-
-          
-  {
     "id": "424100",
     "title": "Celestrion",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/424100/header.jpg?t=1455220662",
@@ -107743,48 +107689,6 @@
 
           
   {
-    "id": "638130",
-    "title": "Sweet Surrender VR",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638130/header.jpg?t=1730896980",
-    "opinionsCount": 1,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-          2
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn":  null 
-    }
-  },
-
-
-          
-  {
     "id": "1001140",
     "title": "Angry Birds VR: Isle of Pigs",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1001140/header.jpg?t=1697719549",
@@ -108257,76 +108161,6 @@
         "alvr":  null ,
         
         "wivrn":  null 
-    }
-  },
-
-
-          
-  {
-    "id": "1079800",
-    "title": "Pistol Whip",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1079800/header.jpg?t=1729189081",
-    "opinionsCount": 3,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          1
-        ,
-        
-        "alvr": 
-          
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        
     }
   },
 
@@ -110089,220 +109923,6 @@
 
           
   {
-    "id": "438100",
-    "title": "VRChat",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1729272027",
-    "opinionsCount": 11,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-          2.5
-        ,
-        
-        "monado": 
-          
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-          1.2857142857142858
-        ,
-        
-        "alvr": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          1.6666666666666667
-        ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-          1
-        
-    }
-  },
-
-
-          
-  {
     "id": "1012790",
     "title": "Into the Radius VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1012790/header.jpg?t=1730487332",
@@ -111197,52 +110817,6 @@
 
           
   {
-    "id": "1125240",
-    "title": "Ancient Dungeon",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1125240/header.jpg?t=1716889951",
-    "opinionsCount": 2,
-    "averages": {
-        "steamVR":  null ,
-        
-        "monado": 
-          
-          
-          
-          
-            
-          
-            
-              
-              
-              
-            
-          
-          4
-        ,
-        
-        "alvr":  null ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          1
-        
-    }
-  },
-
-
-          
-  {
     "id": "1341490",
     "title": "Hellsweeper VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1341490/header.jpg?t=1727784612",
@@ -111943,168 +111517,6 @@
 
           
   {
-    "id": "620980",
-    "title": "Beat Saber",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620980/header.jpg?t=1731661369",
-    "opinionsCount": 8,
-    "averages": {
-        "steamVR": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-            
-          
-          1
-        ,
-        
-        "monado": 
-          
-          
-          
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-          1.25
-        ,
-        
-        "alvr": 
-          
-          
-          
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-          1
-        ,
-        
-        "wivrn": 
-          
-          
-          
-          
-            
-              
-              
-              
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-            
-          
-            
-              
-              
-              
-            
-          
-            
-          
-          1
-        
-    }
-  },
-
-
-          
-  {
     "id": "890550",
     "title": "RUMBLE",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890550/header.jpg?t=1726741428",
@@ -112449,6 +111861,776 @@
         "alvr":  null ,
         
         "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "1079800",
+    "title": "Pistol Whip",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1079800/header.jpg?t=1729189081",
+    "opinionsCount": 5,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+
+          
+  {
+    "id": "1125240",
+    "title": "Ancient Dungeon",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1125240/header.jpg?t=1716889951",
+    "opinionsCount": 4,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+          4
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+
+          
+  {
+    "id": "1707990",
+    "title": "Skydance&#39;s BEHEMOTH",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1707990/header.jpg?t=1733433952",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+
+          
+  {
+    "id": "230290",
+    "title": "Universe Sandbox",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230290/header.jpg?t=1724091487",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          4
+        ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          4
+        ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "2709120",
+    "title": "Clamb",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2709120/header.jpg?t=1731016072",
+    "opinionsCount": 1,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          3
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+
+          
+  {
+    "id": "438100",
+    "title": "VRChat",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1729272027",
+    "opinionsCount": 12,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          2.5
+        ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          1.2857142857142858
+        ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          2
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+
+          
+  {
+    "id": "620980",
+    "title": "Beat Saber",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620980/header.jpg?t=1731661369",
+    "opinionsCount": 9,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1.25
+        ,
+        
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        
+    }
+  },
+
+
+          
+  {
+    "id": "638130",
+    "title": "Sweet Surrender VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638130/header.jpg?t=1730896980",
+    "opinionsCount": 2,
+    "averages": {
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
+        
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          2
+        ,
+        
+        "alvr":  null ,
+        
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          2
+        
     }
   }
 
