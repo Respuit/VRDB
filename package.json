@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "serve": "eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "sass --watch src/scss/style.scss src/css/style.css"
   },
