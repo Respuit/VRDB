@@ -50,6 +50,26 @@
 
 
 
+    
+        
+        
+        
+    
+    
+    
+
+    
+        
+        
+        
+    
+
+    
+        
+        
+        
+    
+
 
 
     
@@ -80,7 +100,7 @@
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-4 fa-solid fa-face-frown icon-dark icon-size" title="Media: 4"></i>
                 
             </td>
 
@@ -94,7 +114,7 @@
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-4 fa-solid fa-face-frown icon-dark icon-size" title="Media: 4"></i>
                 
             </td>
 
@@ -102,7 +122,7 @@
                 
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-2 fa-solid fa-face-smile icon-dark icon-size" title="Media: 2"></i>
                 
             </td>
         </tr>
@@ -165,6 +185,77 @@
 </div>
 
 <div class="container games-container" data-pagefind-ignore>
+
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/Patola.png" alt="Descripción de Patola">
+                <a href= "https://github.com/Patola"> Patola </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>This one was a tough nut to crack. Even on Windows it is riddled with technical mishaps. For starters, if I just run it unprepared, Steam says my headset is incompatible and asks me if I really want to run.<br>
+With both WiVRN stable (24.0.3, I think) and ALVR stable and Proton 9.0-4, it shows Vive Wands on the screen and asks you to press the back triggers. It is unresponsive to these controls though, it just won't proceed.<br>
+I was able to run it with the following adjustments:<br>
+WIVRN: v0.24.1-13-g041e37c with the equivalent APK on the headset.<br>
+STEAM: set game properties → general → launch parameters to be <code>%command% -HMD=OpenXR</code> (this will change the initial screen from vive wands to Oculus Touch controllers and hopefully these will register)<br>
+PROTON: Proton 9.0-4 runs the game, but it won't play the in-game movies, so you have to use an alternative that runs microsoft-compatible codecs. I was able to run the in-game movies by using GE-Proton9-26.<br>
+If you tried first with different settings or protons, remove the game's proton prefix (<code>.../steamapps/compatdata/2806890</code>) before each new attempt (it repopulates this directory when you launch).<br>
+I couldn't make it to run under ALVR, only the latest WiVRn with opencomposite. Also tried WiVRn with xrizer but the controls wouldn't register.<br>
+It is of note that the hands on the game appear in a wrong angle. But the game is still playable.<br>
+Apparently there's no smooth turning, only snap turning.<br>
+gameplay here: <a href="https://youtu.be/F96EbsIZDWM">https://youtu.be/F96EbsIZDWM</a><br>
+Additional data: Ryzen 7 7800X3D, AMD Radeon RX 7900 XTX, mesa 25.0.3, kernel 6.14.2-273-tkg-eevdf, 64 GB DDR5 CL30, ran the game both from HDD and SSD.</p>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                        
+                            <i class="rating rating-4 fa-solid fa-face-frown icon-dark icon-size" title="Rating: Unplayable because of graphical/controller issues"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-4 fa-solid fa-face-frown icon-dark icon-size" title="Rating: Unplayable because of graphical/controller issues"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-2 fa-solid fa-face-smile icon-dark icon-size" title="Rating: Requires manual configuration"></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Meta Quest 3</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> Archlinux</p>
+                <p><strong>Date:</strong> 19 April 2025</p>
+            </div>
+        </div>
+    </article>
 
 </div>
 
