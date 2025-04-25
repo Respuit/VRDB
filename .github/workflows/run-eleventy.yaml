@@ -21,7 +21,7 @@ jobs:
 
           git clone --branch gh-pages https://github.com/${{ github.repository }} gh-pages
 
-          cp -r .public/* gh-pages/
+          cp -r public/* gh-pages/
 
           cd gh-pages
           git add .
