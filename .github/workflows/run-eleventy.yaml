@@ -9,11 +9,16 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
       - name: Run 11ty
         run: npm install && npm run eleventy
+        
       - name: Deploy to gh-pages branch
         run: |
           git config --global user.name "GitHub Actions"
@@ -26,4 +31,5 @@ jobs:
           cd gh-pages
           git add .
           git commit -m "Manual Eleventy deploy" || echo "No changes to commit"
-          git push      
+
+          git push origin gh-pages
