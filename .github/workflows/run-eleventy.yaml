@@ -1,4 +1,4 @@
-name: Manual Eleventy Execution
+venname: Manual Eleventy Execution
 on:
   workflow_dispatch:
     inputs:
@@ -13,4 +13,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run Tests
-        run: npm run
+        run: npm run eleventy
