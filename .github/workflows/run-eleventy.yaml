@@ -13,4 +13,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run 11ty
-        run: npm run eleventy
+        run: npm install && npm run eleventy
