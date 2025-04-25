@@ -27,6 +27,6 @@ scss to css the following command nneds to be executed:
 Background is a modification based on the snipet from Saransh Sinha
 
 ## TODO
-- Make an action to build, transfer the public content and deploy the page.
-- Add a section for VR headsets/hardware.
-- Potentially add a tutorials section where people could post a write up for expecific conbinations of hardware/softweare or edge cases.
+- [x] Make an action to build, transfer the public content and deploy the page.
+- [ ] Add a section for VR headsets/hardware.
+- [ ] Potentially add a tutorials section where people could post a write up for expecific conbinations of hardware/softweare or edge cases.
