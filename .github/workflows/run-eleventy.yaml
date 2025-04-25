@@ -14,3 +14,16 @@ jobs:
         uses: actions/checkout@v2
       - name: Run 11ty
         run: npm install && npm run eleventy
+      - name: Deploy to gh-pages branch
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          git clone --branch gh-pages https://github.com/${{ github.repository }} gh-pages
+
+          cp -r .public/* gh-pages/
+
+          cd gh-pages
+          git add .
+          git commit -m "Manual Eleventy deploy" || echo "No changes to commit"
+          git push      
