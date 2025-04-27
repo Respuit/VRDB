@@ -120,6 +120,8 @@
             onclick="toggleModal(event)"
           ></button>
         </header>
+
+        
     <div class="rating-descriptions" data-pagefind-ignore>
         <div class="rating-desc-element">
             <i class="rating rating-0 fa-solid fa-circle-question icon-dark icon-size" title="Rating: Perfect"></i>
@@ -154,15 +156,30 @@
       </article>
     </dialog>
     <!-- Contenedor para los resultados -->
+
     <section class="container info">
-                  <button class="contrast fa-solid fa-circle-info" data-target="modal-example" onclick="toggleModal(event)">
+        <fieldset>
+          <label>
+            Games
+            <input id="switch" name="opt-in" type="checkbox" role="switch"  />
+            Headsets
+          </label>
+        </fieldset>  
+        <button class="contrast fa-solid fa-circle-info" data-target="modal-example" onclick="toggleModal(event)">
         </button>
     </section>
-    <div id="game-list" class="container game-list games-container">
+    <div id="game-list" class="container game-list games-container" >
       
     </div>
-    <div class="paging-container"></div>
-  </div>
+    <div id="headsets-list" class="container headsets-list games-container" style="display:none;">
+      
+    </div>
+
+    <div id="games-paging" class="paging-container"></div>
+    <div id="headsets-paging"class="paging-container-hmd"></div>
+    </div>
+
+
 
   <script src="js/index.js"></script>
 

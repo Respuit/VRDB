@@ -1,8 +1,15 @@
 let gamesData = [];
+let headsetsData = [];
 let filteredGamesData = [];
 let softwareValue = '';
 let searchValue = '';
 let ratingValue = '';
+
+const switchInput = document.getElementById('switch');
+const gameList = document.getElementById('game-list');
+const headsetList = document.getElementById('headsets-list');
+const pagingGames = document.getElementById('games-paging');
+const pagingHeadsets = document.getElementById('headsets-paging');
 
 document.getElementById("hamburger").addEventListener("click", function() {
     document.getElementById("hamburger-menu").classList.toggle("menu-active");
@@ -22,6 +29,7 @@ document.getElementById('searchButton-hmenu').addEventListener('click', () => {
     applyFilters('searchInput-hmenu', 'rating-filter-hmenu','software-filter-hmenu');
 });
 
+//Remove?
 document.getElementById('software-filter-hmenu').addEventListener('change', function () {
     const selectedValue = this.value;
     softwareValue = selectedValue.toLowerCase();
@@ -40,6 +48,7 @@ document.getElementById('software-filter-hmenu').addEventListener('change', func
 });
 
 
+//Remove
 document.getElementById('rating-filter-hmenu').addEventListener('change', function () {
     const selectedValue = this.value;
     ratingValue = selectedValue !== "" ? parseFloat(selectedValue) : '';  
@@ -108,6 +117,57 @@ const dataRenderFn = (dataPage) => {
       .join('')}`;
   };
 
+  const dataRenderFnHMD = (dataPage) => {
+
+    return `${dataPage
+      .map(
+        (game) => {
+            const icons = {
+                '1': 'fa-solid fa-face-laugh-beam',
+                '2': 'fa-solid fa-face-smile',
+                '3': 'fa-solid fa-face-meh',
+                '4': 'fa-solid fa-face-frown',
+                '5': 'fa-solid fa-face-angry'
+            };
+          const imageHTML = game.image;
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(imageHTML, 'text/html');
+          const imgElem = doc.body.firstChild;
+          const gameAverages = game.averages;
+          const averages = JSON.parse(gameAverages.replace('\n', ''));
+          const tempElem = document.createElement('div');
+            tempElem.innerHTML = game.title;
+            const cleanTitle = tempElem.textContent || tempElem.innerText;
+          return `<a href="games/${game.id}.html" class="game-link">
+                <article class="game-card">
+                <img class="game-img" src="${imgElem.href}" alt="Descripción de ${cleanTitle}">
+                <div class="game-info">
+                    <h3>${cleanTitle}</h3>
+                    <div class="rating-container">
+                    <table class="rating-table">
+                        <tbody>
+                        <tr class="software-list">
+                            <td class="rating-text">SteamVR</td>
+                            <td class="rating-text">Monado</td>
+                            <td class="rating-text">ALVR</td>
+                            <td class="rating-text">WiVRn</td>
+                        </tr>
+                        <tr class="rating-list">
+                            <td><i class="rating rating-${Math.round(averages.steamVR)} ${icons[Math.round(averages.steamVR)?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${Math.round(averages.monado)} ${icons[Math.round(averages.monado)?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${Math.round(averages.alvr)} ${icons[Math.round(averages.alvr)?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                            <td><i class="rating rating-${Math.round(averages.wivrn)} ${icons[Math.round(averages.wivrn)?.toString()] || 'fa-solid fa-circle-question'} icon-dark icon-size"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                </article>
+            </a>`;
+        })
+      .join('')}`;
+  };
+
 
 
 async function fetchGameData() {
@@ -123,7 +183,20 @@ async function fetchGameData() {
     }
 }
 
+async function fetchHMDData() {
+    try {
+    const response = await fetch('hmd-data.json'); 
+    if (!response.ok) {
+        throw new Error("Error al cargar el JSON");
+    }
+    return await response.json();
+    } catch (error) {
+    console.error("Error al obtener los datos del juego:", error);
+    return [];
+    }
+}
 
+//Remove?
 async function searchByName(query) {
 
     const regex = new RegExp(query, 'i'); 
@@ -134,7 +207,7 @@ async function searchByName(query) {
     return filteredGamesData;
 }
 
-
+//Remove later?
 function generateGameCard(game) {
     const icons = {
         '1': 'fa-solid fa-face-laugh-beam',
@@ -209,10 +282,11 @@ function filters(game) {
 
 }
 
+//Test possibility of removing this function
 function movePage(event) {
 
     console.log(event.target);
-    const index = event.target.getAttribute('data-page');
+    const index = event.target.getAttributegame('data-page');
 
     const resultsContainer = document.getElementById('game-list');
 
@@ -235,15 +309,22 @@ function applyFilters(searchInput, rating, software) {
     softwareValue = document.getElementById(software).value.toLowerCase();
     ratingValue = parseFloat(ratingFilter.value);
     searchValue = document.getElementById(searchInput).value.toLowerCase(); 
-  
+    let list = '.game-list';
     
+    if (switchInput.checked) {
+        filteredGamesData = headsetsData.filter(filters);
+        list = '.headsets-list'
 
-    filteredGamesData = gamesData.filter(filters);
+      } else {
+        filteredGamesData = gamesData.filter(filters);
+        list = '.game-list';
+      }
+    
     filteredGamesData.sort((a, b) => (b.opinionsCount || 0) - (a.opinionsCount || 0));
 
     if (filteredGamesData.length > 0) {
         new PaginationSystem({
-            dataContainer: document.querySelector('.game-list'),
+            dataContainer: document.querySelector(list),
             dataRenderFn: dataRenderFn,
             perPage: 50,
             isShowPerPage: false,
@@ -252,7 +333,7 @@ function applyFilters(searchInput, rating, software) {
             countRecords: filteredGamesData.length || 0,
         });
     } else {
-        document.querySelector('.game-list').innerHTML = '<p>No results found</p>';
+        document.querySelector(list).innerHTML = '<p>No results found</p>';
         document.querySelector('.paging-container').innerHTML = '';
     }
   
@@ -281,6 +362,22 @@ document.addEventListener("DOMContentLoaded", async (event) => {
             data: gamesData || [],
             pagingContainer: document.querySelector('.paging-container'),
             countRecords: gamesData.length || 0,
+        });
+    });
+
+    await fetchHMDData().then(function(result) {
+        headsetsData = result;
+
+        headsetsData.sort((a, b) => (b.opinionsCount || 0) - (a.opinionsCount || 0));
+        
+        new PaginationSystem({
+            dataContainer: document.querySelector('.headsets-list'),
+            dataRenderFn: dataRenderFnHMD,
+            perPage: 50,
+            isShowPerPage: false,
+            data: headsetsData || [],
+            pagingContainer: document.querySelector('.paging-container-hmd'),
+            countRecords: headsetsData.length || 0,
         });
     });
 });
@@ -354,3 +451,21 @@ const getScrollbarWidth = () => {
 const isScrollbarVisible = () => {
   return document.body.scrollHeight > screen.height;
 };
+
+
+
+
+
+switchInput.addEventListener('change', function() {
+  if (switchInput.checked) {
+    gameList.style.display = 'none';
+    pagingGames.style.display = 'none';
+    pagingHeadsets.style.removeProperty('display');
+    headsetList.style.display = 'block';
+  } else {
+    gameList.style.removeProperty('display');
+    pagingHeadsets.style.display = 'none';
+    pagingGames.style.removeProperty('display');
+    headsetList.style.display = 'none';
+  }
+});

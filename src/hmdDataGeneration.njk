@@ -1,0 +1,74 @@
+---
+layout: null
+permalink: /hmd-data.json
+eleventyExcludeFromCollections: true
+---
+[
+{% for headset in collections.headsetsList %}
+
+          {% set sortedOpinions = headset.data.opinions | sort(attribute='date') | reverse %}
+  {
+    "id": "{{ headset.fileSlug }}",
+    "title": "{{ headset.data.title }}",
+    "image": "{{ headset.data.image }}",
+    "opinionsCount": {{ headset.data.opinions | length }},
+    "averages": {
+        "steamVR": {% if headset.data.opinions and headset.data.opinions | selectattr('steamVR', '!=', 0) | length > 0 %}
+          {% set totalSteamVR = 0 %}
+          {% set countSteamVR = 0 %}
+          {% set uniqueOpinion = [] %}
+          {% for opinion in sortedOpinions %}
+            {% if opinion.steamVR != 0 and opinion.user not in uniqueOpinion %}
+              {% set totalSteamVR = totalSteamVR + opinion.steamVR %}
+              {% set countSteamVR = countSteamVR + 1 %}
+              {% set uniqueOpinion = (uniqueOpinion.push(opinion.user), uniqueOpinion) %}
+            {% endif %}
+          {% endfor %}
+          {{ totalSteamVR / countSteamVR | round(2) }}
+        {% else %} null {% endif %},
+        
+        "monado": {% if headset.data.opinions and headset.data.opinions | selectattr('monado', '!=', 0) | length > 0 %}
+          {% set totalMonado = 0 %}
+          {% set countMonado = 0 %}
+          {% set uniqueOpinion = [] %}
+          {% for opinion in headset.data.opinions %}
+            {% if opinion.monado != 0 and opinion.user not in uniqueOpinion %}
+              {% set totalMonado = totalMonado + opinion.monado %}
+              {% set countMonado = countMonado + 1 %}
+              {% set uniqueOpinion = (uniqueOpinion.push(opinion.user), uniqueOpinion) %}
+            {% endif %}
+          {% endfor %}
+          {{ totalMonado / countMonado | round(2) }}
+        {% else %} null {% endif %},
+        
+        "alvr": {% if headset.data.opinions and headset.data.opinions | selectattr('alvr', '!=', 0) | length > 0 %}
+          {% set totalAlvr = 0 %}
+          {% set countAlvr = 0 %}
+          {% set uniqueOpinion = [] %}
+          {% for opinion in headset.data.opinions %}
+            {% if opinion.alvr != 0 and opinion.user not in uniqueOpinion %}
+              {% set totalAlvr = totalAlvr + opinion.alvr %}
+              {% set countAlvr = countAlvr + 1 %}
+              {% set uniqueOpinion = (uniqueOpinion.push(opinion.user), uniqueOpinion) %}
+            {% endif %}
+          {% endfor %}
+          {{ totalAlvr / countAlvr | round(2) }}
+        {% else %} null {% endif %},
+        
+        "wivrn": {% if headset.data.opinions and headset.data.opinions | selectattr('wivrn', '!=', 0) | length > 0 %}
+          {% set totalWivrn = 0 %}
+          {% set countWivrn = 0 %}
+          {% set uniqueOpinion = [] %}
+          {% for opinion in headset.data.opinions %}
+            {% if opinion.wivrn != 0 and opinion.user not in uniqueOpinion %}
+              {% set totalWivrn = totalWivrn + opinion.wivrn %}
+              {% set countWivrn = countWivrn + 1 %}
+              {% set uniqueOpinion = (uniqueOpinion.push(opinion.user), uniqueOpinion) %}
+            {% endif %}
+          {% endfor %}
+          {{ totalWivrn / countWivrn | round(2) }}
+        {% else %} null {% endif %}
+    }
+  }{% if not loop.last %},{% endif %}
+{% endfor %}
+]
