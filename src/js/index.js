@@ -342,6 +342,9 @@ function applyFilters(searchInput, rating, software) {
 
 
 document.addEventListener("DOMContentLoaded", async (event) => {
+    
+    listSitchLogic();
+
     document.getElementById('software-filter-hmenu').disabled = false;
     document.getElementById('software-filter').addEventListener('change', applyFilters);
     document.getElementById('rating-filter').addEventListener('change', applyFilters);
@@ -457,15 +460,19 @@ const isScrollbarVisible = () => {
 
 
 switchInput.addEventListener('change', function() {
-  if (switchInput.checked) {
-    gameList.style.display = 'none';
-    pagingGames.style.display = 'none';
-    pagingHeadsets.style.removeProperty('display');
-    headsetList.style.display = 'block';
-  } else {
-    gameList.style.removeProperty('display');
-    pagingHeadsets.style.display = 'none';
-    pagingGames.style.removeProperty('display');
-    headsetList.style.display = 'none';
-  }
+    listSitchLogic();
 });
+
+function listSitchLogic(){
+    if (switchInput.checked) {
+        gameList.style.display = 'none';
+        pagingGames.style.display = 'none';
+        pagingHeadsets.style.removeProperty('display');
+        headsetList.style.display = 'block';
+      } else {
+        gameList.style.removeProperty('display');
+        pagingHeadsets.style.display = 'none';
+        pagingGames.style.removeProperty('display');
+        headsetList.style.display = 'none';
+      }
+}

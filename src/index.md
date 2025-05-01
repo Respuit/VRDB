@@ -1,5 +1,5 @@
 ---
 layout: base.njk
-title: VR GAMES
+title: LVRA DB
 
 ---

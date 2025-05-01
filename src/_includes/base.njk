@@ -158,13 +158,15 @@
     <!-- Contenedor para los resultados -->
 
     <section class="container info">
-        <fieldset>
-          <label>
-            Games
-            <input id="switch" name="opt-in" type="checkbox" role="switch"  />
-            Headsets
-          </label>
-        </fieldset>  
+      <fieldset class="tab-toggle">
+        <label class="tab-option">
+          Games
+          <input id="switch" name="opt-in" type="checkbox" role="switch" />
+          <span class="slider"></span>
+          Headsets
+        </label>
+      </fieldset>
+
         <button class="contrast fa-solid fa-circle-info" data-target="modal-example" onclick="toggleModal(event)">
         </button>
     </section>
