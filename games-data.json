@@ -26880,12 +26880,14 @@
     "id": "1592190",
     "title": "BONELAB",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1592190/header.jpg?t=1672959398",
-    "opinionsCount": 4,
+    "opinionsCount": 5,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -26919,6 +26921,8 @@
           
             
           
+            
+          
           1
         ,
         
@@ -26945,7 +26949,13 @@
           
             
           
-          4
+            
+              
+              
+              
+            
+          
+          3.3333333333333335
         
     }
   },
@@ -50426,9 +50436,21 @@
     "id": "2623190",
     "title": "The Elder Scrolls IV: Oblivion Remastered (UEVR MOD)",
     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2623190/a7cee9165bb1bfc092c390c5cff215ce0e381dfc/header.jpg?t=1745345472",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        ,
         
         "monado":  null ,
         
