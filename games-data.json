@@ -62646,12 +62646,14 @@
     "id": "450540",
     "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
-    "opinionsCount": 7,
+    "opinionsCount": 8,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -62705,7 +62707,13 @@
           
             
           
-          2
+            
+              
+              
+              
+            
+          
+          1.6666666666666667
         ,
         
         "alvr":  null ,
@@ -62743,6 +62751,8 @@
               
               
               
+            
+          
             
           
           1.75
@@ -73444,12 +73454,14 @@
     "id": "546560",
     "title": "Half-Life: Alyx",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/546560/header.jpg?t=1673391297",
-    "opinionsCount": 9,
+    "opinionsCount": 10,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -73519,7 +73531,13 @@
               
             
           
-          3.3333333333333335
+            
+              
+              
+              
+            
+          
+          3
         ,
         
         "alvr": 
@@ -73547,6 +73565,8 @@
               
               
               
+            
+          
             
           
             
@@ -73593,6 +73613,8 @@
               
               
               
+            
+          
             
           
             
@@ -97870,12 +97892,14 @@
     "id": "753640",
     "title": "Outer Wilds (VR MOD)",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/header.jpg?t=1721725925",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -97901,6 +97925,8 @@
           
             
           
+            
+          
           5
         ,
         
@@ -97915,6 +97941,8 @@
               
               
               
+            
+          
             
           
           1
@@ -97933,7 +97961,13 @@
               
             
           
-          3
+            
+              
+              
+              
+            
+          
+          2.5
         
     }
   },
