@@ -61816,7 +61816,7 @@
     "id": "438100",
     "title": "VRChat",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1729272027",
-    "opinionsCount": 12,
+    "opinionsCount": 13,
     "averages": {
         "steamVR": 
           
@@ -61824,6 +61824,12 @@
           
           
             
+              
+              
+              
+            
+          
+            
           
             
           
@@ -61863,7 +61869,7 @@
           
             
           
-          2.5
+          2.8
         ,
         
         "monado": 
@@ -61923,7 +61929,13 @@
           
             
           
-          1.2857142857142858
+            
+              
+              
+              
+            
+          
+          1.5
         ,
         
         "alvr": 
@@ -61969,6 +61981,8 @@
               
               
               
+            
+          
             
           
           2
@@ -62033,6 +62047,8 @@
               
               
               
+            
+          
             
           
           1
@@ -77660,15 +77676,39 @@
     "id": "571890",
     "title": "Shapelab 2024",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/571890/header.jpg?t=1732713776",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
@@ -89152,15 +89192,39 @@
     "id": "658920",
     "title": "Half-Life 2: VR Mod",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/658920/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          3
+        ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        
     }
   },
 
