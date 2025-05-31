@@ -56506,12 +56506,14 @@
     "id": "3058630",
     "title": "Assetto Corsa EVO",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3058630/header.jpg?t=1721725925",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -56537,12 +56539,46 @@
               
             
           
+            
+          
           3
         ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          3
+        ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          3
+        
     }
   },
 
@@ -75182,11 +75218,29 @@
     "id": "555160",
     "title": "Pavlov",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555160/header.jpg?t=1732123959",
-    "opinionsCount": 3,
+    "opinionsCount": 4,
     "averages": {
         "steamVR":  null ,
         
-        "monado":  null ,
+        "monado": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          3
+        ,
         
         "alvr": 
           
@@ -75203,7 +75257,13 @@
           
             
           
-          1
+            
+              
+              
+              
+            
+          
+          1.5
         ,
         
         "wivrn": 
@@ -75229,7 +75289,13 @@
               
             
           
-          4.333333333333333
+            
+              
+              
+              
+            
+          
+          4
         
     }
   },
