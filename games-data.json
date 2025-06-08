@@ -12754,9 +12754,21 @@
     "id": "1250410",
     "title": "Microsoft Flight Simulator 40th Anniversary Edition",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1730994202",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "monado":  null ,
         
@@ -12988,9 +13000,23 @@
     "id": "1255560",
     "title": "Myst",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1255560/header.jpg?t=1730162842",
-    "opinionsCount": 1,
+    "opinionsCount": 2,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
         
         "monado": 
           
@@ -13001,6 +13027,8 @@
               
               
               
+            
+          
             
           
           2
@@ -26892,12 +26920,14 @@
     "id": "1592190",
     "title": "BONELAB",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1592190/header.jpg?t=1672959398",
-    "opinionsCount": 5,
+    "opinionsCount": 6,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -26935,10 +26965,34 @@
           
             
           
+            
+          
           1
         ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn": 
           
@@ -26965,6 +27019,8 @@
               
               
               
+            
+          
             
           
           3.3333333333333335
@@ -59194,12 +59250,18 @@
     "id": "359320",
     "title": "Elite Dangerous",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359320/header.jpg?t=1730387269",
-    "opinionsCount": 5,
+    "opinionsCount": 6,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
+              
+              
+              
+            
           
             
           
@@ -59241,10 +59303,34 @@
               
             
           
+            
+          
           2
         ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn": 
           
@@ -59263,6 +59349,8 @@
               
               
               
+            
+          
             
           
             
@@ -61852,7 +61940,7 @@
     "id": "438100",
     "title": "VRChat",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1729272027",
-    "opinionsCount": 13,
+    "opinionsCount": 14,
     "averages": {
         "steamVR": 
           
@@ -61866,6 +61954,12 @@
             
           
             
+              
+              
+              
+            
+          
+            
           
             
           
@@ -61905,7 +61999,7 @@
           
             
           
-          2.8
+          2.8333333333333335
         ,
         
         "monado": 
@@ -61971,6 +62065,8 @@
               
             
           
+            
+          
           1.5
         ,
         
@@ -62021,7 +62117,13 @@
           
             
           
-          2
+            
+              
+              
+              
+            
+          
+          2.2
         ,
         
         "wivrn": 
@@ -62083,6 +62185,8 @@
               
               
               
+            
+          
             
           
             
@@ -62758,12 +62862,14 @@
     "id": "450540",
     "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
-    "opinionsCount": 9,
+    "opinionsCount": 10,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -62833,10 +62939,42 @@
               
             
           
+            
+          
           1.5
         ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn": 
           
@@ -62871,6 +63009,8 @@
               
               
               
+            
+          
             
           
             
@@ -85900,12 +86040,14 @@
     "id": "629730",
     "title": "Blade and Sorcery",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629730/header.jpg?t=1724242459",
-    "opinionsCount": 5,
+    "opinionsCount": 6,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -85945,6 +86087,12 @@
           
             
           
+            
+              
+              
+              
+            
+          
           1
         ,
         
@@ -85979,7 +86127,13 @@
               
             
           
-          3.25
+            
+              
+              
+              
+            
+          
+          3.4
         
     }
   },
@@ -101904,12 +102058,14 @@
     "id": "801550",
     "title": "VAIL VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/801550/header.jpg?t=1731442773",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
               
@@ -101935,10 +102091,28 @@
               
             
           
+            
+          
           3
         ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn": 
           
@@ -101949,6 +102123,8 @@
               
               
               
+            
+          
             
           
             
@@ -103384,12 +103560,14 @@
     "id": "823500",
     "title": "BONEWORKS",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/823500/header.jpg?t=1581381377",
-    "opinionsCount": 5,
+    "opinionsCount": 6,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
               
@@ -103435,10 +103613,34 @@
           
             
           
+            
+          
           2.5
         ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn": 
           
@@ -103459,6 +103661,8 @@
               
               
               
+            
+          
             
           
             
