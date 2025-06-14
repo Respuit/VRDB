@@ -23252,12 +23252,14 @@
     "id": "1499120",
     "title": "I Expect You To Die 2: The Spy and the Liar",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1499120/header.jpg?t=1725372961",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -23283,12 +23285,30 @@
               
             
           
+            
+          
           1
         ,
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          4
+        
     }
   },
 
@@ -42275,6 +42295,24 @@
 
           
   {
+    "id": "22320",
+    "title": "The Elder Scrolls III: Morrowind (openmw-vr MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
     "id": "2233580",
     "title": "Monkey Doo",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2233580/header.jpg?t=1721066012",
@@ -44064,12 +44102,18 @@
     "id": "2307350",
     "title": "Into the Radius 2",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2307350/header_alt_assets_1.jpg?t=1732803372",
-    "opinionsCount": 4,
+    "opinionsCount": 5,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
+              
+              
+              
+            
           
             
           
@@ -44103,6 +44147,8 @@
           
             
           
+            
+          
           4
         ,
         
@@ -44119,6 +44165,8 @@
               
               
               
+            
+          
             
           
             
@@ -44149,6 +44197,8 @@
               
               
               
+            
+          
             
           
           1
@@ -54966,13 +55016,37 @@
     "id": "2898310",
     "title": "EXOcars",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2898310/header.jpg?t=1731619462",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          3
+        ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          3
+        ,
         
         "wivrn":  null 
     }
@@ -59013,6 +59087,24 @@
 
           
   {
+    "id": "354430",
+    "title": "STAR WARS™: X-Wing Special Edition (XWVM MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/354430/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
     "id": "354780",
     "title": "Teknedia",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/354780/header.jpg?t=1610137355",
@@ -61490,6 +61582,24 @@
     "id": "428370",
     "title": "Windlands",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/428370/header.jpg?t=1728560087",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "429530",
+    "title": "For Falcon 4.0 (Falcon BMS MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/429530/header.jpg?t=1721725925",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -78047,6 +78157,24 @@
 
           
   {
+    "id": "57300",
+    "title": "Amnesia: The Dark Descent (Sclerosis MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/57300/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
     "id": "573260",
     "title": "THOSE DAMN ALIENS! VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/573260/header.jpg?t=1540541497",
@@ -80124,12 +80252,14 @@
     "id": "587430",
     "title": "I Expect You To Die",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/587430/header.jpg?t=1725025973",
-    "opinionsCount": 1,
+    "opinionsCount": 2,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
               
@@ -80144,7 +80274,21 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          5
+        
     }
   },
 
@@ -102428,12 +102572,14 @@
     "id": "805550",
     "title": "Assetto Corsa Competizione",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/805550/header.jpg?t=1730743191",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -102459,10 +102605,28 @@
               
             
           
+            
+          
           1
         ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn":  null 
     }
@@ -111206,9 +111370,21 @@
     "id": "942390",
     "title": "Captain ToonHead vs the Punks from Outer Space",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/942390/header.jpg?t=1684425980",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "monado":  null ,
         
