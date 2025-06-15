@@ -42298,7 +42298,7 @@
     "id": "22320",
     "title": "The Elder Scrolls III: Morrowind (openmw-vr MOD)",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -42306,7 +42306,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
@@ -43844,7 +43856,7 @@
     "id": "2296380",
     "title": "I Expect You To Die 3: Cog in the Machine",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2296380/header.jpg?t=1724689495",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -43852,7 +43864,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          4
+        
     }
   },
 
@@ -59090,7 +59114,7 @@
     "id": "354430",
     "title": "STAR WARS™: X-Wing Special Edition (XWVM MOD)",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/354430/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -59098,7 +59122,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
@@ -78160,15 +78196,57 @@
     "id": "57300",
     "title": "Amnesia: The Dark Descent (Sclerosis MOD)",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/57300/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 2,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 

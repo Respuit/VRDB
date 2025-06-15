@@ -50,6 +50,18 @@
 
 
 
+    
+    
+    
+
+    
+
+    
+        
+        
+        
+    
+
 
 
     
@@ -102,7 +114,7 @@
                 
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Media: 1"></i>
                 
             </td>
         </tr>
@@ -165,6 +177,77 @@
 </div>
 
 <div class="container games-container" data-pagefind-ignore>
+
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/Patola.png" alt="Descripción de Patola">
+                <a href= "https://github.com/Patola"> Patola </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>It works perfectly via WiVRn with XWVM, a revitalized alternative engine for X-Wing. Please note: the engine offers Linux and Windows ports, but only the Windows port has VR (it's written in Unity so that's a technical limitation of that engine), so you have to run it via proton. Gameplay here: <a href="https://www.youtube.com/watch?v=cwjm7lcOuY4">https://www.youtube.com/watch?v=cwjm7lcOuY4</a><br>
+Note that it doesn't use the VR controls for more than the menus. To play the game you'll need joystick or mouse + keyboard, it has very complicated controls.<br>
+XWVM can be downloaded from here: <a href="https://www.moddb.com/mods/xwvm/news/xwvm-release-announcement">https://www.moddb.com/mods/xwvm/news/xwvm-release-announcement</a><br>
+To install:<br>
+1 - Install and run X-Wing once on Steam just to ensure it's working with Proton.<br>
+2 - run the XWVM's installer via protontricks on your X-Wing prefix (<code>protontricks 354430 --gui</code>).<br>
+3 - change X-Wing launch options to:<br>
+<code>cmd=(%command%); cmd[-1]=&quot;/games/SteamLibrary/steamapps/compatdata/354430/pfx/drive_c/Program Files (x86)/XWVM/xwvm.exe&quot;; &quot;${cmd[@]}&quot;</code><br>
+Where this <code>cmd[-1]</code> should point to your actual <code>xwvm.exe</code>, of course (location on the default prefix would be <code>~/.local/share/Steam/steamapps/compatdata/354430/pfx/drive_c/Program Files (x86)/XWVM/xwvm.exe</code>)<br>
+4 - Start WiVRN (I highly advise to run it through envision), connect<br>
+5 - start the game, it will still be in pancake mode<br>
+6 - go to the settings, on camera, enable VR mode.<br>
+7 - This configuration will stick, so next time you launch the game it should already be in VR.</p>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Meta Quest 3</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> Archlinux</p>
+                <p><strong>Date:</strong> June 15, 2025</p>
+            </div>
+        </div>
+    </article>
 
 </div>
 
