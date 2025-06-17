@@ -61660,13 +61660,25 @@
     "id": "429530",
     "title": "For Falcon 4.0 (Falcon BMS MOD)",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/429530/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          2
+        ,
         
         "wivrn":  null 
     }
@@ -76240,18 +76252,38 @@
     "id": "559330",
     "title": "A Fisherman&#39;s Tale",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/559330/header.jpg?t=1725461459",
-    "opinionsCount": 1,
+    "opinionsCount": 2,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn": 
           
           
           
+          
+            
+              
+              
+              
+            
           
             
               
@@ -98318,11 +98350,35 @@
     "id": "751630",
     "title": "After the Fall®",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/751630/header.jpg?t=1725370665",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
-        "monado":  null ,
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        ,
         
         "alvr":  null ,
         
