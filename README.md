@@ -2,6 +2,13 @@
 This website is a community-driven effort to provide an open database that helps users determine wich games are compatible with Linux and potentially discover solutions or workarounds for specific issues.
 https://db.vronlinux.org/
 
+## Support
+
+Thanks for reading this! Feel free to contribute with code — or, if you'd like to support the project, you can always [buy me a coffee](https://coff.ee/respuit).
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-donate-yellow.svg)](https://coff.ee/respuit)
+
+
 ## Local development
 
 To install the dependencies run:
