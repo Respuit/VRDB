@@ -9402,7 +9402,7 @@
     "id": "1184500",
     "title": "YUKI Space Ranger",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1184500/header.jpg?t=1731421018",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -9410,7 +9410,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          4
+        
     }
   },
 
@@ -51340,12 +51352,14 @@
     "id": "2669410",
     "title": "Metro Awakening",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669410/header.jpg?t=1732789594",
-    "opinionsCount": 4,
+    "opinionsCount": 5,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -51379,6 +51393,8 @@
               
             
           
+            
+          
           5
         ,
         
@@ -51395,6 +51411,8 @@
               
               
               
+            
+          
             
           
             
@@ -51423,7 +51441,13 @@
           
             
           
-          3
+            
+              
+              
+              
+            
+          
+          2.6666666666666665
         
     }
   },
@@ -58981,6 +59005,24 @@
 
           
   {
+    "id": "3437820",
+    "title": "Wiped Clean",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3437820/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
     "id": "345140",
     "title": "Crystal Rift",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/345140/header.jpg?t=1728560053",
@@ -59120,6 +59162,24 @@
     "id": "353380",
     "title": "Steam Link",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/353380/header.jpg?t=1702342298",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "3538210",
+    "title": "Alliance Peacefighter",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3538210/header.jpg?t=1721725925",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
