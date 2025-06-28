@@ -9738,13 +9738,27 @@
     "id": "1192900",
     "title": "IRON REBELLION",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1192900/header.jpg?t=1729543417",
-    "opinionsCount": 1,
+    "opinionsCount": 2,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn": 
           
@@ -9755,6 +9769,8 @@
               
               
               
+            
+          
             
           
           1
@@ -28350,13 +28366,25 @@
     "id": "1634870",
     "title": "Open Brush",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1634870/header.jpg?t=1722709684",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          4
+        ,
         
         "wivrn":  null 
     }
