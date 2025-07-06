@@ -21393,6 +21393,24 @@
 
           
   {
+    "id": "1458140",
+    "title": "Pacific Drive (UEVR MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1458140/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
     "id": "1458560",
     "title": "I&#39;m on Observation Duty 3",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1458560/header.jpg?t=1726305174",
@@ -26362,6 +26380,24 @@
     "id": "1575730",
     "title": "Descending I - House of Nightmares",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1575730/header.jpg?t=1617981492",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "1576350",
+    "title": "Blair Witch VR",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1576350/header.jpg?t=1721725925",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -35402,6 +35438,24 @@
     "id": "1920270",
     "title": "Slackline VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1920270/header.jpg?t=1649102573",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "1920490",
+    "title": "The Outer World: Spacer&#39;s Choice Edition (UEVR MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1920490/header.jpg?t=1721725925",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -46845,6 +46899,24 @@
 
           
   {
+    "id": "2413940",
+    "title": "Liberation",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2413940/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
     "id": "2414550",
     "title": "MADiSON VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2414550/header.jpg?t=1715972067",
@@ -50522,11 +50594,35 @@
     "id": "2609610",
     "title": "CONVRGENCE",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2609610/header_alt_assets_0.jpg?t=1732729883",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
-        "monado":  null ,
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        ,
         
         "alvr":  null ,
         
@@ -75628,9 +75724,29 @@
     "id": "555160",
     "title": "Pavlov",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555160/header.jpg?t=1732123959",
-    "opinionsCount": 4,
+    "opinionsCount": 5,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          4
+        ,
         
         "monado": 
           
@@ -75649,7 +75765,13 @@
               
             
           
-          3
+            
+              
+              
+              
+            
+          
+          2
         ,
         
         "alvr": 
@@ -75671,6 +75793,8 @@
               
               
               
+            
+          
             
           
           1.5
@@ -75703,6 +75827,8 @@
               
               
               
+            
+          
             
           
           4
@@ -114050,15 +114176,51 @@
     "id": "985950",
     "title": "Operencia: The Stolen Sun",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/985950/header.jpg?t=1727785460",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          5
+        
     }
   },
 
