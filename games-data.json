@@ -58146,7 +58146,7 @@
     "id": "3241660",
     "title": "R.E.P.O. (RepoXR MOD)",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -58154,7 +58154,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
@@ -93340,11 +93352,35 @@
     "id": "690790",
     "title": "DiRT Rally 2.0",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690790/header.jpg?t=1730918452",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
-        "monado":  null ,
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "alvr":  null ,
         
