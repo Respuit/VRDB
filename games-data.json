@@ -2840,11 +2840,23 @@
     "id": "1051200",
     "title": "Trover Saves the Universe",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1051200/header.jpg?t=1729043819",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
-        "monado":  null ,
+        "monado": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "alvr":  null ,
         
@@ -20860,6 +20872,24 @@
     "id": "1442650",
     "title": "White Day VR: The Courage Test",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1442650/header.jpg?t=1727195501",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "1443620",
+    "title": "Pirates VR: Jolly Roger",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1443620/header.jpg?t=1721725925",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -58098,6 +58128,24 @@
     "id": "3240760",
     "title": "Lock Down",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240760/header.jpg?t=1732648243",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "3241660",
+    "title": "R.E.P.O. (RepoXR MOD)",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/header.jpg?t=1721725925",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
