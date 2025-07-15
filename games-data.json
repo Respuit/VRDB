@@ -47662,12 +47662,14 @@
     "id": "2441700",
     "title": "UNDERDOGS",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2441700/header.jpg?t=1730626747",
-    "opinionsCount": 3,
+    "opinionsCount": 4,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -47697,6 +47699,8 @@
               
             
           
+            
+          
           1
         ,
         
@@ -47711,6 +47715,8 @@
               
               
               
+            
+          
             
           
             
@@ -63386,12 +63392,14 @@
     "id": "450540",
     "title": "Hot Dogs, Horseshoes &amp; Hand Grenades",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450540/header.jpg?t=1701461240",
-    "opinionsCount": 10,
+    "opinionsCount": 11,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -63465,6 +63473,8 @@
           
             
           
+            
+          
           1.5
         ,
         
@@ -63495,6 +63505,8 @@
               
               
               
+            
+          
             
           
           1
@@ -63533,6 +63545,8 @@
               
               
               
+            
+          
             
           
             
@@ -84096,12 +84110,14 @@
     "id": "611670",
     "title": "The Elder Scrolls V: Skyrim VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/611670/header.jpg?t=1564002443",
-    "opinionsCount": 3,
+    "opinionsCount": 4,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -84131,6 +84147,8 @@
               
             
           
+            
+          
           1
         ,
         
@@ -84149,6 +84167,12 @@
           
             
           
+            
+          
+            
+              
+              
+              
             
           
           1
@@ -84720,12 +84744,14 @@
     "id": "615120",
     "title": "COMPOUND",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/615120/header.jpg?t=1723940379",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -84751,12 +84777,30 @@
               
             
           
+            
+          
           1
         ,
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
@@ -102792,12 +102836,14 @@
     "id": "801550",
     "title": "VAIL VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/801550/header.jpg?t=1731442773",
-    "opinionsCount": 3,
+    "opinionsCount": 4,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -102827,6 +102873,8 @@
           
             
           
+            
+          
           3
         ,
         
@@ -102843,6 +102891,8 @@
               
               
               
+            
+          
             
           
           1
@@ -102863,7 +102913,13 @@
           
             
           
-          3
+            
+              
+              
+              
+            
+          
+          4
         
     }
   },
@@ -106784,12 +106840,14 @@
     "id": "858260",
     "title": "Until You Fall",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/858260/header.jpg?t=1724690100",
-    "opinionsCount": 8,
+    "opinionsCount": 9,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -106851,6 +106909,8 @@
               
             
           
+            
+          
           3.6666666666666665
         ,
         
@@ -106867,6 +106927,8 @@
               
               
               
+            
+          
             
           
             
@@ -106915,7 +106977,13 @@
           
             
           
-          4.333333333333333
+            
+              
+              
+              
+            
+          
+          4
         
     }
   },
@@ -113062,12 +113130,14 @@
     "id": "963930",
     "title": "Contractors",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/963930/header.jpg?t=1732285979",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -113093,6 +113163,8 @@
           
             
           
+            
+          
           1
         ,
         
@@ -113111,7 +113183,13 @@
               
             
           
-          3
+            
+              
+              
+              
+            
+          
+          4
         
     }
   },
