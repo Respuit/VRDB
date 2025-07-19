@@ -26468,7 +26468,7 @@
     "id": "1576350",
     "title": "Blair Witch VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1576350/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -26476,7 +26476,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
@@ -35538,7 +35550,7 @@
     "id": "1920490",
     "title": "The Outer World: Spacer&#39;s Choice Edition (UEVR MOD)",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1920490/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -35546,7 +35558,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 

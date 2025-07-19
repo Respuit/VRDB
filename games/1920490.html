@@ -50,6 +50,18 @@
 
 
 
+    
+    
+    
+
+    
+
+    
+        
+        
+        
+    
+
 
 
     
@@ -102,7 +114,7 @@
                 
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Media: 1"></i>
                 
             </td>
         </tr>
@@ -165,6 +177,85 @@
 </div>
 
 <div class="container games-container" data-pagefind-ignore>
+
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/Patola.png" alt="Descripción de Patola">
+                <a href= "https://github.com/Patola"> Patola </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>Works perfectly out of the box. Video showing the game on UEVR:  <a href="https://www.youtube.com/watch?v=fIM_2x-u6nE">https://www.youtube.com/watch?v=fIM_2x-u6nE</a><br>
+Detailed instructions:<br>
+I used this plugin in UEVR for the controls and adjustments: <a href="https://github.com/gwizdek/OuterWorlds-UEVR-Plugin">https://github.com/gwizdek/OuterWorlds-UEVR-Plugin</a><br>
+Versions:<br>
+WiVRn v25.6.1<br>
+Mesa 25.1.4<br>
+kernel 6.15.4-273-tkg-eevdf<br>
+UEVR 1.05</p>
+<ul>
+<li>To make it work:</li>
+</ul>
+<ul>
+<li>install the game on Steam, run it once and configure on high or medium- download UEVR, uncompress it. Then copy its directory under the game prefix, e.g. cp -r uevr ~/.local/share/Steam/steamapps/compatdata/1622910/pfx/drive_c/</li>
+<li>download the UEVR profile, a zip file. Don't uncompress nor rename it.</li>
+<li>download .NET 6.0 from Microsoft's site and install it on the prefix, say .net is under /dados: PRESSURE_VESSEL_FILESYSTEMS_RW=&quot;/dados:/home&quot; protontricks-launch --no-bwrap --appid 1920490 /dados/windowsdesktop-runtime-6.0.36-win-x64.exe (the PRESSURE_VESSEL_FILESYSTEMS_RW is needed so that proton can see the executable file)</li>
+<li>if you used the variable, you might also want to use it on your steam launch options, so that the game can fully access all files: PRESSURE_VESSEL_FILESYSTEMS_RW=&quot;/dados:/home&quot; %command%</li>
+<li>run the game again. Then run the command for UEVRInjector: PRESSURE_VESSEL_FILESYSTEMS_RW=&quot;/dados:/home&quot; protontricks-launch --no-bwrap --appid 1622910 ~/.local/share/Steam/steamapps/compatdata/1622910/pfx/drive_c/uevr/UEVRInjector.exe</li>
+<li>go to &quot;Import&quot;- find the UEVR profile. Import the file. Quit the game and UEVR.</li>
+<li>start wivrn, connect to it. Start the game. DON'T LOAD A SAVEGAME, for me it crashes every time if I inject after starting playing. I have to inject on the title screen.</li>
+<li>Run UEVR again, then click on &quot;Inject&quot;. The VR screen should go dark for a few seconds, then appear in all its glory. Click both thumbnails to close UEVR screen and start playing.</li>
+</ul>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Meta Quest 3</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> Archlinux</p>
+                <p><strong>Date:</strong> July 19, 2025</p>
+            </div>
+        </div>
+    </article>
 
 </div>
 
