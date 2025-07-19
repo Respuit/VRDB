@@ -44338,12 +44338,14 @@
     "id": "2307350",
     "title": "Into the Radius 2",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2307350/header_alt_assets_1.jpg?t=1732803372",
-    "opinionsCount": 5,
+    "opinionsCount": 6,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
               
@@ -44385,6 +44387,8 @@
           
             
           
+            
+          
           4
         ,
         
@@ -44401,6 +44405,8 @@
               
               
               
+            
+          
             
           
             
@@ -44435,6 +44441,12 @@
               
             
           
+            
+          
+            
+              
+              
+              
             
           
           1
@@ -91760,12 +91772,14 @@
     "id": "676510",
     "title": "Industrial Petting",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/676510/header.jpg?t=1667777484",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -91791,12 +91805,30 @@
               
             
           
+            
+          
           1
         ,
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
