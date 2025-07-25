@@ -3752,7 +3752,7 @@
     "id": "1066890",
     "title": "Automobilista 2",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1066890/header.jpg?t=1732932354",
-    "opinionsCount": 4,
+    "opinionsCount": 5,
     "averages": {
         "steamVR": 
           
@@ -3760,6 +3760,12 @@
           
           
             
+              
+              
+              
+            
+          
+            
           
             
           
@@ -3775,7 +3781,7 @@
               
             
           
-          1
+          1.3333333333333333
         ,
         
         "monado": 
@@ -3793,6 +3799,8 @@
               
               
               
+            
+          
             
           
           2
@@ -3819,7 +3827,13 @@
           
             
           
-          1
+            
+              
+              
+              
+            
+          
+          1.3333333333333333
         ,
         
         "wivrn": 
@@ -3839,6 +3853,8 @@
               
               
               
+            
+          
             
           
             
@@ -25042,9 +25058,23 @@
     "id": "1533390",
     "title": "Gorilla Tag",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533390/header.jpg?t=1715638911",
-    "opinionsCount": 1,
+    "opinionsCount": 2,
     "averages": {
-        "steamVR":  null ,
+        "steamVR": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+            
+          
+          1
+        ,
         
         "monado":  null ,
         
@@ -25059,6 +25089,8 @@
               
               
               
+            
+          
             
           
           1
@@ -48763,6 +48795,24 @@
 
           
   {
+    "id": "2496180",
+    "title": "Ghost Town",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2496180/header.jpg?t=1721725925",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
     "id": "2496950",
     "title": "Dawn of Marionette",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2496950/header.jpg?t=1712642134",
@@ -53358,12 +53408,14 @@
     "id": "275850",
     "title": "No Man&#39;s Sky",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/header.jpg?t=1721725925",
-    "opinionsCount": 8,
+    "opinionsCount": 9,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -53425,6 +53477,8 @@
           
             
           
+            
+          
           2.5
         ,
         
@@ -53455,6 +53509,12 @@
           
             
           
+            
+          
+            
+              
+              
+              
             
           
           1
@@ -53501,7 +53561,13 @@
               
             
           
-          2.2
+            
+              
+              
+              
+            
+          
+          2.1666666666666665
         
     }
   },
@@ -56756,6 +56822,24 @@
     "id": "3017530",
     "title": "Cube Jumper VR",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3017530/header.jpg?t=1731952229",
+    "opinionsCount": 0,
+    "averages": {
+        "steamVR":  null ,
+        
+        "monado":  null ,
+        
+        "alvr":  null ,
+        
+        "wivrn":  null 
+    }
+  },
+
+
+          
+  {
+    "id": "3023670",
+    "title": "Evacuation Zone: Tampere",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3023670/header.jpg?t=1721725925",
     "opinionsCount": 0,
     "averages": {
         "steamVR":  null ,
@@ -74314,7 +74398,7 @@
     "id": "546560",
     "title": "Half-Life: Alyx",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/546560/header.jpg?t=1673391297",
-    "opinionsCount": 10,
+    "opinionsCount": 11,
     "averages": {
         "steamVR": 
           
@@ -74322,10 +74406,6 @@
           
           
             
-          
-            
-          
-            
               
               
               
@@ -74344,6 +74424,16 @@
             
           
             
+          
+            
+              
+              
+              
+            
+          
+            
+          
+            
               
               
               
@@ -74353,7 +74443,7 @@
           
             
           
-          1.3333333333333333
+          2.25
         ,
         
         "monado": 
@@ -74397,6 +74487,8 @@
               
             
           
+            
+          
           3
         ,
         
@@ -74433,7 +74525,13 @@
           
             
           
-          2
+            
+              
+              
+              
+            
+          
+          3
         ,
         
         "wivrn": 
@@ -74481,7 +74579,13 @@
           
             
           
-          2.4
+            
+              
+              
+              
+            
+          
+          2.5
         
     }
   },
@@ -110798,13 +110902,27 @@
     "id": "916840",
     "title": "The Walking Dead: Saints &amp; Sinners",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/916840/header.jpg?t=1720718926",
-    "opinionsCount": 1,
+    "opinionsCount": 2,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+          
+            
+              
+              
+              
+            
+          
+          3
+        ,
         
         "wivrn": 
           
@@ -110817,7 +110935,13 @@
               
             
           
-          5
+            
+              
+              
+              
+            
+          
+          4.5
         
     }
   },
