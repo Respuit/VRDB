@@ -125,11 +125,16 @@ async function fetchGameData() {
 
 
 async function searchByName(query) {
+    let queryClean = query.replace(/&#\d\d;/g, '');
+    queryClean = queryClean.replace(/[^a-zA-Z0-9\s]/g, '');
+    const regex = new RegExp(queryClean, 'i'); 
 
-    const regex = new RegExp(query, 'i'); 
 
-    
-    filteredGamesData = gamesData.filter(game => regex.test(game.title));
+    filteredGamesData = gamesData.filter(game => {
+        let gameTitleClean = game.title.replace(/&#\d\d;/g, '');
+        gameTitleClean = gameTitleClean.replace(/[^a-zA-Z0-9\s]/g, '');
+        regex.test(gameTitleClean)
+    });
 
     return filteredGamesData;
 }
@@ -182,8 +187,12 @@ function filters(game) {
     const gameAverages = game.averages;
     const averages = JSON.parse(gameAverages.replace('\n', ''));
     if (searchValue !== '') {
-        const regex = new RegExp(searchValue, 'i');
-        if (!regex.test(game.title)) {
+        let searchValueClean = searchValue.replace(/&#\d\d;/g, '');
+        searchValueClean = searchValueClean.replace(/[^a-zA-Z0-9\s]/g, '');
+        const regex = new RegExp(searchValueClean, 'i');
+        let gameTitleClean = game.title.replace(/&#\d\d;/g, '');
+        gameTitleClean = gameTitleClean.replace(/[^a-zA-Z0-9\s]/g, '');
+        if (!regex.test(gameTitleClean)) {
             return false;
         }
     }
