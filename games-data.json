@@ -36830,13 +36830,25 @@
     "id": "1966870",
     "title": "Cyber Car",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966870/header.jpg?t=1664317743",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn":  null 
     }
@@ -48798,7 +48810,7 @@
     "id": "2496180",
     "title": "Ghost Town",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2496180/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -48806,7 +48818,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
@@ -56840,7 +56864,7 @@
     "id": "3023670",
     "title": "Evacuation Zone: Tampere",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3023670/header.jpg?t=1721725925",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
@@ -56848,7 +56872,19 @@
         
         "alvr":  null ,
         
-        "wivrn":  null 
+        "wivrn": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        
     }
   },
 
@@ -65564,12 +65600,14 @@
     "id": "473770",
     "title": "BallisticNG",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/473770/header.jpg?t=1724975798",
-    "opinionsCount": 2,
+    "opinionsCount": 3,
     "averages": {
         "steamVR": 
           
           
           
+          
+            
           
             
           
@@ -65595,6 +65633,8 @@
           
             
           
+            
+          
           1
         ,
         
@@ -65609,6 +65649,8 @@
               
               
               
+            
+          
             
           
           4
@@ -65627,7 +65669,13 @@
               
             
           
-          4
+            
+              
+              
+              
+            
+          
+          3
         
     }
   },
@@ -91216,13 +91264,25 @@
     "id": "668430",
     "title": "V-Racer Hoverbike",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/668430/header.jpg?t=1635267562",
-    "opinionsCount": 0,
+    "opinionsCount": 1,
     "averages": {
         "steamVR":  null ,
         
         "monado":  null ,
         
-        "alvr":  null ,
+        "alvr": 
+          
+          
+          
+          
+            
+              
+              
+              
+            
+          
+          1
+        ,
         
         "wivrn":  null 
     }
