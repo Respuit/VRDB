@@ -50,6 +50,22 @@
 
 
 
+    
+        
+        
+        
+    
+    
+    
+        
+        
+        
+    
+
+    
+
+    
+
 
 
     
@@ -80,14 +96,14 @@
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Media: 1"></i>
                 
             </td>
 
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Media: 1"></i>
                 
             </td>
 
@@ -165,6 +181,91 @@
 </div>
 
 <div class="container games-container" data-pagefind-ignore>
+
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/Corben78.png" alt="Descripción de Corben78">
+                <a href= "https://github.com/Corben78"> Corben78 </a>
+            </div>
+            
+            <p data-pagefind-ignore><p><strong>CPU</strong>: i9 9900 - <strong>GPU</strong>: RTX 2080 mobile - <strong>Driver</strong>: 550.163.01 (555 - 580 seem to have issues with async reprojection)</p>
+<ul>
+<li><strong>Steam VR</strong><br>
+Steam VR with async reprojection disabled works better on my hardware, hands are &quot;doubled&quot; when moving, does not happen when enabled. Enabled is mostly smooth but has slight stutters even though it's running at 45 FPS only:<br>
+<code>$HOME/.local/share/Steam/config/steamvr.vrsettings</code>:</li>
+</ul>
+<pre><code class="language-json">&quot;steamvr&quot; : {
+    &quot;enableLinuxVulkanAsync&quot; : false
+}
+</code></pre>
+<ul>
+<li><strong>Mondado</strong><br>
+Envision env vars:</li>
+</ul>
+<pre><code>XRT_COMPOSITOR_USE_PRESENT_WAIT=1
+U_PACING_COMP_TIME_FRACTION_PERCENT=90
+XRT_COMPOSITOR_COMPUTE=1
+XRT_COMPOSITOR_SCALE_PERCENTAGE=140
+U_PACING_APP_USE_MIN_FRAME_PERIOD=1
+U_PACING_APP_IMMEDIATE_WAIT_FRAME_RETURN=1 
+XRT_COMPOSITOR_DESIRED_MODE=0              # set index to 90 Hz
+XRT_CURATED_GUI=1
+XRT_JSON_LOG=1
+XRT_DEBUG_UI=1
+</code></pre>
+<p>Monado needs <code>OXR_PARALLEL_VIEWS=1 %command%</code> as launch option in Steam. It stutters a lot on my machine, but when lowering ingame scaling factor to 0.7, which still looks fine it runs smooth.</p>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                        
+                            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-1 fa-solid fa-face-laugh-beam icon-dark icon-size" title="Rating: Perfect"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Valve Index</p>
+                <p><strong>GPU:</strong> Nvidia</p>
+                <p><strong>Distro:</strong> Ubuntu 24.04.3 LTS</p>
+                <p><strong>Date:</strong> August 17, 2025</p>
+            </div>
+        </div>
+    </article>
 
 </div>
 
