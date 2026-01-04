@@ -62,4 +62,17 @@ opinions:
           works great with the Vivecraft branch on OpenComposite, otherwise there are some input-related issues
       date: 2025-02-24
       user: Kiy0shime
+
+    - steamVR: 3
+      monado: 0
+      alvr: 3
+      wivrn: 3
+      GPUVendor: None
+      distro: Arch Linux
+      device: meta quest 3
+      text: |
+          with ALVr I get occasional glitches in the headset, especially with shaders.
+          Note that this doesn't work if you have a multi GPU setup with SteamVR. I've narrowed that down to a SteamVR bug. wiVRn + open composite work fine for vivecraft with multi GPU setups
+      date: 2025-12-03
+      user: Nathan22211
 ---
