@@ -75,4 +75,17 @@ opinions:
           Note that this doesn't work if you have a multi GPU setup with SteamVR. I've narrowed that down to a SteamVR bug. wiVRn + open composite work fine for vivecraft with multi GPU setups
       date: 2025-12-03
       user: Nathan22211
+
+    - steamVR: 0
+      monado: 0
+      alvr: 0
+      wivrn: 1
+      GPUVendor: AMD
+      distro: Arch
+      device: Quest 3
+      text: |
+          Works wonderfully. Even with very heavily modded profiles
+          XRizer-Git
+      date: 2025-12-25
+      user: Helooprototo
 ---
