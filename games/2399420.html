@@ -50,6 +50,22 @@
 
 
 
+    
+        
+        
+        
+    
+    
+    
+        
+        
+        
+    
+
+    
+
+    
+
 
 
     
@@ -80,14 +96,14 @@
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-5 fa-solid fa-face-angry icon-dark icon-size" title="Media: 5"></i>
                 
             </td>
 
             <td>
                 
                 
-                    <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size"></i>
+                    <i class="rating rating-5 fa-solid fa-face-angry icon-dark icon-size" title="Media: 5"></i>
                 
             </td>
 
@@ -165,6 +181,77 @@
 </div>
 
 <div class="container games-container" data-pagefind-ignore>
+
+    <article class="game-card opinion-card">
+        <div class="game-info">
+            <div class="user-content"> 
+                <img  src="https://github.com/Mon-Ouie.png" alt="Descripción de Mon-Ouie">
+                <a href= "https://github.com/Mon-Ouie"> Mon-Ouie </a>
+            </div>
+            
+            <p data-pagefind-ignore><p>The game starts, a window opens, the VR session starts, one of the start up logos is shown, but the game quickly crashes. This is what's contained in the logs:<br>
+4.65s VRHiddenArea  118: VR HAM initialized successfully.<br>
+4.69s VRUI.cpp      391: D3DX11CreateTextureFromMemory( &amp;device, vrCursorFile-&gt;mMemFile.get(), vrCursorFile-&gt;mMemFileSize, nullptr, nullptr, reinterpret_cast&lt;ID3D11Resource**&gt;(mCursorTexture.GetPP()), nullptr )<br>
+4.69s VRUI.cpp      391: FATAL!!!<br>
+In order to even get there I needed to use a <a href="https://github.com/JacKeTUs/proton-ge-custom/releases/tag/GE-Proton10-25-LMU-hid_fixes">custom proton build</a> that implements some Direct2D APIs missing from Proton, and replace the <code>openvr_api.dll</code> that the game ships (which is an old version of OpenComposite) with the regular dll from SteamVR.</p>
+<ul>
+<li><strong>Monado Version</strong>: commit 7d5fa81a91340ced18a3e012ebcf5da7f9a6903c</li>
+<li><strong>GPU</strong>: RX 9070 XT</li>
+<li><strong>GPU Drivers</strong>:  Mesa 25.2.6-arch1.1</li>
+<li><strong>CPU</strong>: AMD Ryzen 9 9950X3D</li>
+<li><strong>Kernel</strong>: Linux 6.17.7-arch1-1</li>
+</ul>
+</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="rating-container" data-pagefind-weight="7">
+            <table class="rating-table">
+                <tr>
+                    <td class="rating-text">SteamVR</td>
+                    <td class="rating-text">Monado</td>
+                    <td class="rating-text">ALVR</td>
+                    <td class="rating-text">WiVRn</td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        
+                        
+                            <i class="rating rating-5 fa-solid fa-face-angry icon-dark icon-size" title="Rating: Crashes or won&#39;t start"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-5 fa-solid fa-face-angry icon-dark icon-size" title="Rating: Crashes or won&#39;t start"></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+
+                    <td>
+                        
+                            <i class="rating rating-unknown fa-solid fa-circle-question icon-dark icon-size" ></i>
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <div class="device-info">
+                <p><strong>Device:</strong> Valve Index</p>
+                <p><strong>GPU:</strong> AMD</p>
+                <p><strong>Distro:</strong> Arch Linux</p>
+                <p><strong>Date:</strong> November 16, 2025</p>
+            </div>
+        </div>
+    </article>
 
 </div>
 
